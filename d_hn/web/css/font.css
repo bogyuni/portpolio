@@ -1,0 +1,35 @@
+@charset 'euc-kr';
+
+@font-face{
+	font-family:YG74;
+	font-style:normal;
+	font-weight:normal;
+	src: url(YoonGothic740.eot);
+	src: url(YoonGothic740.eot?#iefix) format('embedded-opentype'), url(YoonGothic740.woff) format('woff');
+}
+@font-face{
+	font-family:YG76;
+	font-style:normal;
+	font-weight:normal;
+	src: url(YoonGothic760.eot);
+	src: url(YoonGothic760.eot?#iefix) format('embedded-opentype'), url(YoonGothic760.woff) format('woff');
+}
+@font-face{
+	font-family:YG77;
+	font-style:normal;
+	font-weight:normal;
+	src: url(YoonGothic770.eot);
+	src: url(YoonGothic770.eot?#iefix) format('embedded-opentype'), url(YoonGothic770.woff) format('woff');
+}
+@font-face{
+	font-family:YG78;
+	font-style:normal;
+	font-weight:normal;
+	src: url(YoonGothic780.eot);
+	src: url(YoonGothic780.eot?#iefix) format('embedded-opentype'), url(YoonGothic780.woff) format('woff');
+}
+body,input,textarea,h1,h2,h3,h4,h5,h6,th,td,a{font:normal 12px/1.2 YG74, Dotum, sans-serif;}
+.yg74{font-family:YG74;}
+.yg76{font-family:YG76;}
+.yg77{font-family:YG77;}
+.yg78{font-family:YG78;}

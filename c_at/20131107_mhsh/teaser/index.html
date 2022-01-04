@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title> 문화생활 : 너도나도 함께하는 문화생활 </title>
+<meta name="Author" content="Adtive innocation">
+<meta name="Keywords" content="문화생활, 공연, 콘서트, ,뮤지컬, 공연정보, 콘서트정보, 공연티켓 ">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jQueryRotate.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+	function check_device(){
+		var mobileKeyWords = new Array('iPhone','iPad', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+		var device_name = '';
+		for (var word in mobileKeyWords){
+			if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+				device_name = mobileKeyWords[word];
+				break;
+			}
+		}
+	return device_name;
+	}
+	$(document).ready(function(){
+		var device = check_device();
+		if(device !=''){
+			location.href='m_index.html'
+		}
+	});
+	function eventLink(){
+		alert("이벤트가 종료 되었습니다. \n 문화생활 페이스북으로 이동합니다.");
+		location.href='https://www.facebook.com/mhshlife2014'
+	}
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="wrap">
+	<article class="notice">
+		<div class="notice_box">
+			<p class="obj txt_con"><img src="images/common/notice_con1.png" alt="2014년 2월 문화생활을 통해 모두가 새로워집니다." /></p>
+			<div class="obj enter_check_box">
+				<form action="">
+					<input id="todayCheck" type="checkbox" name="Notice" value="" />
+					<label for="todayCheck"><img src="images/common/notice_label1.png" alt="1일간 열지않음" /></label>
+					<a href="javascript:history.onclick=closeNotice()"><img src="images/common/btn_close_notice.png" alt="창 닫기" /></a>
+				</form>
+			</div>
+		</div>
+	</article>
+
+	<section class="contents_section section1">
+		<div class="obj left_obj"><img src="images/section1/bg_left_obj.png" alt="left image" /></div>
+		<div class="obj right_obj"><img src="images/section1/bg_right_obj.png" alt="right image" /></div>
+
+		<article class="main_content">
+			<aside class="obj sns_link_box">
+				<a href="http://www.facebook.com/mhshlife2014" target="_blank"><img src="images/common/btn_facebook.png" alt="facebook link" /></a>
+				<a href="https://twitter.com/mhshlife" target="_blank"><img src="images/common/btn_twitter.png" alt="twitter link" /></a>
+			</aside>
+			<div class="obj obj1">
+				<img class="obj back" src="images/section1/bg_main_con1.png" alt="background" />
+				<img class="obj shadow" src="images/section1/bg_main_con2.png" alt="shadow" />
+				<img class="obj front" src="images/section1/main_con1.png" alt="너도 나도 함께하는" />
+			</div>
+		</article>
+	</section>
+
+	<section class="contents_section section2">
+		<article class="main_content">
+			<h1><img src="images/section2/tit_section2.png" alt="철수가 영희를 꼬신 '문화생활' " /></h1>
+			<div class="obj obj1"><img src="images/section2/obj_main_con2.png" alt="철수" /></div>
+			<div class="obj obj2"><img src="images/section2/obj_main_con1.png" alt="영희" /></div>
+
+			<div class="obj obj3"><img src="images/section2/obj_main_con3.png" alt="꽃1" /></div>
+			<div class="obj obj4"><img src="images/section2/obj_main_con4.png" alt="꽃2" /></div>
+			<div class="obj obj5"><img src="images/section2/obj_main_con5.png" alt="꽃3" /></div>
+
+			<div class="obj obj6">
+				<!--
+				<div class="inbox">
+					<img class="img_con1" src="images/section2/obj_txt_con1.gif" alt="영희야 네가 꿈꾸던" />
+					<img src="images/section2/obj_txt_con2.gif" alt="문화생활이 여기 다있어!" />
+				</div>
+				-->
+				<img src="images/section2/obj_txt_box2.png" alt="영희야 네가 꿈꾸던 문화생활이 여기 다있어!" />
+			</div>
+			<div class="obj obj7">
+				<!--
+				<div class="inbox">
+					<img src="images/section2/obj_txt_con3.gif" alt="어.. 어딘데!" />
+				</div>
+				-->
+				<img src="images/section2/obj_txt_box1.png" alt="어.. 어딘데!" />
+			</div>
+		</article>
+	</section>
+
+	<section class="contents_section section3">
+		<article class="main_content">
+			<h1><img src="images/section3/tit_section3.png" alt="우리는 회사를 생각하는 문화부대다!" /></h1>
+			<div class="obj obj1"><img src="images/section3/obj_main_con2.png" alt="문화부대 깃발" /></div>
+			<div class="obj obj2"><img src="images/section3/obj_main_con1.png" alt="문화부대 군인" /></div>
+			<div class="obj obj3"><img src="images/section3/obj_txt_con1.png" alt="문화생활을 통하여 어쩌고 저쩌고" /></div>
+		</article>
+	</section>
+
+	<section class="contents_section section4">
+		<article class="main_content">
+			<h1><img src="images/section4/tit_section4.png" alt="우리는 회사를 생각하는 문화부대다!" /></h1>
+			<p class="obj obj1">
+				<img class="bg_con" src="images/section4/obj_txt_con1_1.png" alt="background" />
+				<img class="txt_con" src="images/section4/obj_txt_con1.png" alt="자라나는 문화생활인들을 위해 문화생활은 어쩌고 저쩌고 페이스북 이벤트 진행중" />
+			</p>
+			<p class="obj obj2">
+				<img src="images/section4/obj_txt_con2.png" alt="이벤트기간, 참여방법, 당첨자발표" />
+			</p>
+			<!--
+			<ul class="obj obj2">
+				<li><img src="images/section4/obj_txt_con2.png" alt="이벤트 기간 : 12월 13일(금) ~ 12월 18(수) 오전 10시까지" /></li>
+				<li><img src="images/section4/obj_txt_con3.png" alt="참 여 방 법 :‘문화생활’ 페이스북을 통해 응원 댓글을 남겨주세요. 추첨을 통해 뮤지컬‘청춘밴드 ZERO’공연티켓을 드립니다." /></li>
+				<li><img src="images/section4/obj_txt_con4.png" alt="당첨자 발표 : 12월 18일(수) 오후 2시 페이스북을 통해 진행" /></li>
+			</ul>
+			-->
+			<div class="obj obj3">
+				<div class="obj_con1">
+					<img class="img_con" src="images/section4/obj_con1.png" alt="hahaha" />
+					<img class="txt_con" src="images/section4/obj_txt_box1.png" alt="이런건 바로 응모하는거다!" />
+				</div>
+				<p class="obj_con2"><img src="images/section4/obj_txt_con5.png" alt="1. 티켓 우편발송 ...진행됩니다. 2. 응원 댓글을 남겨주신 ...가능합니다." /></p>
+			</div>
+			<div class="obj obj4"><img src="images/section4/obj_con2.png" alt="뮤지컬 청춘밴드ZERO 공연정보" /></div>
+			<a class="btn_event" href="javascript:eventLink();"><img src="images/section4/btn_go_link.png" alt="이벤트 참여하기" /></a>
+		</article>
+	</section>
+
+	<article class="amilto">
+		<img src="images/common/mailto_txt1.gif" alt="광고 및 기타 문의는" />
+		<a href="mailto:mhsh@adtive.co.kr" target="_blank"><img src="images/common/mailto_txt2.gif" alt="광고 및 기타 문의는" /></a>
+		<img src="images/common/mailto_txt3.gif" alt="로 문의하여 주십시요." />
+	</article>
+
+	<footer>
+		<div class="footer_wrap">
+			<div class="logo"><img src="images/common/logo_footer.gif" alt="Adtive innovation" /></div>
+			<address>
+				서울시 강남구 역삼동 719번지 신웅빌딩 14층 애드티브이노베이션(주) <img src="images/common/bg_line_h9.gif" alt="" />
+				대표이사 : 조재범 <img src="images/common/bg_line_h9.gif" alt="" />
+				사업자등록번호 : 120-87-11103
+			</address>
+			<p class="copyright">Copyright(c) 2013 adtive innovation. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+
+<!--
+<div class="test">
+	<p class="scrollTop"></p>
+</div>
+-->
+
+</body>
+</html>

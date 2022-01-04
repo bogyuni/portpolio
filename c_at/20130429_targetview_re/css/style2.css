@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* container area */
+		/* 메뉴 타이틀 */
+			/*
+				depth_2_4_1_tit
+				- depth_2 : 사용자 메뉴구성
+				- _4 : 4번 메뉴
+				- _1 : 1번 카테고리
+				- _tit : 타이틀 
+			*/
+			.title_article .depth_2_4_1_tit{width:141px;height:29px;margin-left:1px;background:url('../images/tit/h2_5_adcharge.gif') no-repeat;}
+			.title_article .depth_2_4_4_tit{width:205px;height:29px;margin-left:1px;background:url('../images/tit/h2_4_taxdetail.gif') no-repeat;}
+			.title_article .depth_2_4_5_tit{width:179px;height:29px;margin-left:1px;background:url('../images/tit/h2_4_autochargeset.gif') no-repeat;}
+			.title_article .depth_2_4_6_tit{width:114px;height:29px;margin-left:1px;background:url('../images/tit/h2_4_refund_app.gif') no-repeat;}
+
+		/* 셀렉 박스 & 기간 선택 */
+			.dataSelect_article{width:1102px;padding:11px 13px 0;margin-bottom:43px;border:4px solid #d4d4d4;background:#fafafa;}
+				.contentSelect_box{position:relative;height:46px;text-align:right;}
+				.contentSelect_box .advertiser{position:absolute;top:8px;left:0;font-weight:bold;font-size:17px;color:#919191;}
+				.contentSelect_box .advertiser span{color:#555555;}
+
+/* user main */
+	.userMain_section{overflow:hidden;}
+	.userMain_section .article{position:relative;float:left;margin-bottom:54px;}
+	.userMain_section .article1{width:1120px;height:235px;border:4px solid #d4d4d4;background:#fafafa;}
+	.userMain_section .article1 h3{position:absolute;left:25px;top:23px;}
+	.userMain_section .article1 h3 span{display:inline-block;*display:inline;zoom:1;vertical-align:top;}
+	.userMain_section .article1 h3 .span1{font-weight:bold;font-size:24px;line-height:1;padding-bottom:3px;margin-right:8px;border-bottom:2px solid #555;}
+	.userMain_section .article1 h3 .span2{width:138px;height:23px;text-indent:-9999px;background:url('../images/tit/h3_user_tit1.gif') no-repeat;}
+	.userMain_section .article1 ul{position:absolute;left:0;bottom:0;overflow:hidden;width:100%;border-top:1px solid #d4d4d4;}
+	.userMain_section .article1 ul .ad_regi_box{float:left;position:relative;width:25%;height:96px;background:white url('../images/bg/bg_thline.gif') repeat-y right;}
+	.userMain_section .article1 ul .ad_regi_box.last{background:white;}
+	.userMain_section .article1 ul .ad_regi_box h4{position:absolute;left:29px;top:19px;font:bold 17px Dotum;color:#919191;}
+	.userMain_section .article1 ul .ad_regi_box p{position:absolute;right:22px;top:57px;font:bold 22px Helvetica;color:#555555;}
+	.userMain_section .article1 ul .ad_regi_box p span{font-size:17px;color:#919191;}
+	.userMain_section .article2 h3{width:98px;background:url('../images/tit/h3_user_tit2.gif') no-repeat;}
+	.userMain_section .article3 h3{width:98px;background:url('../images/tit/h3_user_tit3.gif') no-repeat;}
+	.userMain_section .article2{margin-right:20px;}
+	.userMain_section .statistics_article{width:558px;padding-top:33px;border-bottom:1px solid #898989;}
+	.userMain_section .statistics_article h3{position:absolute;left:0;top:5px;height:15px;text-indent:-9999px;}
+	.userMain_section .statistics_article .btn_img{position:absolute;right:0;top:0;}
+	.userMain_section .statistics_article table{width:100%;}
+	.userMain_section .statistics_article table .leftTd{text-align:left;padding-left:10px;}
+
+/* 결제관리 */
+	/* 광고비 충전 */
+		.adcharge_section .cost_info_box{position:relative;text-align:right;padding:15px 38px;margin-bottom:43px;border:4px solid #d4d4d4;background:#fafafa;}
+		.adcharge_section .cost_info_box h3{position:absolute;left:38px;top:42%;font-weight:bold;}
+		.adcharge_section .cost_info_box .cost_box{color:#919191;}
+		.adcharge_section .cost_info_box .cost_box span{font:bold 30px/1.2 Helvetica;color:#4a9ede;}
+		.adcharge_section table .td2 span{font-weight:bold;color:#ff000a;}
+		.adcharge_section table .td3{padding-top:25px;padding-bottom:25px;}
+		.adcharge_section table .td3 span{font:bold 30px/1.2 Helvetica;color:#ff000a;}
+		.adcharge_section .btn_box{text-align:center;}
+		.adcharge_section .btn_box a{margin:0 10px;}
+	/* 결제내역 */
+		.paymentdetail_table_box td.colorTd3{font-weight:bold;color:#890008;cursor:pointer;}
+	/* 세금 계산서 내역 */
+		.taxdetail_section .tab_article{position:relative;width:1135px;padding-top:117px;margin-bottom:70px;background:url('../images/bg/bg_statistics_tab_line.gif') repeat-x 0 41px;}
+		.taxdetail_section .tab_article .tab_tit{position:absolute;top:0;text-align:center;width:565px;height:29px;padding-top:16px;background:url('../images/bg/bg_tax_tabdt_off.gif') no-repeat;cursor:pointer;}
+		.taxdetail_section .tab_article .tab_tit.tit1{left:0;}
+		.taxdetail_section .tab_article .tab_tit.tit2{left:570px;}
+		.taxdetail_section .tab_article .tab_tit.on{font-weight:bold;color:#c90810;background:url('../images/bg/bg_tax_tabdt_on.gif') no-repeat;}
+		.taxdetail_section .tab_article .tab_tit.on .ch_on{display:inline-block;width:9px;height:12px;background:url('../images/common/bu_arrow.gif') no-repeat 0 5px;}
+		.taxdetail_section .tab_article .th3_type1{border-right:1px solid #898989;border-left:none;background:#fafafa;}
+		.taxdetail_section .taxPercent_box{text-align:right;padding:15px 38px;margin-bottom:43px;border:4px solid #d4d4d4;background:#fafafa;}
+		.taxdetail_section .taxPercent_box select{font-size:17px;font-weight:bold;height:32px;margin-right:12px;text-align:center;width:222px;}
+		.taxdetail_section .taxPercent_box .count_box{display:inline-block;font:bold 30px/1 Helvetica;text-align:right;vertical-align:middle;width:229px;height:32px;padding:0 5px;border:1px solid #bdbdbd;background:#fff;*display:inline;zoom:1;}
+		.taxdetail_section .taxPercent_box .count_box span{color:#919191;}
+		.taxdetail_section .taxPercent_box .count_box .count{color:#ff0000;}
+		.taxdetail_section .table_box{margin-bottom:30px;}
+		.taxdetail_section table td span{font-weight:bold;}
+		.taxdetail_section table td .yes{color:#FF0000;}
+		.taxdetail_section .btn_down{display:inline-block;*display:inline;zoom:1;margin-bottom:30px;}
+	/* 자동 충전 설정 */
+		.autocharge_section .table_box{margin-bottom:50px;}
+		.autocharge_section table .label1{margin-right:20px;}
+		.autocharge_section .btn_box{text-align:center;}
+		.autocharge_section .btn_box a{margin:0 10px;}
+	/* 환불 내역*/
+		.user_refunddetail_section .table_box{margin-bottom:50px;}
+		.user_refunddetail_section .table_box table td img{vertical-align:middle;}
+		.user_refunddetail_section .btn_box{text-align:center;margin-bottom:50px;}
+	/* 환불 신청 */
+		.user_refundapp_section table .td1 span{vertical-align:top;font-weight:bold;color:#ff0000;}
+		.user_refundapp_section table .td3 input{margin-right:20px;}
+		.user_refundapp_section table .td4{padding-top:20px;padding-bottom:20px;}
+		.user_refundapp_section table .td4 span{font:bold 30px/1 Helvetica;color:#ff0000;}
+		.user_refundapp_section .btn_box{text-align:center;margin-bottom:50px;}
+
+		.user_caption_box{padding:25px 0 25px 200px;margin-bottom:50px;border:4px solid #d4d4d4;background:url('../images/content/auto_charge_con1.jpg') no-repeat 24px;}
+		.user_caption_box .name_con{font-weight:bold;font-size:17px;color:#919191;margin-bottom:10px;}
+		.user_caption_box .name_con span{color:#555555;}
+		.user_caption_box ul li{color:#919191;padding-left:9px;margin-bottom:5px;background:url('../images/common/bu_circle.gif') no-repeat left;}
+		.user_caption_box ul li.last{margin-bottom:0px;}
+		.user_caption_box ul li span{color:#555555;}
+
+
+

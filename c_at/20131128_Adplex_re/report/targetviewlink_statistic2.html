@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container targetviewlink_statistics_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">광고주 리포트</span>
+			<span class="depth2_name color_type3">TargetView Link 통계</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_targetviewlink_statistics.gif" alt="TargetView Link 통계" /></h2>
+			<p class="caption"></p>
+		</div>
+		<div class="composition_obj_article type2">
+			<div class="category_group">
+				<span class="txt_print mr_21">2014.11.10</span>
+				<a class="btn_type_set btn_type_set_s btn_type3 color_type6">월별로 보기</a>
+				<a class="btn_type_set btn_type_set_s btn_type2 color_type7">일별로 보기</a>
+				<div class="link_box">
+					<a href="" class="btn_link on">타겟뷰링크 노출 우선순위</a>
+					<a href="" class="btn_link">노출빈도 현황</a>
+					<a href="" class="btn_link">매체 영역 통계</a>
+				</div>
+			</div>
+			<div class="category_group category_group2">
+				<dl class="mr_21">
+					<dt>진행여부</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">-진행여부-</option>
+							<option value="">진행</option>
+							<option value="">중지</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>영역 선택</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">캠페인을 선택하여 주세요</option>
+							<option value="">캠페인을 선택하여 주세요캠페인을 선택하여 주세요캠페인을 선택하여 주세요</option>
+						</select>
+					</dd>
+				</dl>
+			</div>
+			<div class="category_group category_group2">
+				<dl class="mr_21">
+					<dt>Client 선택</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">광고주를 선택하여 주세요</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>담당자 선택</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">담당자를 선택하여 주세요</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>디바이스 선택</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">전체</option>
+						</select>
+					</dd>
+				</dl>
+			</div>
+			<div class="category_group category_group2">
+				<dl>
+					<dt>기간선택</dt>
+					<dd>
+						<select name="" id="" class="select_year">
+							<option value="">2013년 1월</option>
+						</select>
+						<select name="" id="" class="select_day mr_7">
+							<option value="">일선택</option>
+						</select>
+						<span class="mr_7 bold">~</span>
+						<select name="" id="" class="select_year">
+							<option value="">2013년 1월</option>
+						</select>
+						<select name="" id="" class="select_day">
+							<option value="">일선택</option>
+						</select>
+					</dd>
+				</dl>
+				<button class="btn_type_set btn_type_set_s btn_type3 color_type6">검색</button>
+			</div>
+		</div>
+		<div class="btn_box">
+			<button class="btn_downset fl_right btn_excel mr_7"><img src="../images/common/ico_excel.png" alt="Excel" /> <span>엑셀 다운로드</span></button>
+		</div>
+
+		<table summary="리타겟팅 통계 테이블" class="table_set1 table_headline2 targetviewlink_table">
+			<colgroup>
+				<col width="8%">
+				<col width="6%">
+				<col width="6%">
+				<col width="5%">
+				<col width="5%">
+				<col width="7%">
+				<col width="9%">
+				<col width="6%">
+				<col width="4%">
+				<col width="4%">
+				<col width="4%">
+				<col width="7%">
+				<col width="6%">
+				<col width="9%">
+				<col width="7%">
+				<col width="8%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th rowspan="2">날짜</th>
+					<th rowspan="2">노출수</th>
+					<th rowspan="2">클릭수</th>
+					<th rowspan="2">CTR</th>
+					<th rowspan="2">CPC</th>
+					<th rowspan="2">충전금액</th>
+					<th rowspan="2">예상광고비</th>
+					<th rowspan="2">eCPM</th>
+					<th rowspan="2">전환<br />구분</th>
+					<th colspan="2">장바구니</th>
+					<th colspan="5">구매</th>
+				</tr>
+				<tr>
+					<th>전환수</th>
+					<th>전환율</th>
+					<th>전환수</th>
+					<th>전환율</th>
+					<th>매출</th>
+					<th>ROAS</th>
+					<th>전환비용</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td rowspan="3">합계</td>
+					<td rowspan="3">15,111</td>
+					<td rowspan="3">1000</td>
+					<td rowspan="3">0.26%</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">&#92; 18,111</td>
+					<td rowspan="3" class="td_celldata">1187.11</td>
+					<td class="td_celldata td_celldata1">전체</td>
+					<td>2</td>
+					<td class="td_celldata">2.22%</td>
+					<td>0</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr>
+					<td class="td_celldata td_celldata2">직접</td>
+					<td>2</td>
+					<td class="td_celldata">2.22%</td>
+					<td>0</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr>
+					<td class="td_celldata td_celldata3">간접</td>
+					<td>2</td>
+					<td class="td_celldata">2.22%</td>
+					<td>0</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+			</tfoot>
+
+			<!-- 루프 영역 시작<tbody>-->
+			<tbody class="tbody_celldata">
+				<tr>
+					<td rowspan="3"><a class="open_dateData" value="1">2014/10/10</a></td>
+					<td rowspan="3">15,111</td>
+					<td rowspan="3">1000</td>
+					<td rowspan="3">0.26%</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">&#92; 18,111</td>
+					<td rowspan="3" class="td_celldata">1187.11</td>
+					<td class="td_celldata td_celldata1">전체</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr class="detailview_cell">
+					<td class="td_celldata td_celldata2">직접</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr class="detailview_cell">
+					<td class="td_celldata td_celldata3">간접</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+			</tbody>
+			<!-- //루프 영역 끝<tbody>-->
+
+			<tbody class="tbody_celldata">
+				<tr>
+					<td rowspan="3"><a class="open_dateData" value="1">2014/11/11</a></td>
+					<td rowspan="3">15,111</td>
+					<td rowspan="3">1000</td>
+					<td rowspan="3">0.26%</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">&#92; 18,111</td>
+					<td rowspan="3" class="td_celldata">1187.11</td>
+					<td class="td_celldata td_celldata1">전체</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr class="detailview_cell">
+					<td class="td_celldata td_celldata2">직접</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+				<tr class="detailview_cell">
+					<td class="td_celldata td_celldata3">간접</td>
+					<td class="open_newData">2</td>
+					<td class="td_celldata">2.22%</td>
+					<td class="open_newData">2</td>
+					<td>3.22%</td>
+					<td>&#92; 96,000</td>
+					<td>522.6%</td>
+					<td>&#92; 6,222</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+<div class="background_layer"></div>
+
+<div class="popuplayer popuplayer1 popuplayer_type1 statistic_popuplayer_type1">
+	<div class="pop_header">
+		<h1 class="popTitleSet"> 레이어팝업 타이틀 + 대상 연월 일</h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<div class="datesearch_article">
+			<span>기간선택</span>
+			<select name="" id="">
+				<option value="">2014년 11월</option>
+			</select>
+			<select name="" id="">
+				<option value="">10일</option>
+			</select>
+			<span>~</span>
+			<select name="" id="">
+				<option value="">2014년 11월</option>
+			</select>
+			<select name="" id="">
+				<option value="">10일</option>
+			</select>
+			<button class="btn_type_set btn_type_set_s btn_type3 color_type6 mr_21">검색</button>
+			<span>디바이스 선택</span>
+			<select name="" id="">
+				<option value="">전체</option>
+				<option value="">PC</option>
+				<option value="">Mobile</option>
+			</select>
+		</div>
+
+		<table summary="TargetView Link" class="all_data_table">
+			<colgroup>
+				<col width="20%" />
+				<col width="20%" />
+				<col width="20%" />
+				<col width="20%" />
+				<col width="20%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>노출수</th>
+					<th>클릭수</th>
+					<th>CTR</th>
+					<th>소진금액</th>
+					<th>eCPM</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>45454</td>
+					<td>111</td>
+					<td>111</td>
+					<td>555</td>
+					<td>999</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="select_box">
+			<span>출력순서</span>
+			<select name="" id="">
+				<option value="">전체</option>
+				<option value="">노출수</option>
+				<option value="">클릭수</option>
+				<option value="">CTR</option>
+				<option value="">소진금액</option>
+				<option value="">eCPM</option>
+			</select>
+		</div>
+
+		<table summary="TargetView Link" class="table_set6">
+			<caption>TargetView Link</caption>
+			<colgroup>
+				<col width="20%" />
+				<col width="20%" />
+				<col width="12%" />
+				<col width="12%" />
+				<col width="12%" />
+				<col width="12%" />
+				<col width="12%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">매체명</th>
+					<th scope="col">영역</th>
+					<th scope="col">노출수</th>
+					<th scope="col">클릭</th>
+					<th scope="col">CTR</th>
+					<th scope="col">소진금액</th>
+					<th scope="col">eCPM</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="td_center" rowspan="2">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">타겟뷰존 우측 텍스트</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+				<tr class="total_tr">
+					<td class="td_center">합계</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_center" rowspan="2">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">타겟뷰존 우측 텍스트</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+				<tr class="total_tr">
+					<td class="td_center">합계</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td class="td_center" rowspan="2">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">타겟뷰존 우측 텍스트</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+				<tr class="total_tr">
+					<td class="td_center">합계</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">24</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_box">
+			<button class="btn_downset fl_right btn_excel mr_7"><img src="../images/common/ico_excel.png" alt="Excel" /> <span>엑셀 다운로드</span></button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

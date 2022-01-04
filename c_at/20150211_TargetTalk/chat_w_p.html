@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>TM 채팅 서비스</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script_parent_p.js"></script>
+<style type="text/css">
+	.wrap{height:auto;background:url(sampleimg/bg_wrapper.gif) repeat;}
+	.head{background:url(sampleimg/bg_head.gif) repeat-x;}
+	.inhead{width:1176px;margin:0 auto;}
+	.content_wrap{width:1200px;margin:0 auto;padding-top:30px;overflow:hidden;}
+	.aside{float:left;}
+	.content{float:right;position:relative;width:998px;height:2500px;background:url(sampleimg/content.jpg) no-repeat;}
+	.foot{background:url(sampleimg/bg_foot.gif) repeat-x;}
+	.infoot{width:1198px;margin:0 auto;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="head">
+		<div class="inhead"><img src="sampleimg/head.gif" alt=""></div>
+	</div>
+	<div class="container" style="padding:0;">
+		<div class="content_wrap">
+			<div class="aside"><img src="sampleimg/aside_left.jpg" alt=""></div>
+			<div class="content">
+
+				<!--채팅 iframe 랩퍼 태그-->
+				<div id="targetTalk_frame_p" class="type_p_wrap type_p_wrap2">
+					<div class="chat_container">
+						<div class="chat_head">
+							<div class="chat_tit">비감초 다이어트 무료상담 채팅창다이어트 무료상담 채팅창다이어트 무료상담 채팅창</div>
+							<button  type="button" class="btn_tel"><img src="images/btn_tel.png" alt="전화상담"></button>
+							<div class="tel_popLayer" title="월드오브워크래프.아서스:리치왕의탄생">
+								<p class="ad_title">월드오브워크래프.아서스:리치왕의탄생</p>
+								<p class="ad_tel_num">010-0000-0000</p>
+								<span class="arrow_con"></span>
+							</div>
+							<button type="button" class="btn_closePopLayer">채팅창 비 활성화 on/off</button>
+						</div>
+
+						<iframe src="frame_w_p.html" width="393" height="446" frameborder="0"></iframe>
+
+						<div class="inactive_chatBox">
+							<div class="adviser_photo"><img src="images/@user.gif" alt=""></div>
+							<p class="ad_title">어벤져스:실버서퍼의 위협</p>
+							<p class="adviser_name">캡틴 아메리카</p>
+							<div class="bot_con">
+								<button type="button" class="btn_closePopLayer">무료 채팅 상담</button>
+								<button type="button" class="btn_tel">전화상담</button>
+								<div class="tel_popLayer" title="월드오브워크래프.아서스:리치왕의탄생">
+									<p class="ad_title">월드오브워크래프.아서스:리치왕의탄생</p>
+									<p class="ad_tel_num">010-0000-0000</p>
+									<span class="arrow_con"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<div class="infoot"><img src="sampleimg/foot.gif" alt="foot.gif"></div>
+	</div>
+</div>
+
+<div class="popup_layer control_box">
+	<div class="title_box">
+		<h5>예약고객설정</h5>
+		<!--<button type="button" class="btn_close">창닫기</button>-->
+	</div>
+	<div class="bottom_box">
+		<p>채팅 시스템 설정 값 변경</p>
+		<button type="button" class="btn_firstAdviserOnOff">상담원 배정 [전]</button><br>
+		<button type="button" class="btn_chatUserOnOff">채팅 대상자 [상담원]</button>
+	</div>
+</div>
+
+</body>
+</html>

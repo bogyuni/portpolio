@@ -1,0 +1,110 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>내정보수정</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+<div class="sub_container">
+	<section class="join_section mp_modify_section">
+		<form action="">
+			<fieldset>
+				<legend>modify</legend>
+				<h4>상품요약 설정</h4>
+				<div class="row_con row_con3" style="margin-bottom:20px;">
+					<label class="rd_label txt on" for="prod_view_set1" style="margin-right:20px;">
+						<input type="radio" id="prod_view_set1" name="prod_view_set" checked><span></span>
+						상품요약 사용
+					</label>
+					<label class="rd_label txt " for="prod_view_set2">
+						<input type="radio" id="prod_view_set2" name="prod_view_set"><span></span>
+						상품요약 사용안함
+					</label>
+				</div>
+
+
+				<h4>개인정보변경</h4>
+				<div class="row_con">
+					<input type="text" class="inst_input read_bg" value="natureboy" readonly>
+				</div>
+				<div class="row_con">
+					<input type="text" class="inst_input" placeholder="이름" value="서보균">
+				</div>
+				<div class="row_con">
+					<input type="text" class="inst_input inst_id" placeholder="이메일">
+					<button type="button" class="btn_check_id">중복확인</button>
+				</div>
+				<div class="row_con">
+					<input type="password" class="inst_input inst_pw" placeholder="현재 비밀번호를 입력하세요.">
+				</div>
+				<div class="row_con">
+					<input type="password" class="inst_input inst_pw" placeholder="새 비밀번호를 입력하세요.">
+				</div>
+				<div class="row_con">
+					<input type="password" class="inst_input inst_pw" placeholder="새 비밀번호 확인.">
+				</div>
+				<div class="row_con">
+					<input type="text" class="inst_input post_code" readonly>
+					<input type="button" class="search_post_code" value="우편번호찾기">
+				</div>
+				<div class="row_con">
+					<input type="text" class="inst_input" readonly>
+				</div>
+				<div class="row_con">
+					<input type="text" class="inst_input" placeholder="상세주소">
+				</div>
+				<div class="row_con">
+					<select name="" class="select_phone">
+						<option value="010">010</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+						<option value="018">018</option>
+						<option value="019">019</option>
+					</select>
+					<input type="tel" class="inst_input inst_phone" maxlength="4">
+					<input type="tel" class="inst_input inst_phone" maxlength="4">
+				</div>
+				<div class="row_con">
+					<input type="tel" class="inst_input inst_phone1" maxlength="3" placeholder="전화번호">
+					<input type="tel" class="inst_input inst_phone" maxlength="4">
+					<input type="tel" class="inst_input inst_phone" maxlength="4">
+				</div>
+
+				<div class="btn_box">
+					<input type="submit" class="btn btn_submit" value="변경사항 적용">
+				</div>
+
+
+			</fieldset>
+		</form>
+	</section>
+</div>
+
+<script>
+	$(function (){
+	});
+</script>
+
+
+<!--  footer info -->
+<?php
+	include('outline/footer_info.html');
+?>
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+</body>
+</html>

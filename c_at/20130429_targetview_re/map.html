@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr" xml:lang="kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> TARGETVIEW - 광고관리자 </title>
+	<meta name="Author" content="ADtive innovation" />
+	<meta name="Keywords" content="" />
+	<link rel="shortcut icon" type="image/x-ico" href="ico/ico.ico" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function newCheck(){
+			$(".newCh").fadeOut(300).fadeIn(300);
+		}
+		setInterval("newCheck()",0);
+	</script>
+	<style type="text/css">
+		.map_section{position:relative;margin-bottom:40px;}
+		.map_section h2{font-weight:bold;font-size:24px;margin-bottom:40px;}
+		.map_section h3{font-weight:bold;font-size:18px;padding-left:24px;margin-bottom:12px;}
+		.map_section h3 span{color:#424db3;}
+		.map_section ul{margin-bottom:30px;}
+		.map_section .ulF{margin-bottom:80px;}
+		.map_section ul li{color:#b31020;padding-left:41px;margin-bottom:12px;font-size:14px;background:url('images/bu_arrow2.gif') no-repeat 28px 3px;}
+		.map_section .ing{color:#b31020;}
+		.map_section .newBox{position:absolute;bottom:300px;left:400px;}
+		.map_section .newCh{font-weight:bold;color:#ff0000;}
+	</style>
+</head>
+<body>
+<div class="wraper">
+
+<!-- header -->
+<div class="header">
+	<div class="header_wrap">
+		<h1>TARGET VIEW</h1>
+		<ul class="asideMenu">
+			<li class="first"><a href="">로그아웃</a></li>
+			<li><a href="">회원정보</a></li>
+		</ul><!-- //asideMenu -->
+		<div class="gnb_wrap">
+			<div class="leftCon"></div>
+			<div class="rightCon"></div>
+			<div class="centerCon">
+				<div class="notice_article">
+					<h2>notice</h2>
+					<p><span>2012-07-11 18:16:00</span> 에</p>
+					<p><span>Supervisor</span> 계정으로 접속하셨습니다.</p>
+				</div><!-- //notice_article -->
+				<ul class="gnb_list">
+					<li class="depth1 depth1_1">
+						<a class="depth1_a on" href="">계정관리</a>
+					</li>
+					<li class="depth1 depth1_2">
+						<a class="depth1_a" href="">광고관리</a>
+					</li>
+					<li class="depth1 depth1_3">
+						<a class="depth1_a" href="">광고등록</a>
+					</li>
+					<li class="depth1 depth1_4">
+						<a class="depth1_a" href="">통계(로그)</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">광고통계</a></li>
+							<li class="depth2_2"><a href="">유저DB현황</a></li>
+							<li class="depth2_3 last"><a href="">매체통계</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_5">
+						<a class="depth1_a" href="">결제관리</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">결제내역</a></li>
+							<li class="depth2_2"><a href="">광고비 사용내역</a></li>
+							<li class="depth2_3"><a href="">광고비 진행내역</a></li>
+							<li class="depth2_4"><a href="">세금계산서 내역</a></li>
+							<li class="depth2_5 last"><a href="">환불내역</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_6">
+						<a class="depth1_a" href="">매출관리</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">페이지 매출관리</a></li>
+							<li class="depth2_2"><a href="">링크 매출관리</a></li>
+							<li class="depth2_3 last"><a href="">서치 매출관리</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_7">
+						<a class="depth1_a" href="">사이트 정보</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">개인정보보호정책</a></li>
+							<li class="depth2_2"><a href="">이용약관</a></li>
+							<li class="depth2_3"><a href="">업종관리</a></li>
+							<li class="depth2_4"><a href="">메뉴관리</a></li>
+							<li class="depth2_5 last"><a href="">광고문의</a></li>
+						</ul>
+					</li>
+				</ul><!-- //gnbList -->
+			</div><!-- //centerCon -->
+		</div><!-- //gnb_wrap -->
+	</div><!-- //header_wrap -->
+</div>
+<!-- //header -->
+
+<!-- container -->
+<div class="container">
+	<div class="container_wrap">
+		<div class="content map_section">
+			<div class="newBox"><img src="images/new_spot.gif" alt="" /></div>
+			<h2>타겟뷰 링크 트리 - 공통</h2>
+				<h3><span>프론트 페이지</span></h3>
+				<ul class="ulF">
+					<li><a href="index.html">관리자 프론트</a></li>
+					<li><a href="index_user.html">사용자 프론트</a> <span class="newCh">07.24</span></li>
+				</ul>
+
+				<h3><span>GNB 메뉴 페이지</span></h3>
+				<ul class="ulF">
+					<li><a href="menu1_account/gnb_admin.html">관리자 메뉴 구성</a> <span class="newCh">07.24</span></li>
+					<li><a href="menu1_account/gnb_user.html">사용자 메뉴 구성</a> <span class="newCh">07.24</span></li>
+				</ul>
+
+			<h2>타겟뷰 링크 트리 - 관리자</h2>
+				<h3><span>메뉴1</span> - 계정 관리</h3>
+					<ul>
+						<li><a href="menu1_account/account.html">계정 관리 리스트</a></li>
+						<li><a href="menu1_account/account_regi.html">계정 관리 등록</a></li>
+						<li><a href="menu1_account/account_modi.html">계정 관리 수정</a></li>
+					</ul>
+
+				<h3><span>메뉴2</span> - 광고 관리</h3>
+					<ul>
+						<li><a href="menu2_ad_set/ad_set.html">광고 관리</a></li>
+					</ul>
+
+				<h3><span>메뉴3</span> - 광고 등록</h3>
+					<ul>
+						<li><a href="menu3_smart_regi/smart_regi.html">광고 등록 시작</a></li>
+						<li><a href="javascript:alert('최신 버전의 페이지는 현재 서버상에 구현 되어있음')" class="ing">광고 내용 등록</a></li>
+						<li><a href="javascript:alert('최신 버전의 페이지는 현재 서버상에 구현 되어있음')" class="ing">광고 배너 등록</a></li>
+						<li><a href="menu3_smart_regi/smart_regi4.html">광고비 충전 및 완료</a></li>
+					</ul>
+
+				<h3><span>메뉴4</span> - 통계</h3>
+					<ul>
+						<li><a href="menu4_statistics/ad_statistics_graph1.html">광고 통계 - 그래프, 표 페이지 (페이지)</a></li>
+						<li><a href="menu4_statistics/ad_statistics_calendar1.html">광고 통계 - 달력 페이지 (페이지)</a> <span class="newCh">06.04</span></li>
+						<li><a href="menu4_statistics/ad_statistics_graph2.html">광고 통계 - 그래프, 표 페이지 (Link)</a></li>
+						<li><a href="menu4_statistics/ad_statistics_calendar2.html">광고 통계 - 달력 페이지 (Link)</a> <span class="newCh">06.04</span></li>
+						<li><a href="javascript:alert('미정')" class="ing">유저 DB 현황</a></li>
+						<li><a href="menu4_statistics/me_statistics_graph.html">매체통계 - 그래프, 표 페이지</a></li>
+						<li><a href="menu4_statistics/me_statistics_calendar.html">매체통계 - 달력 페이지</a> <span class="newCh">06.04</span></li>
+					</ul>
+
+				<h3><span>메뉴5</span> - 결제 관리</h3>
+					<ul>
+						<li><a href="menu5_payment_set/adcostset.html">광고비 관리</a></li>
+						<li><a href="menu5_payment_set/adcostset_mod.html">광고비 관리 - 수정</a></li>
+						<li><a href="menu5_payment_set/paymentdetail.html">결제 내역</a></li>
+						<li><a href="menu5_payment_set/progressdetail.html">광고 진행 내역</a></li>
+						<li><a href="menu5_payment_set/refunddetail.html">환불 내역</a></li>
+					</ul>
+
+				<h3><span>메뉴6</span> - 매출 관리</h3>
+					<ul>
+						<li><a href="menu6_sales_set/pagesalesset.html">페이지 매출 관리</a></li>
+						<li><a href="menu6_sales_set/linksalesset.html">링크 매출 관리</a></li>
+						<li><a href="menu6_sales_set/taxcalculationset.html">세금계산서 관리</a></li>
+						<li><a href="menu6_sales_set/taxcalculation_mod.html">세금계산서 관리 - 수정</a></li>
+					</ul>
+
+				<h3><span>메뉴7</span> - SHOP</h3>
+					<ul>
+						<li><a href="menu8_shop/orderset.html">주문 관리</a> <span class="newCh">new</span></li>
+						<li><a href="menu8_shop/salesset.html">매출 관리</a> <span class="newCh">new</span></li>
+						<li><a href="menu8_shop/customer_qna.html">고객 문의</a> <span class="newCh">new</span></li>
+						<li><a href="menu8_shop/customer_qna_view.html">고객 문의 - 세부</a> <span class="newCh">new</span></li>
+					</ul>
+
+				<h3><span>메뉴8</span> - 사이트 정보</h3>
+					<ul>
+						<li><a href="menu7_site_info/personalinfo.html">개인정보보호 정책</a></li>
+						<li><a href="menu7_site_info/clause.html">이용약관</a></li>
+						<li><a href="menu7_site_info/businessset.html">업종 관리</a></li>
+						<li><a href="menu7_site_info/menuset.html">메뉴 관리</a></li>
+						<li><a href="menu7_site_info/qnaset.html">광고문의 리스트</a></li>
+						<li><a href="menu7_site_info/qnaset_view.html">광고문의 관리</a></li>
+					</ul>
+
+			<h2>타겟뷰 링크 트리 - 사용자</h2>
+				<h3><span>메뉴2</span> - 광고 등록</h3>
+					<ul>
+						<li><a href="menu2_2_ad_regi/ad_regi.html">광고 등록</a> <span class="newCh">07.24</span></li>
+					</ul>
+
+				<h3><span>메뉴3</span> - 통계</h3>
+					<ul>
+						<li>
+							사용자 구성은 관리자 페이지 바탕으로 작업 예정
+						</li>
+					</ul>
+
+				<h3><span>메뉴4</span> - 결제관리</h3>
+					<ul>
+						<li><a href="menu4_2_payment_set/adcharge.html">광고비 충전</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/paymentdetail.html">결제내역</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/progressdetail.html">광고 진행 내역</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/autocharge_set.html">자동충전설정</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/taxdetail.html">세금계산서 내역</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/refunddetail.html">환불 내역</a> <span class="newCh">07.24</span></li>
+						<li><a href="menu4_2_payment_set/refund_app.html">환불 신청</a> <span class="newCh">07.24</span></li>
+					</ul>
+
+
+		</div><!-- //content -->
+	</div><!-- //container_wrap -->
+</div>
+<!-- //container -->
+
+<!-- footer -->
+<div class="footer">
+	<div class="footer_wrap">
+		<h1>TARGET VIEW</h1>
+		<address>
+			서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) | 대표이사 : 조재범 | 등록번호 : 서울 아 01569 | 사업자등록번호 : 120-87-11103
+			개인정보취급자 : 김종렬 | 이메일 jrkim@adtive.co.kr
+		</address>
+		<p class="copyright">Copyright (C) 2012. TARGET VIEW. All Rights Reserved.</p>
+	</div>
+</div>
+<!-- //footer -->
+
+</div>
+</body>
+</html>

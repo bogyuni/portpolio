@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>TM 채팅 서비스 - 관리자</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<!--[if lt IE 9]>
+	<script>alert('Fucking! your browser! Fuckyou IE!!\n\n 해석:나는 당신의 썩어빠진 브라우저를\n 지원 할 생각이 없습니다.')</script>
+	<style type="text/css">.popup_waring{display:block}</style>
+	<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="wrap">
+	<div class="sideMenu_area">
+		<button class="btn_sideOut" type="button"></button>
+		<article class="user_box">
+			<div class="user_icon"><img src="images/user_icon_default.gif" alt=""></div>
+			<div class="user_id">userID</div>
+			<div class="user_name">서보균</div>
+
+			<div class="user_status_box">
+				<div class="user_status set2">
+					<div class="status_txt">상담대기</div>
+					<div class="arrow_con">close</div>
+				</div>
+				<ul class="user_status_list">
+					<li value="1">상담가능</li>
+					<li value="2">상담대기</li>
+					<li value="3">공석</li>
+				</ul>
+			</div>
+		</article>
+
+		<nav class="sideMenu">
+			<ul class="menu_list">
+				<li class="menu1 on">
+					<a href="" class="menu_anchor">실시간 상담</a>
+				</li>
+				<li class="menu2">
+					<a href="" class="menu_anchor">예약명단</a>
+				</li>
+				<li class="menu3">
+					<a href="" class="menu_anchor">히스토리</a>
+				</li>
+				<li class="menu4">
+					<a href="" class="menu_anchor">광고셋팅</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="content_area">
+		<header class="head_content">
+			<h1 class="company_tit">Adtive Innovation</h1>
+			<div class="right_con">
+				<button type="button" class="btn_logout">로그아웃</button>
+				<span class="date_txt">2015.02.23</span>
+				<span class="time_txt">AM 11:11</span>
+				<span class="week_txt">금요일</span>
+			</div>
+		</header>
+
+		<div class="container" value="0">
+			<section class="main_content">
+				<div class="chatAdmin_wrap">
+					<!-- 채팅창 article이 늘어 날 때마다 value값으로 인덱스 번호를 삽입 시작은 0부터 최대 3까지 증가 4의 나머지 값으로 반복함 -->
+					<article class="chating_article" value="0">
+						<div class="btnAdmin_box on">
+							<span title="서보균서보균서보균서보균">서보균서보균서보균서보균</span>
+							<button type="button" class="btn_closeChatBox">채팅창 닫기</button>
+						</div>
+						<div class="chatAdmin_container">
+							<div class="chat_box">
+								<div class="chat_inBox">
+
+									<div class="chat_user chat_adviser">
+										<div class="adviser_icon"><img src="images/@user.gif" alt=""></div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">안녕하세요. 고객님~
+											다이어트 방법을 알려드립니다.
+											부담없이 무료로 상담하세요. 하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요. </span>
+										</div>
+										<div class="chat_time_con">
+											<span>상담원</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+									</div>
+
+									<div class="chat_user chat_enquirer">
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">정말 진지하게... 살빼고 싶은데..얼마예요?</span>
+										</div>
+										<div class="chat_time_con">
+											<span>고객님</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat_typing"><span class="typing_ment">상대방 입력 중...</span></div>
+							<div class="chat_insertBox">
+								<button type="button" class="btn_memoPopup">메모장 버튼</button>
+								<textarea name="" id="" class="inst_text"></textarea>
+								<label for="fileUpload" class="btn_fileUpload"><input type="file" id="fileUpload"></label>
+								<button type="button" class="btn_msg">전송</button>
+							</div>
+							<div class="chat_memoBox">
+								<textarea name="" class="inst_memo"></textarea>
+								<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+								<div class="arrow_con"></div>
+							</div>
+						</div>
+					</article>
+					<!--
+					<article class="chating_article" value="1">
+						<div class="btnAdmin_box">
+							<span title="서보균서보균서보균서보균">서보균서보균서보균서보균</span>
+							<button type="button" class="btn_closeChatBox">채팅창 닫기</button>
+						</div>
+						<div class="chatAdmin_container">
+							<div class="chat_box">
+								<div class="chat_inBox">
+
+									<div class="chat_user chat_adviser">
+										<div class="chat_time_con">
+											<span>상담원</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="adviser_icon"><img src="images/@user.gif" alt=""></div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">안녕하세요. 고객님~
+											다이어트 방법을 알려드립니다.
+											부담없이 무료로 상담하세요. 하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요. </span>
+										</div>
+									</div>
+
+									<div class="chat_user chat_enquirer">
+										<div class="chat_time_con">
+											<span>고객님</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">정말 진지하게... 살빼고 싶은데..얼마예요?</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat_typing"><span class="typing_ment">상대방 입력 중...</span></div>
+							<div class="chat_insertBox">
+								<button type="button" class="btn_memoPopup">메모장 버튼</button>
+								<textarea name="" id="" class="inst_text"></textarea>
+								<label for="fileUpload" class="btn_fileUpload"><input type="file" id="fileUpload"></label>
+								<button type="button" class="btn_msg">전송</button>
+							</div>
+							<div class="chat_memoBox">
+								<textarea name="" class="inst_memo"></textarea>
+								<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+								<div class="arrow_con"></div>
+							</div>
+						</div>
+					</article>
+					<article class="chating_article" value="2">
+						<div class="btnAdmin_box">
+							<span title="서보균서보균서보균서보균">서보균서보균서보균서보균</span>
+							<button type="button" class="btn_closeChatBox">채팅창 닫기</button>
+						</div>
+						<div class="chatAdmin_container">
+							<div class="chat_box">
+								<div class="chat_inBox">
+
+									<div class="chat_user chat_adviser">
+										<div class="chat_time_con">
+											<span>상담원</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="adviser_icon"><img src="images/@user.gif" alt=""></div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">안녕하세요. 고객님~
+											다이어트 방법을 알려드립니다.
+											부담없이 무료로 상담하세요. 하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요. </span>
+										</div>
+									</div>
+
+									<div class="chat_user chat_enquirer">
+										<div class="chat_time_con">
+											<span>고객님</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">정말 진지하게... 살빼고 싶은데..얼마예요?</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat_typing"><span class="typing_ment">상대방 입력 중...</span></div>
+							<div class="chat_insertBox">
+								<button type="button" class="btn_memoPopup">메모장 버튼</button>
+								<textarea name="" id="" class="inst_text"></textarea>
+								<label for="fileUpload" class="btn_fileUpload"><input type="file" id="fileUpload"></label>
+								<button type="button" class="btn_msg">전송</button>
+							</div>
+							<div class="chat_memoBox">
+								<textarea name="" class="inst_memo"></textarea>
+								<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+								<div class="arrow_con"></div>
+							</div>
+						</div>
+					</article>
+					<article class="chating_article" value="3">
+						<div class="btnAdmin_box">
+							<span title="서보균서보균서보균서보균">서보균서보균서보균서보균</span>
+							<button type="button" class="btn_closeChatBox">채팅창 닫기</button>
+						</div>
+						<div class="chatAdmin_container">
+							<div class="chat_box">
+								<div class="chat_inBox">
+
+									<div class="chat_user chat_adviser">
+										<div class="chat_time_con">
+											<span>상담원</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="adviser_icon"><img src="images/@user.gif" alt=""></div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">안녕하세요. 고객님~
+											다이어트 방법을 알려드립니다.
+											부담없이 무료로 상담하세요. 하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요.  하세요. 하세요. </span>
+										</div>
+									</div>
+
+									<div class="chat_user chat_enquirer">
+										<div class="chat_time_con">
+											<span>고객님</span>
+											<img src="images/ico_time.png" alt="time icon">
+											<span class="chat_time">21:00</span>
+										</div>
+										<div class="chat_talk"><span class="arrow_con"></span>
+											<span class="msg_ment">정말 진지하게... 살빼고 싶은데..얼마예요?</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat_typing"><span class="typing_ment">상대방 입력 중...</span></div>
+							<div class="chat_insertBox">
+								<button type="button" class="btn_memoPopup">메모장 버튼</button>
+								<textarea name="" id="" class="inst_text"></textarea>
+								<label for="fileUpload" class="btn_fileUpload"><input type="file" id="fileUpload"></label>
+								<button type="button" class="btn_msg">전송</button>
+							</div>
+							<div class="chat_memoBox">
+								<textarea name="" class="inst_memo"></textarea>
+								<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+								<div class="arrow_con"></div>
+							</div>
+						</div>
+					</article>
+					-->
+
+					<div class="pagelist_box">
+						<!--다음, 이전 노출 예정 페이지가 있으면 버튼에 on클래스 추가-->
+						<button type="button" class="btn_prevPage">이전</button>
+						<button type="button" class="btn_nextPage on">다음</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="customer_content">
+				<article class="customer_article customer_now">
+					<h4 class="customer_title">실시간 상담 명단<span class="customer_count">30</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>상담 시작하기</li>
+									<li class="btn_reserveOpen"><span class="bl_list"><span></span></span>예약 고객 설정</li>
+									<li><span class="bl_list"><span></span></span>상담종료</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="customer_article customer_end">
+					<h4 class="customer_title">상담 종료 명단<span class="customer_count">390</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>상담 시작하기</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="customer_article customer_call">
+					<h4 class="customer_title">바로 상담 요청<span class="customer_count">1</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>전화 상담하기</li>
+									<li class="btn_reserveOpen"><span class="bl_list"><span></span></span>예약 고객 설정</li>
+									<li><span class="bl_list"><span></span></span>전화 상담종료</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+
+		<footer class="foot_content">
+			<p class="copyright">Copyright (c) 2015 adtive innovation. All rights reserved.</p>
+		</footer>
+	</div>
+
+</div>
+
+<div class="popup_layer customer_reserve">
+	<div class="title_box">
+		<h5>예약고객설정</h5>
+		<button type="button" class="btn_close">창닫기</button>
+	</div>
+	<div class="bottom_box">
+		<form action="">
+			<fieldset>
+				<legend>예약고객 정보입력</legend>
+				<div class="inst_con"><input type="text" class="inst_name" placeholder="이름"></div>
+				<div class="inst_con">
+					<select name="" id="" class="select_tell">
+						<option value="010">010</option>
+						<option value="010">016</option>
+						<option value="010">017</option>
+						<option value="010">018</option>
+						<option value="010">019</option>
+					</select>
+					<span>-</span>
+					<input type="text" class="inst_tell" maxlength="4">
+					<span>-</span>
+					<input type="text" class="inst_tell" maxlength="4">
+				</div>
+				<div class="inst_con">
+					<div class="calendar_con"><span class="date_text">예약시간</span><button type="button" class="btn_calendarOpen">날짜 입력버튼</button></div>
+				</div>
+				<div class="inst_con"><textarea class="inst_reserve"></textarea></div>
+				<div class="btn_box">
+					<button type="button" class="btn_close btn_cancel">취소</button>
+					<button type="button" class="btn_save">저장</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<div class="popup_waring">
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신은 구형입니다... 음??<br>
+</div>
+</body>
+</html>

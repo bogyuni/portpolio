@@ -1,0 +1,159 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>쿠폰</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+
+<div class="sub_container">
+
+	<section class="coupon_section">
+		<h3 class="tab_tit on">사용가능(99)</h3>
+		<div class="coupon_wrap on">
+			<!--<div class="btn_box">
+				<a href="" class="btn_open_in">쿠폰번호 입력</a>
+			</div>-->
+
+			<div class="coupon_list">
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag1">
+							<div class="name">할인쿠폰</div>
+							<em>99999</em>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+						<div class="coupon_opt">적용상품보기</div>
+
+						<div class="coupon_opt_list">
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag2">
+							<div class="name">배송쿠폰</div>
+							<div class="cp_name2">무료배송</div>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 </div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+					</div>
+				</div>
+
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag3">
+							<div class="name">적립쿠폰</div>
+							<em>99999</em>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="btn_more">더보기 (10/20)</button>
+		</div>
+
+		
+		<h3 class="tab_tit tab_tit2">사용완료(99)</h3>
+		<div class="coupon_wrap">
+			<div class="coupon_list">
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag1">
+							<div class="name">할인쿠폰</div>
+							<em>99999</em>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+						<div class="coupon_opt">적용상품보기</div>
+						<div class="coupon_opt_list">
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+							<p>진영오님의 먹기 편한 유럽채소 -무농약 미니방울양</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag2">
+							<div class="name">배송쿠폰</div>
+							<div class="cp_name2">무료배송</div>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 </div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+					</div>
+				</div>
+
+				<div class="coupon_tb">
+					<div class="coupon_con">
+						<div class="coupon_tag coupon_tag3">
+							<div class="name">적립쿠폰</div>
+							<em>99999</em>
+						</div>
+						<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+						<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn_more">더보기 (10/20)</button>
+		</div>
+
+	</section>
+
+</div>
+
+<script>
+	$(function (){
+
+		$('.coupon_section .tab_tit').click(function (){
+			$('.coupon_section .tab_tit').removeClass('on');
+			$('.coupon_wrap').removeClass('on');
+			$(this).addClass('on');
+			$(this).next().addClass('on');
+		});
+
+		$('.coupon_list').on('click', '.coupon_opt', function (){
+			if ( !$(this).data('ch') ){
+				$(this).data('ch',1).text('적용상품닫기').next('.coupon_opt_list').show();
+			}else{
+				$(this).data('ch',0).text('적용상품보기').next('.coupon_opt_list').hide();
+			}
+		});
+	});
+</script>
+
+
+
+<!--  footer info -->
+<?php
+	include('outline/footer_info.html');
+?>
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

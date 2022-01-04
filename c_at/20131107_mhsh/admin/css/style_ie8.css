@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.select_box .selected_text{height:25px;padding-top:12px;}
+.input_box .input_text{height:25px;padding-top:12px;}
+.calendar_box .input_text{height:25px;padding-top:12px;}
+.background_layer{-ms-filter:"alpha(opacity=50)";}
+.background_layer2{-ms-filter:"alpha(opacity=50)";}
+.background_layer3{-ms-filter:"alpha(opacity=50)";}
+	.product_search_layer legend{border:1px solid red;}
+.chart_section .chrat_table_article table td .cell_box{-ms-filter:"alpha(opacity=50)";}
+.chart_section .chrat_table_article table td .cell_box.focus:hover{-ms-filter:"alpha(opacity=100)";}
+
+
+
+
+
+

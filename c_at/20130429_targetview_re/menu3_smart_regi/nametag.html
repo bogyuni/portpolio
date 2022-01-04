@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr" xml:lang="kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> New Document </title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		ol,ul,li{list-style:none;}
+		img{vertical-align:top;border:0;}
+		.companyInfo_box{width:693px;height:111px;margin:0 auto;background:url('images/bg_companyInfo.png') no-repeat;}
+		.company_box{float:left;position:relative;font-family:Malgun, "맑은고딕", Dotum, "돋음", verdana, sans-serif;width:390px;height:111px;}
+		.company_box .logo{position:absolute;left:19px;top:9px;width:92px;height:93px;}
+		.company_box .logo .logo_mask{position:absolute;left:0px;top:0px;}
+		.company_box .companyInfo_list{padding:20px 0 0 124px;}
+		.company_box .companyInfo_list .name{font-size:15px;color:#3b3b3b;letter-spacing:-1px;}
+		.company_box .companyInfo_list .url{font-size:15px;color:#606060;}
+		.company_box .companyInfo_list .phone{font-size:13px;color:#898989;padding-left:20px;background:url('images/ico_tell.gif') no-repeat 1px 2px;}
+		.company_box .companyInfo_list .email{font-size:13px;color:#898989;padding-left:20px;background:url('images/ico_email.gif') no-repeat 0 4px;}
+		.company_box .companyInfo_list .instInput{display:none;}
+		.linkList_box{float:left;position:relative;width:284px;height:92px;padding:19px 0 0 17px;}
+		.linkList_box h4{font:bold 11px Dotum, "돋음", verdana, sans-serif;color:#505050;margin-bottom:11px;}
+		.linkList_box .link_list{overflow:hidden;}
+		.linkList_box .link_list li{float:left;margin-right:8px;width:;}
+		.linkList_box .btn_modify{position:absolute;right:12px;top:16px;font-size:11px;text-align:center;line-height:1;padding:2px;border:1px solid #ccc;color:#ddd;background:#888;cursor:pointer;}
+		.linkList_box .linkCon_add_box{display:none;position:absolute;left:0;top:36px;font-size:11px;width:400px;padding:20px;background:#ddd;z-index:9999;}
+		.linkList_box .linkCon_add_box select{font-size:11px;border:1px solid #ccc;}
+		.linkList_box .linkCon_add_box .con1{margin-bottom:8px;}
+		.linkList_box .linkCon_add_box .instUrl{width:300px;}
+		.background_layer{position:fixed;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.3;z-index:9998;}
+	</style>
+</head>
+<body>
+	<div class="companyInfo_box">
+		<div class="company_box">
+			<div class="logo">
+				<img src="images/@logo.gif" alt="" />
+				<div class="logo_mask"><img src="images/logo_mask.png" alt="" /></div>
+			</div>
+			<ul class="companyInfo_list">
+				<li class="name">
+					<span class="modiSpan">(주) 애드티브 이노베이션</span>
+					<input class="instInput" type="text" />
+				</li>
+				<li class="url">
+					<span class="modiSpan">www.adtive.co.kr</span>
+					<input class="instInput" type="text" />
+				</li>
+				<li class="phone">
+					<span class="modiSpan">02.554.9014</span>
+					<input class="instInput" type="text" />
+				</li>
+				<li class="email">
+					<span class="modiSpan">pys@adtive.co.kr</span>
+					<input class="instInput" type="text" />
+				</li>
+			</ul>
+		</div>
+		<div class="linkList_box">
+			<h4>바로가기</h4>
+			<div class="btn_modify">추가</div>
+			<ul class="link_list">
+				<li><a href="#" target="_blank"><img src="images/link_gamrket.gif" alt="G마켓" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/link_auction.gif" alt="옥션" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/link_11st.gif" alt="11번가" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/link_lottecom.gif" alt="롯데닷컴" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/link_cjmall.gif" alt="CJ몰" /></a></li>
+				<li><a href="#" target="_blank">링크닷컴</a></li>
+			</ul>
+			<div class="linkCon_add_box">
+				<div class="con1">
+					<select name="" id="">
+						<option value="">옥션</option>
+						<option value="">지마켓</option>
+						<option value="">11번가</option>
+						<option value="">에너지샵</option>
+						<option value="">애플 앱스토어</option>
+						<option value="">구글 플레이</option>
+					</select>
+					<label for="">온라인샵 명</label> <input type="text" />
+				</div>
+				<label for="">구매 URL</label> <input type="text" class="instUrl" />
+			</div>
+		</div>
+	</div>
+
+	<div class="background_layer"></div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+			$(".modiSpan").click(function(){
+				$(this).hide().next(".instInput").show().focus();
+			});
+			$(".linkList_box .btn_modify").click(function(){
+				$();
+			});
+		//]]>
+	</script>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">매체관리</span>
+			<span class="depth2_name color_type3">매체영역현황</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_media_status.gif" alt="매체영역 현황" /></h2>
+			<p class="caption">매체영역 플랫폼 및 담당자, 진행여부를 설정 할 수 있습니다.</p>
+		</div>
+		<div class="status_count_article">
+			<dl>
+				<dt>전체</dt>
+				<dd><span class="count color_type1">191515153</span> 개</dd>
+			</dl>
+			<span class="slash_con">&#47;</span>
+			<dl>
+				<dt>진행중</dt>
+				<dd><span class="count color_type2">193</span> 개</dd>
+			</dl>
+			<span class="slash_con">&#47;</span>
+			<dl>
+				<dt>중지</dt>
+				<dd><span class="count color_type3">193</span> 개</dd>
+			</dl>
+		</div>
+		<div class="composition_obj_article">
+			<div class="category_group">
+				<dl>
+					<dt>담당자</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">전체</option>
+						</select>
+					</dd>
+				</dl>
+				<span class="slash_con">&#47;</span>
+				<dl>
+					<dt>플랫폼</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">모든 플렛폼</option>
+						</select>
+					</dd>
+				</dl>
+				<span class="slash_con">&#47;</span>
+				<dl>
+					<dt>진행 구분</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">모든영역</option>
+						</select>
+					</dd>
+				</dl>
+				<div class="search_box">
+					<input type="text" class="inst_search input_w184" />
+					<button class="btn_search"><img src="../images/common/ico_search.png" alt="search" /><span>검색</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="media_container">
+			<div class="media_content">
+				<div class="left_section">
+					<table class="table_set1" summary="매체 현황 테이블">
+						<caption>매체 현황</caption>
+						<colgroup>
+							<col width="8%" />
+							<col width="18%" />
+							<col width="16%" />
+							<col width="11%" />
+							<col width="9%" />
+							<col width="9%" />
+							<col width="9%" />
+							<col width="21%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">번호</th>
+								<th scope="col" rowspan="2">매체명</th>
+								<th scope="col" rowspan="2">매체분류</th>
+								<th scope="col" rowspan="2">담당자</th>
+								<th scope="col" colspan="3" style="border-bottom:1px solid #dfdfdf">하위존 현황</th>
+								<th scope="col" rowspan="2">관리</th>
+							</tr>
+							<tr>
+								<th scope="col">전체</th>
+								<th scope="col">진행</th>
+								<th scope="col" style="border-right:1px solid #dfdfdf">중지</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr class="bgc_type1">
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr class="bgc_type1">
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr class="bgc_type1">
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+							<tr class="bgc_type1">
+								<td>100</td>
+								<td>머니투데이</td>
+								<td>경제지</td>
+								<td>김도한</td>
+								<td class="color_type1 bold">3</td>
+								<td class="color_type2 bold">1</td>
+								<td class="color_type3 bold">2</td>
+								<td>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type3" href="#">존 생성</a>
+									<a class="btn_type_set btn_type_set_s btn_type1 color_type1" href="#">정보수정</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<button class="btn_section_adjust" title="왼쪽으로 레이어 확장">◀</button>
+				<div class="right_section">
+					<div class="top_article">
+						<h3 class="color_type3">머니투데이</h3>
+						<div class="select_box">
+							<select name="" id="">
+								<option value="">모든플렛폼</option>
+							</select>
+							<select name="" id="">
+								<option value="">진행중</option>
+							</select>
+						</div>
+					</div>
+
+					<table class="table_set2" summary="매체 세부현항">
+						<caption>매체 세부현항</caption>
+						<colgroup>
+							<col width="6%" />
+							<col width="20%" />
+							<col width="8%" />
+							<col width="66%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">존명</th>
+								<th scope="col">진행상태</th>
+								<th scope="col">요약내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span>1</span></td>
+								<td>
+									<p>뉴스면 텍스트 (2slot)</p>
+									<button class="btn_type_set btn_type_set_s btn_type2 color_type7 btn_codeshow">존코드보기</button>
+									<button class="btn_type_set btn_type_set_s btn_type3 color_type6">존정보변경</button>
+									<button class="btn_type_set btn_type_set_s btn_type3 color_type6">슬롯보기</button>
+								</td>
+								<td><span class="color_type2">진행중</span></td>
+								<td>
+									<table class="table_set3 btn_detail_view" summary="요약내용" title="클릭하면 상세정보 노출">
+										<caption>요약내용</caption>
+										<thead>
+											<tr>
+												<th scope="col">소재타입</th>
+												<th scope="col">존사이즈</th>
+												<th scope="col">이미지크기</th>
+												<th scope="col">슬롯정보</th>
+												<th scope="col">실제&#47;설정 구좌</th>
+												<th scope="col">진행 캠페인</th>
+												<th scope="col">대체 소재</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="color_type3">텍스트</td>
+												<td>320 x 92</td>
+												<td>없음</td>
+												<td class="color_type3">1 x 2 (2슬롯)</td>
+												<td>50 &#47; 50</td>
+												<td>10</td>
+												<td>0</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="detail_view_td">
+									<div class="detail_view_section">
+										<div class="top_con">
+											<h4>“썸네일 (3slot)” 상세정보</h4>
+											<button class="btn_close"><img src="../images/btn/btn_close.png" alt="세부영역 닫기 버튼" /></button>
+										</div>
+										<div class="bot_con">
+											<h5>● 기본정보</h5>
+											<table class="table_write_set4" summary="기본정보">
+												<caption>기본정보</caption>
+												<colgroup>
+													<col width="14%" />
+													<col width="19%" />
+													<col width="13%" />
+													<col width="20%" />
+													<col width="13%" />
+													<col width="20%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">광고 플랫폼</th>
+														<td class="bold">모바일 (Mobile Web)</td>
+														<th scope="row">영역 매입단가</th>
+														<td>0 만원</td>
+														<th scope="row">CPC 수이금비율</th>
+														<td>0 %</td>
+													</tr>
+													<tr>
+														<th scope="row">진해여부</th>
+														<td class="color_type2">진행중</td>
+														<th scope="row">노출 우선순위</th>
+														<td colspan="3">비율우선 (소재의 카테고리 중복에 상관없이 노출비율을 정확히 맞춤)</td>
+													</tr>
+													<tr>
+														<th scope="row">실제 LIVE시작일</th>
+														<td>2012&#47;07&#47;16</td>
+														<th scope="row">영역 생성일</th>
+														<td colspan="3">2012&#47;07&#47;16</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h5>● 영역설정 정보</h5>
+											<table class="table_write_set4" summary="영역설정 정보">
+												<caption>영역설정 정보</caption>
+												<colgroup>
+													<col width="14%" />
+													<col width="19%" />
+													<col width="13%" />
+													<col width="20%" />
+													<col width="13%" />
+													<col width="20%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">배너타입</th>
+														<td>썸네일</td>
+														<th scope="row">영역크기</th>
+														<td colspan="3">310 x 110 (px)</td>
+													</tr>
+													<tr>
+														<th scope="row">실제구좌</th>
+														<td>구좌</td>
+														<th scope="row">설정구좌</th>
+														<td colspan="3" class="color_type3">무제한</td>
+													</tr>
+													<tr>
+														<th scope="row">랜덤&#47;판</th>
+														<td>슬롯랜덤</td>
+														<th scope="row">영역테두리</th>
+														<td>PX</td>
+														<th scope="row">배경색상</th>
+														<td>
+															<span class="color_preview"></span>
+															<span class="color_code">&#35;ffffff</span>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">내부패딩</th>
+														<td>없음</td>
+														<th scope="row">블릿설정</th>
+														<td colspan="3">없음</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h5>● 슬롯설정 정보</h5>
+											<table class="table_write_set4" summary="슬롯설정 정보">
+												<caption>슬롯설정 정보</caption>
+												<colgroup>
+													<col width="13%" />
+													<col width="37%" />
+													<col width="14%" />
+													<col width="36%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">슬롯갯수</th>
+														<td>3 slot (3 x 1)</td>
+														<th scope="row">1슬롯크기</th>
+														<td>x (px)</td>
+													</tr>
+													<tr>
+														<th scope="row">슬롯간격</th>
+														<td>없음</td>
+														<th scope="row">슬롯구분선</th>
+														<td>[가로] px &#47; [세로] px</td>
+													</tr>
+													<tr>
+														<th scope="row">텍스트정렬</th>
+														<td>가로: &#47; 세로:</td>
+														<th scope="row">텍스트효과</th>
+														<td>매체의 CSS를 따름</td>
+													</tr>
+													<tr>
+														<th scope="row">썸네일영역</th>
+														<td colspan="3">해당사항없음</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h5>● 효과설정 정보</h5>
+											<table class="table_write_set4" summary="효과설정 정보">
+												<caption>효과설정 정보</caption>
+												<colgroup>
+													<col width="13%" />
+													<col width="37%" />
+													<col width="14%" />
+													<col width="36%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">롤링허용</th>
+														<td>없음</td>
+														<th scope="row">롤링효과</th>
+														<td>없음</td>
+													</tr>
+													<tr>
+														<th scope="row">레이어효과</th>
+														<td>없음</td>
+														<th scope="row">영역확장</th>
+														<td>없음</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h5>● 대체캠페인 정보</h5>
+											<div class="campaign_box">대체캠페인 미설정</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="background_in_layer"></div>
+
+					<div class="codeview_article">
+						<div class="top_con">
+							<h4><img src="../images/tit/article_tit_menu2_1.gif" alt="매체제공 영역코드" /></h4>
+							<button class="btn_close"><img src="../images/btn/btn_close.png" alt="창 닫기" /></button>
+						</div>
+						<div class="bot_con">
+							<p class="caption">※ 적용방식에 따라 아래의 코드를 복사하여 해당페이지에 삽입하십시오</p>
+							<p>[ <span class="color_type3">파일저장 또는 미리선언 방식</span> ]</p>
+							<button class="btn_type_set btn_type_set_s btn_type2 color_type7 btn_allchoice">전체선택</button>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_article">
+				<a class="btn_type_set btn_type_set_b btn_type4 color_type7" href="#">취소</a>
+				<a class="btn_type_set btn_type_set_b btn_type5 color_type6" href="#">확인</a>
+			</div>
+		</div>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+</body>
+</html>

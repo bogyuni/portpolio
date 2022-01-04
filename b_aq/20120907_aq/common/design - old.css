@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+
+@import "reset.css";
+@import "fonts.css";
+@import "layout.css";
+
+
+.skip, hr, legend{position:absolute;visibility:hidden;left:-5000px;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;}
+/*웹킷용 캡션 숨기기*/
+caption{width:0;height:0;padding:0px;margin:0px;visibility:hidden;}
+
+
+
+#header{position:fixed;background:#1f1f1f;width:252px;height:100%;z-index:100;}
+#header .btn_snb{position:absolute;top:50%;right:-17px;margin-top:-75px;z-index:100;}
+	.globalmenu{height:100%;}
+
+/* margin */
+.mgb7{margin-bottom:7px;}
+.mgb35{margin-bottom:35px;}
+
+
+/*
+#container{position:relative;width:auto;min-width:772px;height:auto;min-height:100%;margin-left:280px;background:url(../images/list_bg.gif) repeat left top;}
+#container h1{height:93px;padding-top:22px;}
+
+	.utilmenu{position:fixed;right:0px;top:50px;z-index:3;}
+	.utilmenu li{background:#ddd;margin-bottom:5px;}
+*/
+	.content_list_area{width:100%;height:auto;position:relative;}
+/*
+	.content_list_area .item_list{overflow:hidden;}
+	.content_list_area .item{margin:0;padding:0;width:237px;height:237px;position:absolute;}
+	.content_list_area .item .back_img{position:absolute;left:0;top:0;width:237px;height:237px;}
+	.content_list_area .item .overview{position:absolute;left:0;top:0;width:237px;height:237px;background:url(../images/thumbnail_over1.png) no-repeat;}
+*/
+	.content_list_area .itemContent{display:none;position:absolute;width:711px;height:948px;background:white;}
+	.content_list_area .itemContent .btn_close{position:absolute;top:13px;right:19px;cursor:pointer;}

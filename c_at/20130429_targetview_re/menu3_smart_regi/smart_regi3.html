@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr" xml:lang="kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> TARGETVIEW - 광고관리자 </title>
+	<meta name="Author" content="ADtive innovation" />
+	<meta name="Keywords" content="" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-ico"/>
+	<link rel="shortcut icon" type="image/x-ico" href="ico/ico.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/add_article.css" />
+	<script type="text/javascript" src="/js/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="/js/jquery.alphanumeric.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.8.23.custom.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.simplemodal-1.4.4.js"></script>
+	<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/header.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/util.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/button.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/handler.base.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/handler.form.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/handler.xhr.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/uploader.basic.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/dnd.js"></script>
+	<script type="text/javascript" src="/js/fineuploader/uploader.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+	<script type="text/javascript" src="/js/jquery.form.js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate-1.1.1.min.js"></script>
+	<!-- 셀렉트박스 검색 -->
+	<link href="/css/select2.css" rel="stylesheet"/>
+	<script src="/js/select2.js"></script>
+	<!-- 셀렉트박스 검색 -->
+
+<script type="text/javascript">
+	Number.prototype.format = function(){
+	    if(this==0) return 0;
+	 
+	    var reg = /(^[+-]?\d+)(\d{3})/;
+	    var n = (this + '');
+	 
+	    while (reg.test(n)) n = n.replace(reg, '$1' + ',' + '$2');
+	 
+	    return n;
+	};
+	 
+	// 문자열 타입에서 쓸 수 있도록 format() 함수 추가
+	String.prototype.format = function(){
+	    var num = parseFloat(this);
+	    if( isNaN(num) ) return "0";
+	 
+	    return num.format();
+	};
+$(document).ready(function () {
+    var $trigger = $(".menu > li");
+    var $submenu = $(".menu > li > ul");
+    $submenu.hide();
+    $trigger.removeClass("on");
+    $trigger.each(function (i) {
+        //$submenu.eq(i).css("left", i *199); // sub menu의 위치
+        $trigger.eq(i).hover(function () {
+            $trigger.eq(i).addClass("on"); // menu의 rollover 이미지 변경
+            $submenu.eq(i).show(); // menu mouseover 할 때 sub menu 보여주기		
+        }, function () {
+            $trigger.eq(i).removeClass("on");
+            $submenu.eq(i).hide();
+        });
+        $trigger.eq(i).click(function () {
+            $(this).addClass("click_on"); // menu의 rollover 이미지 변경
+            $(this).siblings().removeClass("click_on");
+        });
+    });
+});
+</script>
+</head>
+<body>
+<!-- wrapper-->
+<div class="wraper">
+<script type="text/javascript">
+	var $editor = $("#editable");
+	var fontSize = 12;
+	var _fontSizeType = 'px';
+	var _minFontSize = 8;
+	var _maxFontSize = 30;
+	var _fontsize_match = fontSize + _fontSizeType;
+	var SelectRange = null;
+	var SelectString = "";
+	var mouseX = 0;
+	var mouseY = 0;
+</script>
+<script type="text/javascript" src="../ban/jquery.mouseWheel.js"></script>
+<script type="text/javascript" src="../ban/jquery.crop.js"></script>
+<script>
+	function showBox() {
+		$("#progressBox").modal({
+	        close: false,
+	        overlayId: 'modalBackground',
+	        containerId: 'modalContainer',
+	        onShow: function(dialog) {
+	        }
+	    });
+	}
+</script>
+
+<style>
+	/* 20130430 서보균 */
+	.table_typeB{overflow:hidden;padding-top:16px;}
+	.leftCon_section{float:left;width:435px;margin-right:27px;}
+	.leftCon_section .caption_article{position:relative;color:#fff;width:401px;height:34px;padding:8px 0 0 34px;background:#858585 url('../images/bu_star.gif') no-repeat 11px 6px;}
+	.leftCon_section .caption_article .btn_bannerPosition{position:absolute;right:11px;top:10px;cursor:pointer;}
+	.instBanner_article{position:relative;border-bottom:1px solid #dfdfdf;}
+	.instBanner_article .btn_modify{position:absolute;right:20px;top:50%;margin-top:-20px;cursor:pointer;}
+	.instBanner_article .caption_p{color:#898989;height:20px;padding:8px 0 0 24px;border-bottom:1px solid #fafafa;background:url('../images/bu_arrow.gif') no-repeat 11px 8px;}
+	.instBanner_article .caption_p span{color:#c5c5c5;}
+	.instBanner_article .banner_box{position:relative;width:435px;background:#fafafa;}
+	.instBanner_article .banner_box .photo_con{position:absolute;left:68px;top:10px;width:240px;border:4px solid #dfdfdf;}
+	.instBanner_article .banner_box .photo_con .btn_instBanner{position:absolute;left:50%;top:50%;margin-left:-45px;margin-top:-10px;cursor:pointer;}
+	.instBanner_article .banner_box .photo_con p{position:absolute;left:44px;bottom:21px;text-align:center;color:#c5c5c5;letter-spacing:-1px;}
+
+	.instBanner_article1{height:229px;}
+	.instBanner_article1 .banner_box{height:200px;}
+	.instBanner_article1 .banner_box .photo_con{width:240px;height:170px;}
+
+	.instBanner_article2{height:296px;}
+	.instBanner_article2 .banner_box{height:268px;}
+	.instBanner_article2 .banner_box .photo_con{width:240px;height:240px;}
+
+	.instBanner_article3{height:108px;}
+	.instBanner_article3 .btn_modify{top:50%;margin-top:-26px;}
+	.instBanner_article3 .banner_box{height:80px;}
+	.instBanner_article3 .banner_box .photo_con{left:28px;width:320px;height:48px;}
+	.instBanner_article3 .banner_box .photo_con .btn_instBanner{top:50%;margin-top:-17px;}
+	.instBanner_article3 .banner_box .photo_con p{position:absolute;left:20pxpx;bottom:1px;text-align:center;color:#c5c5c5;}
+
+	.rightCon_section{float:left;position:relative;width:666px;height:672px;margin-bottom:19px;border:4px solid #dfdfdf;background:#fafafa;}
+	.rightCon_section .caption_p1{position:absolute;left:245px;top:322px;text-align:center;color:#898989;}
+	.rightCon_section .caption_p1 span{color:#c5c5c5;}
+	.setBanner_article{display:none;position:absolute;left:0px;top:0px;width:666px;height:672px;background:#fafafa;z-index:9;}
+	.setBanner_article .bannerImg_list{overflow:hidden;margin:1px 0 9px 1px;}
+	.setBanner_article .bannerImg_list li{position:relative;float:left;width:96px;height:64px;margin-right:15px;border:1px solid #afafaf;cursor:pointer;}
+	.setBanner_article .bannerImg_list li img{width:96px;height:64px;}
+	.setBanner_article .bannerImg_list li .mask{position:absolute;left:0px;top:0px;width:96px;height:64px;background:url('../images/bg_black50.png') repeat;}
+	.setBanner_article .bannerImg_list li .loading_con{position:absolute;left:50%;top:50%;width:16px;height:16px;margin-left:-8px;margin-top:-8px;}
+	.setBanner_article .bannerImg_list li .loading_con img{width:16px;height:16px;}
+	.setBanner_article .bannerImg_list li.on .mask{position:absolute;left:-1px;top:-1px;width:90px;height:58px;border:4px solid #ee000a;background:none;}
+	.setBanner_article .bannerImg_list .btn_instPhoto{margin-right:0;}
+	.setBanner_article .caption_p2{color:#c5c5c5;padding:0 7px;letter-spacing:-1px;border-bottom:1px solid #dfdfdf;}
+	.setBanner_article .caption_p2 span{color:#898989;}
+	.setBanner_article .seting_box{width:664px;height:447px;margin-left:1px;background:#020203; position:relative; overflow: hidden;}
+
+	.setBanner_article .seting_box .position_list{overflow:hidden;position:absolute;/*left:-96px;*/left:0;top:1px;width:96px;}
+	.setBanner_article .seting_box .position_list li{background:#ddd;float:left;font-weight:bold;text-align:center;width:22px;padding:3px 0 2px;border:1px solid #000;cursor:pointer;}
+	.setBanner_article .seting_box .position_list li:hover{color:#fff;background:#000;}
+	.setBanner_article .seting_box .position_list li.on{color:#fff;background:#000;}
+	.setBanner_article .seting_box .btn_instText img{position:absolute;left:0;top:0;cursor:pointer;}
+
+	.setBanner_article .seting_box .banner_con { position:absolute;}
+	.setBanner_article .caption_list{overflow:hidden;margin:0 1px;background:url('../images/bg_guideline_bottom.gif') repeat-x bottom;}
+	.setBanner_article .caption_list li{float:left;width:332px;height:47px;}
+	.setBanner_article .caption_list .li1{background:url('../images/ico_scroll.gif') no-repeat 14px 8px;}
+	.setBanner_article .caption_list .li2{background:url('../images/ico_dragMove.gif') no-repeat 10px 9px;}
+	.setBanner_article .caption_list li h5{float:left;width:68px;margin:11px 0 0 51px;font:normal 12px Dotum;letter-spacing:-1px;color:#555555;}
+	.setBanner_article .caption_list li p{float:left;width:191px;margin-top:11px;color:#c5c5c5;}
+	.setBanner_article .btn_box{text-align:center;padding-top:17px;}
+	.setBanner_article .btn_box span{margin:0 10px;cursor:pointer;}
+
+	.btn_confirmation{clear:both;text-align:center;padding-top:51px;background:url('../images/bg_guideline_bottom.gif') repeat-x;}
+	.btn_confirmation img{cursor:pointer;}
+	.background_layer{display:none;position:fixed;left:0px;top:0;width:100%;height:100%;background:url('../images/bg_black50.png') repeat;z-index:8;}
+	
+	/* Image Crop 20130503 김종훈*/
+	.crop_loading { background-image: url('../images/img_loader.gif'); background-repeat: no-repeat; background-position: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+	.crop_area { position: absolute; }
+	.image_drag_handler { cursor: pointer; }
+	.crop_viewport img, .image_drag_handler { cursor: pointer; }
+	
+	.image_drag_handler {
+		position: absolute;top:0;left:0;right:0;bottom:0;background-color: #000;opacity: .1; /* FX/Opera/Safari/Chrome */-ms-filter: "alpha(opacity=10)"; /* IE8 */filter: alpha(opacity = 10); /* IE6/IE7 */ 
+	}
+	
+	.image_board { position: absolute; background-color: #000;opacity: 0; /* FX/Opera/Safari/Chrome */-ms-filter: "alpha(opacity=0)"; /* IE8 */filter: alpha(opacity = 0); /* IE6/IE7 */ z-index: 10; cursor: pointer;}
+	
+	.cropselect-border1 { background: url('./../images/border-anim-v.gif') repeat-y left top; }
+	.cropselect-border2 { background: url('./../images/border-anim-h.gif') repeat-x left top; }
+	.cropselect-border3 { background: url('./../images/border-anim-v.gif') repeat-y right top; }
+	.cropselect-border4 { background: url('./../images/border-anim-h.gif') repeat-x left bottom; }
+	
+	.cropselect-border1, .cropselect-border2,
+	.cropselect-border3, .cropselect-border4 {
+    	filter: alpha(opacity=50);
+		opacity: 0.7;
+	}
+	.cropselect-outer { background-color: #000; filter: alpha(opacity=40); opacity: 0.4;}
+	/* //20130430 서보균 */
+	
+	#modalBackground { background-color:#FFFFFF; }
+	#modalContainer { font-family:"맑은 고딕";background: #000; opacity: 0.8;color: #FFF;width: 224px;height: 130px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;line-height: 20px; }
+  	
+  	div.blindScreen { display: block;position: absolute;z-index: 150001;top: 0;left: 0;width: 100%;height: 100%; }
+	div.blindScreenCover { display: block;position: absolute;z-index: 150002;top: 0;left: 0;width: 100%;height: 100%; }
+	.blindScreen2 { display: block;position: absolute;z-index: 150003;width: auto;height: auto;padding:1px; }
+	div.textboxes_contents { clear:both;padding:5px;background-color:#f9f9f9;cursor:default;font-size:12px; }
+  	#toolbar {z-index: 143555;padding:5px; background-color:#f5f5f5;background-color:#fff; display:none;position:absolute; top:0px; left:0px; overflow:hidden;border:solid 1px #929292; border-radius:3px; -moz-border-radius:3px; -webit-border-radius:3px;box-shadow: 5px 5px 5px #888; -moz-box-shadow: 1px 1px 3px #555; -webkit-box-shadow: 5px 5px 5px #888;}
+	#toolbar ul li { float: left; text-align: center; }
+	#toolbar ul li a { padding:3px 5px; border:solid 1px transparent; color:#000; text-decoration:none; float:left; display:block; text-align:center;} 
+	#toolbar ul li a:hover { border:solid 1px #bea881; background-color:#fff2cb;background: -moz-linear-gradient(top, rgba(255, 251, 239, 1), rgba(255, 220, 87, 1));
+</style>
+
+<div id="toolbar">
+	<ul>
+		<li><a href="#" id="bold">B</a></li>
+		<li><a href="#" id="small">작게</a></li>
+		<li><a href="#" id="big">크게</a></li>
+		<li><a href="#" id="color"><img src="/images/color.png" align="absmiddle"/></a></li>
+	</ul>
+</div>
+
+<!-- header -->
+<div class="header">
+	<div class="header_wrap">
+		<h1>TARGET VIEW</h1>
+		<ul class="asideMenu">
+			<li class="first"><a href="/article/article_list.php">로그아웃</a></li>
+			<li><a href="/member/member_mod.php?m_no=1">회원정보</a></li>
+		</ul><!-- //asideMenu -->
+		<div class="gnb_wrap">
+			<div class="leftCon"></div>
+			<div class="rightCon"></div>
+			<div class="centerCon">
+				<div class="notice_article">
+					<h2>notice</h2>
+					<p><span>2013-06-27 10:07:41</span> 에</p>
+					<p><span>관리자</span> 계정으로 접속하셨습니다.</p>
+				</div><!-- //notice_article -->
+				<ul class="gnb_list">
+					<li class="depth1 depth1_1">
+						<a class="depth1_a " href="/member/member_list_new.php">계정관리</a>
+					</li>
+					<li class="depth1 depth1_2">
+						<a class="depth1_a " href="/article_new/article_list.php">광고관리</a>
+					</li>
+					<li class="depth1 depth1_3">
+						<a class="depth1_a " href="/smart_new/cam.php?mode=reg">광고등록</a>
+					</li>
+					<li class="depth1 depth1_4">
+						<a class="depth1_a " href="/stats/stats_main.php">통계(로그)</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">광고통계</a></li>
+							<li class="depth2_2"><a href="/userdb/userdb_list.php">유저DB현황</a></li>
+							<li class="depth2_3 last"><a href="/media/calendar.php">매체통계</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_5">
+						<a class="depth1_a " href="/payment/">결제관리</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="/payment/adcostset.php">광고비 관리</a></li>
+							<li class="depth2_2"><a href="/payment/payment_list_new.php">결제 내역</a></li>
+							<li class="depth2_3"><a href="/payment/progressdetail.php">광고 진행 내역</a></li>
+							<li class="depth2_4 last"><a href="/payment/repayment_list.php">환불내역</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_6">
+						<a class="depth1_a" href="">매출관리</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="">페이지 매출관리</a></li>
+							<li class="depth2_2"><a href="">링크 매출관리</a></li>
+							<li class="depth2_3 last"><a href="">세금계산서 관리</a></li>
+						</ul>
+					</li>
+					<li class="depth1 depth1_7">
+						<a class="depth1_a " href="/siteinfo/priv.php?sType=priv">사이트 정보</a>
+						<ul class="depth2_list">
+							<li class="depth2_1"><a href="/siteinfo/priv.php?sType=priv">개인정보보호정책</a></li>
+							<li class="depth2_2"><a href="/siteinfo/priv.php?sType=use">이용약관</a></li>
+							<li class="depth2_3"><a href="/siteinfo/category.php">업종관리</a></li>
+							<li class="depth2_4"><a href="/siteinfo/menu_cate.php">메뉴관리</a></li>
+							<li class="depth2_5 last"><a href="/siteinfo/inquiry.php">광고문의</a></li>
+						</ul>
+					</li>
+				</ul><!-- //gnbList -->
+			</div><!-- //centerCon -->
+		</div><!-- //gnb_wrap -->
+	</div><!-- //header_wrap -->
+</div>
+<!-- //header -->
+
+<!-- container -->
+<div class="container">
+	<div class="container_wrap">
+		<div class="title_article">
+			<h2 class="depth2_tit">스마트 등록</h2>
+			<p class="caption">광고 등록 및 광고명 관리, 광고 내용관리 등 전체적인 광고를 검색 하실 수 있으며 새로운 광고를 등록 하실 수 있습니다.</p>
+		</div>
+		<div class="content smart_regi_section3">
+			<div class="registration_process">
+				광고 내용 등록 : 광고 기사에 들어갈 내용 및 이미지, 동영상, DB창 등을 등록합니다.
+			</div>
+
+			<h3>광고 등록 배너</h3>
+			<div class="write_box smart_regi_table_box">
+				<!-- 배너등록 테이블 시작 서보균-->
+				<div class="leftCon_section">
+					<div class="caption_article">
+						<p>등록하실 3가지 사이즈의 배너를 선택하시면<br />등록할 수 있는 창이 나타납니다.</p>
+						<div class="btn_bannerPosition"><img src="../images/txt_banner_caption.gif" alt="배너 위치 안내" /></div>
+					</div>
+					<div class="instBanner_article instBanner_article1">
+						<div class="banner_box">
+							<div class="photo_con">
+								<div class="btn_instBanner"><img onclick="setingBoxOpen(1)" src="../images/btn_instBanner.gif" alt="배너등록" /></div>
+								<p>이 곳을 클릭하시면<br />배너 제작 창이 나타납니다.</p>
+								<!-- 저장이후의 이미지
+								<img src="../images/@temp_photo.gif" alt="" />
+								-->
+							</div>
+						</div>
+						<!-- <div class="btn_modify"><img src="../images/btn_modify.gif" alt="수정" /></div> -->
+						<p class="caption_p">대표배너 : 240px <span>*</span> 170px 사이즈<span>의 배너를 입력하실 수 있습니다.</span></p>
+					</div>
+					<div class="instBanner_article instBanner_article2">
+						<div class="banner_box">
+							<div class="photo_con">
+								<div class="btn_instBanner"><img onclick="setingBoxOpen(2)" src="../images/btn_instBanner.gif" alt="배너등록" /></div>
+								<p>이 곳을 클릭하시면<br />배너 제작 창이 나타납니다.</p>
+							</div>
+						</div>
+						<!-- <div class="btn_modify"><img src="../images/btn_modify.gif" alt="수정" /></div> -->
+						<p class="caption_p">크리테오배너 : 240px <span>*</span> 240px 사이즈<span>의 배너를 입력하실 수 있습니다.</span></p>
+					</div>
+					<div class="instBanner_article instBanner_article3">
+						<div class="banner_box">
+							<div class="photo_con">
+								<div class="btn_instBanner"><img onclick="setingBoxOpen(3)" src="../images/btn_instBanner.gif" alt="배너등록" /></div>
+								<p>이 곳을 클릭하시면 배너 제작 창이 나타납니다.</p>
+							</div>
+						</div>
+						<!-- <div class="btn_modify"><img src="../images/btn_modify.gif" alt="수정" /></div> -->
+						<p class="caption_p">모바일배너 : 640px <span>*</span> 96px 사이즈<span>의 배너를 입력하실 수 있습니다.</span></p>
+					</div>
+				</div><!-- //leftCon_section -->
+				<div class="rightCon_section">
+					<p class="caption_p1">배너 등록 버튼<span>을 누르시면 <br />배너를 만들 수 있는 창이 나옵니다.</span></p>
+					<div class="setBanner_article">
+						
+						<ul class="bannerImg_list">
+							<li class="bannerImg">
+								<img src="../images/img_01.jpg" alt="" />
+								<div class="mask"></div>
+								<!-- <div class="loading_con"><img src="../images/ajaxloader.gif" alt="" /></div> -->
+							</li>
+							<li class="bannerImg">
+								<img src="../images/img_02.jpg" alt="" />
+								<div class="mask"></div>
+								<!-- <div class="loading_con"><img src="../images/ajaxloader.gif" alt="" /></div> -->
+							</li>
+							<li class="bannerImg">
+								<img src="../images/img_03.jpg" alt="" />
+								<div class="mask"></div>
+								<!-- <div class="loading_con"><img src="../images/ajaxloader.gif" alt="" /></div> -->
+							</li>
+							<li class="bannerImg">
+								<img src="../images/img_04.jpg" alt="" />
+								<div class="mask"></div>
+								<!-- <div class="loading_con"><img src="../images/ajaxloader.gif" alt="" /></div> -->
+							</li>
+							<li class="bannerImg">
+								<img src="../images/img_05.jpg" alt="" />
+								<div class="mask"></div>
+								<!-- <div class="loading_con"><img src="../images/ajaxloader.gif" alt="" /></div> -->
+							</li>
+							<li class="btn_instPhoto">
+								<img src="../images/btn_instPhoto.gif" alt="" />
+							</li>
+						</ul>
+						<p class="caption_p2">광고 내용 등록에서 <span>등록하신 이미지</span>들로 배너를 만드실 수 있습니다. 만약, 따로 준비한 이미지가 있으시면 <span>다른 이미지 선택</span> 버튼을 클릭해 주세요.</p>
+						<div class="seting_box">
+							<form name="frm_autobanner">
+							<p style="color:#fff">배너 에디터 영역</p>
+							<div class="coords">
+								<input type="text" name="img_src" />
+								<input type="text" name="cx" />
+								<input type="text" name="cy" />
+								<input type="text" name="cw" />
+								<input type="text" name="ch" />
+								<input type="text" name="iw" />
+								<input type="text" name="ih" />
+								<input type="text" name="tx" />
+								<input type="text" name="ty" />
+								<input type="text" name="tw" />
+								<input type="text" name="th" />
+								<input type="text" name="text_word" id="text_word" />	
+							</div>
+							</form>
+						</div>
+						<ul class="caption_list">
+							<li class="li1">
+								<h5>확대 &#47; 축소 :</h5>
+								<p>마우스 휠을 이용하여 이미지의 확대&#47;축소가 가능합니다.</p>
+							</li>
+							<li class="li2">
+								<h5>위치 이동 :</h5>
+								<p>마우스로 활성된 부분을 클릭하시면 이미지 위치 변경이 가능합니다.</p>
+							</li>
+						</ul>
+						<div class="btn_box">
+							<span><img src="../images/btn_save.gif" alt="저장" onclick="ImgMake()" /></span>
+							<span><img onclick="setingBoxClose()" src="../images/btn_cancel.gif" alt="취소" /></span>
+						</div>
+					</div><!-- //setBanner_article -->
+				</div><!-- //rightCon_section -->
+				<div class="btn_confirmation">
+					<img onclick="" src="../images/btn_confirmation.gif" alt="확인" />
+				</div>
+
+				<div class="background_layer"></div>
+			<!-- 배너등록 테이블 끝 -->
+			</div>
+		</div>
+			<script type="text/javascript">
+				//<![CDATA[
+					var banner = 1;
+					var c_width = 240;
+					var c_height = 170;
+					
+					function setingBoxOpen(v){
+						$(".background_layer").fadeIn();
+						$(".setBanner_article").fadeIn();
+						banner = v;
+					}
+					function setingBoxClose(){
+						$(".btn_instText").remove();
+						
+						$(".crop_container").remove();
+						$(".background_layer").fadeOut();
+						$(".setBanner_article").fadeOut();
+					}
+					function ImgMake() {
+						var param = '{img_src: "'+$("input[name='img_src']").val()+'", set_x: "'+$("input[name='cx']").val()+'", set_y: "'+$("input[name='cy']").val()+'", set_width: "'+$("input[name='cw']").val();
+							param += '", set_height: "'+$("input[name='ch']").val()+'", img_width: "'+$("input[name='iw']").val()+'", img_height:"'+$("input[name='ih']").val()+'"';
+						
+						if( tinymce.get('editable') != undefined) {
+							
+							
+							console.log("tmpArea : ", $("#tmpEdit").html());
+							param += ', box_w: "'+$("input[name='tx']").val()+'", box_y: "'+$("input[name='ty']").val()+'", box_width: "'+$("input[name='tw']").val()+'", box_height: "'+$("input[name='th']").val()+'"';
+							param += ', box_text: "'+tinymce.get('editable').getContent()+'"';	
+						}
+						param += '}';
+						
+						console.log(param);
+					}
+					$(".btn_instPhoto").click(function() {
+						$(".background_layer").fadeIn();
+						$(".addContent_popup").fadeIn();	
+					});
+					//이미지추가팝업닫기
+					$(".btn_popupClose").click(function(){
+						close_layer();
+					});
+					$(".bannerImg").click(function(){
+						$(".bannerImg").removeClass("on");
+						$(this).addClass("on");
+						$(".crop_container").remove();
+						//$(".banner_con img").attr('src', $(this).find("img").attr("src"));
+						if(banner==1) {
+							c_width = 240;
+							c_height = 170;
+						} else if(banner==2){
+							c_width = 240;
+							c_height = 240;
+						} else if(banner==3){
+							c_width = 640;
+							c_height = 96;
+						}
+						$(".seting_box").ImageCrop({
+							src : $(this).find("img").attr("src"),
+							crop_div : banner,
+							crop_width : c_width,
+							crop_height : c_height,
+							
+							viewport_onload: function() {
+								var $viewport = this;
+								var inputs = $viewport.$container.parent(".seting_box").find('.coords input:text');
+								/*console.log($viewport);
+								console.log(inputs);*/
+								var events = ['ic_img_src', 'ic_crop_x','ic_crop_y','ic_crop_width','ic_crop_height','ic_image_width','ic_image_height','ic_text_x','ic_text_y','ic_text_width','ic_text_height'];
+								for ( var i=0; i < events.length; i++ ) {
+									var event_name = events[i];
+									$viewport.observator.register(event_name, inputs.eq(i));
+									
+									inputs.eq(i).bind(event_name, function(event, $viewport, value) {
+										$(this).val(value);
+									})
+									.change(event_name, function(event) {
+										var event_name = event.data;
+										$viewport.observator.set_property(event_name,$(this).val());
+										
+									});
+								}
+								$viewport.observator.set_property(event_name,$(this).val());
+							}
+						});
+						
+					});
+				//]]>
+			</script>
+	</div><!-- //container_wrap -->
+</div>
+<!-- //container -->
+
+<!-- footer -->
+<div class="footer">
+	<div class="footer_wrap">
+		<h1>TARGET VIEW</h1>
+		<address>
+			서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) | 대표이사 : 조재범 | 등록번호 : 서울 아 01569 | 사업자등록번호 : 120-87-11103
+			개인정보취급자 : 김종렬 | 이메일 jrkim@adtive.co.kr
+		</address>
+		<p class="copyright">Copyright (C) 2012. TARGET VIEW. All Rights Reserved.</p>
+	</div>
+</div>
+<!-- //footer -->
+
+</div>
+<!-- //wrapper-->
+
+<div class="background_layer"></div>
+
+<!-- 이미지추가 팝업 -->
+<div class="addContent_popup">
+	<div class="topContent">
+		<div class="header_box">
+			<div class="btn_popupClose"><img src="/../images/article_new/../images/writecontent/btn_popupClose.png" alt="close popup" /></div>
+			<h1>사진 첨부 하기</h1>
+		</div>
+		<!-- 사진업로드폼 -->
+		<form action="ajax_add_img.php" method="post" name="myForm" id="myForm" enctype="multipart/form-data">
+		<input type="hidden" name="img_kind" value="photo" />
+			<ul>
+				<li class="photo_con">
+					<span>이미지</span> <input type="file" name="file" id="file" />
+				</li>
+			</ul>
+			<div class="btn_submit">
+				<img src="/../images/writecontent/btn_submit.gif" alt="이미지등록" onclick="img_reg()"/>
+			</div>
+		</form>
+	</div>
+	<div class="bottomContent">
+		<img src="/../images/writecontent/popup_content2.jpg" alt="등록가능 이미지 형태 안내" />
+	</div>
+</div>
+
+<div id="progressBox" style="display: none; ">
+	<p style="text-align: center; width:100%"><img src="/../images/loding.gif" alt="" /></p>
+	<p style="text-align: center;width:100%">지금 처리중이오니 <br>잠시만 기다려주시기 바랍니다.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>상품문의</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+<div class="sub_container">
+	<div class="qna_btn_area">
+		<div class="top_row_con">
+			상품문의 <em>114</em> 건
+		</div>
+	</div>
+	<div class="cs_center_wrap">
+		<section class="qna_warp">
+			<ul>
+				<!-- 답변대기 -->
+				<li>
+					<div class="list_tit">
+						<img class="ico_img" src="images/common/ico_prod_qna1.gif" alt="대기">
+						<h3>문의 제목 문의 제목 문의 제목 문의 제목 문의 제목</h3>
+						<p>2016.02.03</p>
+					</div> 
+					<div class="list_content">
+						<div class="txt_con1">
+							<h3>문의 제목 문의 제목 문의 제목 문의 제목 문의 제목</h3>
+							<img src="images/temp/@cs_list.jpg">
+							<p>[TV리포트=김풀잎11 기자] '신서유기' 두 번째 스토리가 전파를 탔다. 마침내 중국 시안에 도착한 멤버들. 본격 고군분투가 시작된 셈이다.11일 오전 네이버 TV캐스트를 통해 tvN '신서유기'가 공개됐다. 이날 방송에서는 '서유기' 게임에 나선 멤버들의 모습이 그려졌다. 첫 게임은 '삼장법사 레이스'. 강호동-이수근, 은지원-이승기가 팀을 이뤄 게임에 나섰다. 승리팀은 은지원-이승기. 강호동-이승기는 삼륜차를 타고 이동해 시선을 끌었다.</p>
+						</div>
+						<div class="btn_box">
+							<button type="button" class="btn_delete">삭제하기</button> |
+							<button type="button" class="btn_modify">수정하기</button>
+						</div>
+					</div>
+				</li>
+				<!-- 답변완료 -->
+				<li>
+					<div class="list_tit">
+						<img class="ico_img" src="images/common/ico_prod_qna2.gif" alt="완료">
+						<h3>문의 제목 문의 제목 문의 제목 문의 제목 문의 제목</h3>
+						<p>2016.02.03</p>
+					</div> 
+					<div class="list_content">
+						<div class="txt_con1">
+							<h3>문의 제목 문의 제목 문의 제목 문의 제목 문의 제목</h3>
+							<img src="images/temp/@cs_list.jpg">
+							<p>[TV리포트=김풀잎11 기자] '신서유기' 두 번째 스토리가 전파를 탔다. 마침내 중국 시안에 도착한 멤버들. 본격 고군분투가 시작된 셈이다.11일 오전 네이버 TV캐스트를 통해 tvN '신서유기'가 공개됐다. 이날 방송에서는 '서유기' 게임에 나선 멤버들의 모습이 그려졌다. 첫 게임은 '삼장법사 레이스'. 강호동-이수근, 은지원-이승기가 팀을 이뤄 게임에 나섰다. 승리팀은 은지원-이승기. 강호동-이승기는 삼륜차를 타고 이동해 시선을 끌었다.</p>
+						</div>
+						<div class="txt_con2">
+							<img src="images/temp/@cs_list.jpg">
+							<p>[TV리포트=김풀잎11 기자] '신서유기' 두 번째 스토리가 전파를 탔다. 마침내 중국 시안에 도착한 멤버들. 본격 고군분투가 시작된 셈이다.11일 오전 네이버 TV캐스트를 통해 tvN '신서유기'가 공개됐다. 이날 방송에서는 '서유기' 게임에 나선 멤버들의 모습이 그려졌다. 첫 게임은 '삼장법사 레이스'. 강호동-이수근, 은지원-이승기가 팀을 이뤄 게임에 나섰다. 승리팀은 은지원-이승기. 강호동-이승기는 삼륜차를 타고 이동해 시선을 끌었다.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<button type="button" class="btn_more">더보기 (10/20)</button>
+	</div>
+</div>
+
+
+
+<!-- QNA write -->
+<div class="qna_write_popup layer_window">
+	<div class="top_tit">
+		상품문의 수정
+		<button type="button" class="btn_close t_hide">close popup</button>
+	</div>
+	<section class="inst_form_section">
+		<form action="">
+			<fieldset>
+				<legend>상품문의 수정</legend>
+				<div class="row_con">
+					<input type="text" class="inst_txt" placeholder="제목을 입력해 주세요">
+				</div>
+				<div class="row_con">
+					<span class="tit">공개여부</span>
+					<label class="rd_label txt on" for="qna_lock_ch_on">
+						<input type="radio" id="qna_lock_ch_on" name="qna_lock_ch" checked>
+						<span></span>
+						공개
+					</label>
+					<label class="rd_label txt" for="qna_lock_ch_off">
+						<input type="radio" id="qna_lock_ch_off" name="qna_lock_ch">
+						<span></span>
+						비공개
+					</label>
+				</div>
+				<div class="row_con">
+					<textarea name="" placeholder="문의 내용을 입력해 주세요"></textarea>
+				</div>
+
+				<div class="btn_box">
+					<button type="button" class="btn btn_close">취소하기</button>
+					<input type="submit" value="작성완료" class="btn btn_submit">
+				</div>
+				<p class="caption">* 최근문의한 내역은 마이페이지 > 내문의 에서 확인하실 수 있습니다.</p>
+			</fieldset>
+		</form>
+	</section>
+</div>
+
+
+<script>
+	$(function (){
+		// qna open
+			$('.list_tit').on('click',function (){
+				if ( !$(this).data('click') ){
+					$('.qna_warp li').removeClass('on');
+					$('.list_content').slideUp(160);
+					$('.list_tit').data('click',0);
+					$(this).parent('li').addClass('on');
+					$(this).next('.list_content').slideDown(160);
+					$(this).data('click',1);
+				}else{
+					$(this).parent('li').removeClass('on');
+					$(this).next('.list_content').slideUp(160);
+					$(this).data('click',0);
+				}
+			});
+
+			$('.btn_modify').click(function (){
+				$('.qna_write_popup').show();
+			});
+
+			$('.btn_delete').click(function (){
+				confirm('삭제 하시겠습니까?');
+			});
+	});
+</script>
+
+
+<!--  footer info -->
+<?php
+	include('outline/footer_info.html');
+?>
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

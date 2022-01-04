@@ -1,0 +1,141 @@
+<!-- Omniture -->
+<script>
+if (window.GALAXY&&GALAXY.isTestURL) {
+//if (window.GALAXY&&GALAXY.isGalaxy) {
+	GALAXY.load(function() {
+		var s = '';
+		s += '<scr'+'ipt src="/global/galaxy/common/js/omni/s_code_microsite.js"></scr'+'ipt>';
+		s += '<scr'+'ipt src="/global/galaxy/common/js/omni/omni.js"></scr'+'ipt>';
+		$('body').append(s);
+	});
+}
+</script>
+<!--// Omniture -->
+
+<script>
+// Google Search
+window.googleValueCheckInterval = null;
+window.__gcse = {
+	callback: function() {
+		var $cseOpenButton = $('#cseOpenButton'),
+			$cseSearchField = $('#cseSearchForm input.gsc-input'),
+			$cseSearchDefaultKeyword = 'Galaxy Note9', //검색어.
+			$resizemode;
+
+		if ( !$cseSearchField.length ) return;
+
+		$cseSearchField.attr('placeholder', 'Search..');
+
+		$cseOpenButton.on('click.openCseSearch', function() {
+			var _this = this;
+			var resultEl = google.search.cse.element.getElement('cseSearchResultOnly');
+			if ( $cseSearchField.val() == '' ) {
+				$cseSearchField.val( $cseSearchDefaultKeyword );
+			}
+			resultEl.execute( $cseSearchField.val() );
+			setTimeout(function() {
+				_this.style.outline = '';
+				$cseSearchField.select();
+			}, 600);
+
+			// 검색어 변경시 체크.
+			googleValueCheckInterval = setInterval(function () {
+		    var resultInfo = $('.gsc-result:first');
+			    if (resultInfo.length && !resultInfo.data('isOld')) {
+			        resultInfo.data('isOld', true);
+			        $('.srch-tab-area a:first').trigger('click');
+			    }
+			}, 250);
+			$('.g-close a').one('click.setInterval', function() {
+				clearInterval( googleValueCheckInterval );
+			});
+		});
+
+		// ie bug
+		$('html.ie #gnb').on('click', '.gsc-cursor-page', function() {
+			$('#gnb').scrollLeft(0);
+		});
+
+		// 검색모드(ALL, images) 변경
+		$('.srch-tab-area a').on('click', function() {
+			var curIndex = $('.srch-tab-area a').index(this);
+			var $tabs = $('#gnb .gsc-control-cse .gsc-tabsArea > div');
+
+			$('.srch-tab-area a').removeClass('current');
+			$(this).addClass('current');
+			$('.srch-tabs .cur-bg').css('left', $('.srch-tab-area a.current').position().left);
+			$tabs.eq(curIndex).trigger('click');
+			return false;
+		});
+
+		// 이미지검색 마우스 오버시 실행 함수.
+		// window.google.search.ImageSearch.showPopup = function(self) {
+	 // 	    return false;
+		// }
+		$resizemode = GALAXY.sizeMode;
+
+		$(window).resize(function () {
+			if (GALAXY.sizeMode != $resizemode) {
+				$('.srch-tab-area a.current').click();
+				$resizemode = GALAXY.sizeMode;
+			}
+		});
+		
+		
+		
+	}
+};
+
+window.GALAXY&&GALAXY.load(function() {
+	var cx = '007367572554865640989:togm7mb0yig';
+	var gcse = document.createElement('script');
+	var width = document.documentElement.offsetWidth,
+		sizeMode = width > 1440 ? 4 : width > 1023 ? 3 : width > 767 ? 2 : 1,
+		setMobile = '';
+
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?'+ setMobile +'cx='+ cx;
+
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+});
+
+// !function(f,b,e,v,n,t,s)
+// {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+// n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+// if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+// n.queue=[];t=b.createElement(e);t.async=!0;
+// t.src=v;s=b.getElementsByTagName(e)[0];
+// s.parentNode.insertBefore(t,s)}(window, document,'script',
+// 'https://connect.facebook.net/en_US/fbevents.js');
+// fbq('init', '385706305215262');
+// fbq('track', 'PageView');
+
+// !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+// },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+// a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// // Insert Twitter Pixel ID and Standard Event data below
+// twq('init','nykpv');
+// twq('track','PageView');
+
+// window.dataLayer = window.dataLayer || [];
+// function gtag(){dataLayer.push(arguments);}
+// gtag('js', new Date());
+
+// gtag('config', 'DC-5406021');
+// gtag('event', 'conversion', {
+// 'allow_custom_scripts': true,
+// 'send_to': 'DC-5406021/invmedia/odyhwyt4+standard'
+// });
+
+
+</script>
+
+<!-- <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=385706305215262&ev=PageView&noscript=1"
+/></noscript>
+
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=5406021;type=invmedia;cat=odyhwyt4;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" alt=""/>
+</noscript> -->

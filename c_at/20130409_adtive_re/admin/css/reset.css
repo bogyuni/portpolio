@@ -1,0 +1,43 @@
+@charset = 'utf-8';
+
+/* font */
+@font-face {
+	font-family:'NanumGothic';
+	src: url('font/NanumGothic.eot');
+	src: local("NanumGothic"),
+		url("font/NanumGothic.ttf") format("truetype"),
+		url("font/NanumGothic.otf") format("opentype"),
+		url('font/NanumGothic.woff') format('woff');
+}
+@font-face {
+	font-family:'NanumGothicBold';
+	src: url('font/NanumGothicBold.eot');
+	src: local("NanumGothicBold"),
+		url("font/NanumGothicBold.ttf") format("truetype"),
+		url("font/NanumGothicBold.otf") format("opentype"),
+		url('font/NanumGothicBold.woff') format('woff');
+}
+
+
+/* basic seting */
+*{padding:0;margin:0;}
+html{overflow-y:scroll;}
+body, select, input, textarea {font:normal 12px/1.5 NanumGothic, "나눔고딕", Dotum, "돋움", gulim, "굴림", verdana, sans-serif;color:#333;}
+table {border-collapse:collapse; border-spacing:0;}
+table tr td, table tr th {vertical-align:middle;}
+form, fieldset{border:0;}
+img {border:0;vertical-align:top;}
+li{list-style:none;}
+a{font:normal 12px/1.5 NanumGothic, "나눔고딕", Dotum, "돋움", gulim, "굴림", verdana, sans-serif;color:#333;}
+address, caption, em, h1, h2, h3, h4, h5, h6{font:normal 12px/1.5 NanumGothic, "나눔고딕", Dotum, "돋움", gulim, "굴림", verdana, sans-serif;color:#333;}
+select,input,button{vertical-align:middle;}
+/* 화면숨김 */
+hr, legend{position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;text-indent:-5000px;}
+/*웹킷용 캡션 숨기기*/
+caption{width:0;height:0;padding:0px;margin:0px;visibility:hidden;}
+select{padding:3px 2px 3px 2px;}
+button{cursor:pointer;border:0 none;background:none;}
+label{cursor:pointer;}
+
+
+

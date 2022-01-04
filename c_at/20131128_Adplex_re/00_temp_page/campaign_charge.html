@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 2beon 투비온 - 클라이언트 계정관리 시스템</title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<ul class="depth1_category_list">
+						<!--
+							1. 2뎁스 메뉴에서 하위 메뉴가 없고, 링크 연결의 경우
+							세부 메뉴가 존재하는 리스트는 class detail_on 를 가져야 class depth1_menu 를 호버했을 때 세부 메뉴가 노출 된다.
+						-->
+						<li class="depth1_menu category_menu1 detail_on">
+							<h3>◀ 개인회원</h3>
+							<!-- 가. 2뎁스 메뉴, 링크 연결 카테고리 -->
+							<div class="depth2_category_box tinyscrollbar tinyscrollbar2">
+								<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+								<div class="viewport">
+									<ul class="depth2_category_list overview">
+										<!--
+											지금 현재의 depth2_menu 는 세부메뉴가 없어서 class detail_on 를 가지지 않는다.
+										-->
+										<li class="depth2_menu category_menu1"><a href="#">(주) 두드림0</a></li>
+										<li class="depth2_menu category_menu2"><a href="#">(주) 두드림1</a></li>
+										<li class="depth2_menu category_menu3"><a href="#">(주) 두드림2</a></li>
+										<li class="depth2_menu category_menu4"><a href="#">(주) 두드림3</a></li>
+										<li class="depth2_menu category_menu5"><a href="#">(주) 두드림4</a></li>
+										<li class="depth2_menu category_menu1"><a href="#">(주) 두드림0</a></li>
+										<li class="depth2_menu category_menu2"><a href="#">(주) 두드림1</a></li>
+										<li class="depth2_menu category_menu3"><a href="#">(주) 두드림2</a></li>
+										<li class="depth2_menu category_menu4"><a href="#">(주) 두드림3</a></li>
+										<li class="depth2_menu category_menu5"><a href="#">(주) 두드림4</a></li>
+										<li class="depth2_menu category_menu1"><a href="#">(주) 두드림0</a></li>
+										<li class="depth2_menu category_menu2"><a href="#">(주) 두드림1</a></li>
+										<li class="depth2_menu category_menu3"><a href="#">(주) 두드림2</a></li>
+										<li class="depth2_menu category_menu4"><a href="#">(주) 두드림3</a></li>
+										<li class="depth2_menu category_menu5"><a href="#">(주) 두드림4</a></li>
+										<li class="depth2_menu category_menu1"><a href="#">(주) 두드림0</a></li>
+										<li class="depth2_menu category_menu2"><a href="#">(주) 두드림1</a></li>
+										<li class="depth2_menu category_menu3"><a href="#">(주) 두드림2</a></li>
+										<li class="depth2_menu category_menu4"><a href="#">(주) 두드림3</a></li>
+										<li class="depth2_menu category_menu5"><a href="#">(주) 두드림4</a></li>
+										<li class="depth2_menu category_menu1"><a href="#">(주) 두드림0</a></li>
+										<li class="depth2_menu category_menu2"><a href="#">(주) 두드림1</a></li>
+										<li class="depth2_menu category_menu3"><a href="#">(주) 두드림2</a></li>
+										<li class="depth2_menu category_menu4"><a href="#">(주) 두드림3</a></li>
+										<li class="depth2_menu category_menu5"><a href="#">(주) 두드림4</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--
+							2. 2뎁스 메뉴에서 하위메뉴가 존재하고, 링크 연결이 아닌 마우스 호버시 3뎁스 메뉴 노출 되는 경우
+						-->
+						<li class="depth1_menu category_menu2 detail_on">
+							<h3>◀ 매체사</h3>
+							<!-- 가. 2뎁스 메뉴, 3뎁스 메뉴 노출 카테고리 -->
+							<div class="depth2_category_box tinyscrollbar tinyscrollbar2">
+								<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+								<div class="viewport">
+									<ul class="depth2_category_list overview">
+										<!--
+											세부 메뉴가 존재하는 리스트는 class detail_on 를 가져야 class depth2_menu 를 호버했을 때 세부 메뉴가 노출 된다.
+										-->
+										<li class="depth2_menu category_menu1 detail_on">
+											<h4>◀ 화이트베이스1</h4>
+											<!-- 1) 3뎁스 노출 메뉴 -->
+											<div class="depth3_category_box tinyscrollbar tinyscrollbar3">
+												<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+												<div class="viewport">
+													<ul class="depth3_category_list overview">
+														<li class="depth3_menu category_menu1"><a href="#">(주) 화이트베이스0</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 화이트베이스1</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 화이트베이스2</a></li>
+														<li class="depth3_menu category_menu4"><a href="#">(주) 화이트베이스3</a></li>
+														<li class="depth3_menu category_menu1"><a href="#">(주) 화이트베이스0</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 화이트베이스1</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 화이트베이스2</a></li>
+														<li class="depth3_menu category_menu4"><a href="#">(주) 화이트베이스3</a></li>
+														<li class="depth3_menu category_menu1"><a href="#">(주) 화이트베이스0</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 화이트베이스1</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 화이트베이스2</a></li>
+														<li class="depth3_menu category_menu4"><a href="#">(주) 화이트베이스3</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="depth2_menu category_menu2 detail_on">
+											<h4>◀ 화이트베이스2</h4>
+											<!-- 1) 3뎁스 노출 메뉴 -->
+											<div class="depth3_category_box tinyscrollbar tinyscrollbar3">
+												<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+												<div class="viewport">
+													<ul class="depth3_category_list overview">
+														<li class="depth3_menu category_menu1"><a href="#">(주) 그와진</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 그와진2</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 그와진3</a></li>
+														<li class="depth3_menu category_menu4"><a href="#">(주) 그와진4</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="depth2_menu category_menu3 detail_on">
+											<h4>◀ 화이트베이스3</h4>
+											<!-- 1) 3뎁스 노출 메뉴 -->
+											<div class="depth3_category_box tinyscrollbar tinyscrollbar3">
+												<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+												<div class="viewport">
+													<ul class="depth3_category_list overview">
+														<li class="depth3_menu category_menu1"><a href="#">(주) 잔지발</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 잔지발2</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 잔지발3</a></li>
+														<li class="depth3_menu category_menu4"><a href="#">(주) 잔지발4</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="depth2_menu category_menu4 detail_on">
+											<h4>◀ 화이트베이스</h4>
+											<!-- 1) 3뎁스 노출 메뉴 -->
+											<div class="depth3_category_box tinyscrollbar tinyscrollbar3">
+												<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+												<div class="viewport">
+													<ul class="depth3_category_list overview">
+														<li class="depth3_menu category_menu1"><a href="#">(주) 무사이</a></li>
+														<li class="depth3_menu category_menu2"><a href="#">(주) 무사이2</a></li>
+														<li class="depth3_menu category_menu3"><a href="#">(주) 무사이4</a></li>
+														<li class="depth3_menu category_menu4 detail_on">
+															<h5>◀ 화이트베이스</h5>
+															<!-- 1) 3뎁스 노출 메뉴 -->
+															<div class="depth4_category_box tinyscrollbar tinyscrollbar4">
+																<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+																<div class="viewport">
+																	<ul class="depth4_category_list overview">
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu1"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu2"><a href="#">4뎁스 메뉴</a></li>
+																		<li class="depth4_menu category_menu3"><a href="#">4뎁스 메뉴</a></li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">
+					보유포인트 : <span class="point">0</span> 원
+				</div>
+				<div class="user_name">
+					<span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span>
+				</div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><img src="../images/common/logo.png" alt="2beon" /></h1>
+				<ul class="gnb_list">
+					<li class="menu1"><a href="#">회원관리</a></li>
+					<li class="menu2"><a href="#">매체관리</a></li>
+					<li class="menu3 on"><a href="#">캠페인관리</a></li>
+					<li class="menu4"><a href="#">보도자료관리</a></li>
+					<li class="menu5"><a href="#">포인트관리</a></li>
+					<li class="menu6"><a href="#">광고통계</a></li>
+					<li class="menu7"><a href="#">관리기능</a></li>
+					<li class="menu8"><a href="#">패키지관리</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1">
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체영역현황</a></li>
+							<li class="submenu_detail"><a href="#">정산관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인현황</a></li>
+							<li class="submenu_detail"><a href="#">캠페인 소재관리</a></li>
+							<li class="submenu_detail"><a href="#">소재 일괄등록</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">포인트관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 충전/차감</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB 등록현황</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 옵션통계</a></li>
+							<li class="submenu_detail"><a href="#">매체효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">카테고리 단가설정</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu8">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인 예약소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약소재</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container campaign_charge_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">캠페인관리</span>
+			<span class="depth2_name color_type3">캠페인 충전</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_campaign_charge.gif" alt="캠페인 충전" /></h2>
+			<p class="caption">각 매체의 계약형태에 따른 정산내용을 확인하실 수 있습니다.</p>
+		</div>
+		<table class="table_write_set1 table_headline2" summary="캠페인 충전">
+			<caption>캠페인 충전</caption>
+			<colgroup>
+				<col width="18%" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">보유 포인트</th>
+					<td>
+						<span class="color_type3 bold">2,000,000</span> <span class="mr_21">point</span>
+						<button class="btn_type3 color_type6">충전하기</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">캠페인 선택</th>
+					<td>
+						<select name="" id="" class="select_w184">
+							<option value="">선택</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">현재 포인트 <span style="font-weight:normal">(캠페인 잔액)</span></th>
+					<td>
+						<span class="bold">2,000,000</span> <span>point</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">충전금액 설정</th>
+					<td><input type="text" class="input_w184" /></td>
+				</tr>
+				<tr>
+					<th scope="row">충전 후 포인트</th>
+					<td>
+						<span class="bold">2,000,000</span> <span>point</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_box">
+			<button class="btn_type7 color_type7">취소</button>
+			<button class="btn_type5 color_type6">확인</button>
+		</div>
+
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+</body>
+</html>

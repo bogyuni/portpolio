@@ -1,0 +1,66 @@
+<?php
+	include('outline/head_tag.html');
+?>
+
+<div class="single_page_wrap">
+
+	<div class="sub_title_area">
+		<h3 class="cate_tit">
+			<div>로그인</div>
+		</h3>
+		<a href="" class="btn_back t_hide">back page</a>
+	</div>
+
+	<div class="sub_container">
+		<section class="login_section">
+			<div class="log_logo"><img src="images/content/log_logo.gif" alt="HelloNature"></div>
+
+			<form action="">
+				<fieldset>
+					<legend>log in</legend>
+					<input type="text" class="inst_input inst_id" placeholder="아이디를 입력하세요.">
+					<input type="password" class="inst_input inst_pw" placeholder="비밀번호를 입력하세요.">
+					<div class="row_con">
+						<label class="ch_label txt on" for="id_save_ch">
+							<input type="checkbox" name="" id="id_save_ch" checked><span></span>
+							아이디 저장
+						</label>
+						<label class="ch_label txt" for="auto_login_ch">
+							<input type="checkbox" name="" id="auto_login_ch" ><span></span>
+							자동로그인
+						</label>
+					</div>
+
+					<input type="submit" class="btn_login" value="로그인">
+
+					<ul class="log_list">
+						<li>
+							SNS계정으로 간편<br>로그인하세요.
+							<a href=""><img src="images/content/log_btn_facebook.gif" alt="facebook"></a>
+						</li>
+						<li>
+							헬로네이처 회원이<br>아니신가요?
+							<a href=""><img src="images/content/log_btn_join.gif" alt="join"></a>
+						</li>
+						<!--
+						<li>
+							계정정보를 모르세요?
+							<a href=""><img src="images/content/log_btn_idpw.gif" alt="find id, pw"></a>
+						</li>
+							아이디/비밀번호 찾기 페이지 추가예정
+						-->
+					</ul>
+
+				</fieldset>
+			</form>
+		</section>
+	</div>
+
+	<script>
+		$('body,html').css('height','100%');
+	</script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>주문하기</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+
+<div class="sub_container">
+	<section class="order_section">
+		<div class="ord_step_wrap ord_step_wrap1">
+			<div class="ord_step_con ord_step_con1 on">장바구니</div>
+			<div class="ord_step_con ord_step_con2"><span class="arr1"></span>주문/결제<span class="arr2"></span></div>
+			<div class="ord_step_con ord_step_con3">주문완료</div>
+		</div>
+
+		<div class="ord_prod_list_wrap">
+			<div class="select_btn_box">
+				<label class="ch_label txt on" for="check_cart_all">
+					<input type="checkbox" name="checkboxAll" id="check_cart_all" checked="checked"><span></span>
+					전체선택
+				</label>
+				<button class="btn_delete"><img src="images/common/btn_prod_del.png" alt="닫기이미지"> 선택상품삭제</button>
+			</div>
+
+			<ul class="cart_list">
+				<li class="cart_item">
+					<div class="in_item">
+						<label class="ch_label on" for="check_cart_item0">
+							<input type="checkbox" name="check_cart_item check_cart_item0" id="check_cart_item0" checked="checked">
+							<span></span>
+						</label>
+						<div class="prod_img">
+							<a href="">
+								<img src="images/temp/@prod_f.jpg" alt="">
+								<div class="caption_delay">1~2일 지연배송</div>
+							</a>
+						</div>
+						<div class="prod_info">
+							<a class="prod_name" href="">헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위</a>
+							<a class="prod_cost" href=""><em>999,999</em>원</a>
+							<span class="delivery_tag2">개별배송</span>
+							<div class="prod_qty_box">
+								<button class="btn_qty_m t_hide">수량감소</button>
+								<input class="prod_qty" type="text" readonly value="99">
+								<button class="btn_qty_p t_hide">수량증가</button>
+							</div>
+						</div>
+						<button class="btn_prod_delete t_hide">상품삭제</button>
+					</div>
+					<div class="prod_restore">
+						<div class="prod_img">
+							<a><img src="images/temp/@prod_f.jpg" alt=""></a>
+						</div>
+						<div class="inbox">
+							<p>삭제완료된 상품입니다.</p>
+							<button class="btn_restore t_hide">삭제 상품 복원</button>
+						</div>
+					</div>
+				</li>
+				<li class="cart_item">
+					<div class="in_item">
+						<label class="ch_label on" for="check_cart_item1">
+							<input type="checkbox" name="check_cart_item check_cart_item1" id="check_cart_item1" checked="checked">
+							<span></span>
+						</label>
+						<div class="prod_img">
+							<a href="">
+								<img src="images/temp/@prod_f.jpg" alt="">
+								<div class="caption_delay">1~2일 지연배송</div>
+							</a>
+						</div>
+						<div class="prod_info">
+							<a class="prod_name" href="">헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위</a>
+							<a class="prod_cost" href=""><em>999,999</em>원</a>
+							<span class="delivery_tag2">개별배송</span>
+							<div class="prod_qty_box">
+								<button class="btn_qty_m t_hide">수량감소</button>
+								<input class="prod_qty" type="text" readonly value="99">
+								<button class="btn_qty_p t_hide">수량증가</button>
+							</div>
+						</div>
+						<button class="btn_prod_delete t_hide">상품삭제</button>
+					</div>
+					<div class="prod_restore">
+						<div class="prod_img">
+							<a><img src="images/temp/@prod_f.jpg" alt=""></a>
+						</div>
+						<div class="inbox">
+							<p>삭제완료된 상품입니다.</p>
+							<button class="btn_restore t_hide">삭제 상품 복원</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="ord_payment_info">
+				<div class="inBox">
+					<div class="top_con">
+						<div class="row_con">
+							<div class="tit tit1">주문금액</div>
+							<div class="cost"><em>999,999</em>원</div>
+						</div>
+						<div class="row_con">
+							<div class="tit tit2">배송비</div>
+							<div class="cost"><em>999,999</em>원</div>
+						</div>
+					</div>
+					<div class="row_con row_con2">
+						<div class="tit tit4">예상결제금액</div>
+						<div class="cost total"><em>999,999</em>원</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart_btn_box">
+			<button type="button" class="btn_cart btn_delivery_seting">정기배송</button>
+			<input type="submit" class="btn_cart btn_submit" value="주문하기">
+		</div>
+
+
+	</section>
+</div>
+
+<div class="popup_delivery_seting layer_window">
+	<div class="top_tit">
+		예약배송주문
+		<button type="button" class="btn_close t_hide">레이어닫기</button>
+	</div>
+
+	<div class="bot_con">
+		<div class="set_order_step set_order_step1">
+			<h5 class="order_box_tit">STEP.1 받는 날 선택</h5>
+			<div class="select_calendar_inBox">
+				<!-- 달력 모듈 -->
+			</div>
+		</div>
+
+		<div class="set_order_step set_order_step2">
+			<h5 class="order_box_tit">STEP.2 받는 횟수 선택</h5>
+			<table class="ch_table ch_table1">
+				<tbody>
+					<tr>
+						<td class="on">1회</td>
+						<td>2회</td>
+						<td>3회</td>
+						<td>4회</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="set_order_step set_order_step3">
+			<h5 class="order_box_tit">STEP.3 받는 주기 선택</h5>
+			<table class="ch_table ch_table2">
+				<tbody>
+					<tr>
+						<td class="on">매주</td>
+						<td>격주</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="set_order_step set_order_step4">
+			<h5 class="order_box_tit">STEP.4 예약 배송정보 확인</h5>
+			<table class="ch_table ch_table3">
+				<tbody>
+					<tr>
+						<th>받는날</th>
+						<td>
+							<span id="regular_delivery_msg_1">2016-02-13 토요일</span><br> <span class="sp2">(배송가능 지역을 확인하세요.)</span>
+						</td>
+					</tr>
+					<tr>
+						<th>배송횟수</th>
+						<td><span id="regular_delivery_msg_2">1회</span> 배송</td>
+					</tr>
+					<tr>
+						<th>배송주기</th>
+						<td><span id="regular_delivery_msg_3">매주</span> 배송</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="set_order_step">
+			<h5 class="order_box_tit order_box_tit2">예약배송 안내사항</h5>
+			<div class="odrer_info">
+				<table class="ch_table">
+					<caption>예약배송 안내사항</caption>
+					<tbody>
+						<tr>
+							<th>정기배송비</th>
+						</tr>
+						<tr>
+							<td>
+								<p>4만원 이상 <span>- 무료배송</span></p>
+								<p>3만원 이상 ~ 4만원 미만 <span>- <em>1,000</em>원</span></p>
+								<p>3만원 미만 <span>- <em>3,000</em>원</span></p>
+								<br>
+								<p>* 금액은 전체 주문금액 기준</p>
+							</td>
+						</tr>
+						<tr>
+							<th>배송일 선택</th>
+						</tr>
+						<tr>
+							<td>
+								<p>서울.경기(00시 ~ 24시 주문)</p>
+								<p>- 주문하신 다음날로 선택가능</p>
+								<p>그 외 지역(00시 ~ 16시 주문)</p>
+								<p>- 주문하신 다음날로 선택가능</p>
+							</td>
+						</tr>
+						<tr>
+							<th>수령 후 남은 배송일 변경</th>
+						</tr>
+						<tr>
+							<td>
+								<p>고객센터 : 1644 - 4339</p>
+								<p>카카오톡 ID : ‘헬로네이처’ 친구추가</p>
+								<p>홈페이지 : 1:1 문의 게시판을 이용하시면 보다 쉽고 편리하게 변경이 가능하십니다.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<button type="button" class="btn_close btn_ord_comp">확인</button>
+
+	</div>
+</div>
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+<script>
+	$(function (){
+		$('.ch_table1 td,.ch_table2 td').click(function (){
+			$(this).siblings().removeClass('on');
+			$(this).addClass('on');
+		});
+
+		$('.btn_delivery_seting').click(function (){
+			$('html,body').addClass('popon');
+			$('.popup_delivery_seting').show();
+		});
+	});
+</script>
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 2beon 투비온 - 클라이언트 계정관리 시스템</title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">회원관리</a></li>
+					<li class="menu2"><a href="#">매체관리</a></li>
+					<li class="menu3"><a href="#">캠페인</a></li>
+					<li class="menu4"><a href="#">광고주리포트</a></li>
+					<li class="menu5"><a href="#">포인트</a></li>
+					<li class="menu6"><a href="#">관리자</a></li>
+					<li class="menu7"><a href="#">패키지</a></li>
+					<li class="menu8"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on"></li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+							<li class="submenu_detail"><a href="#">Targetview 소재</a></li>
+							<li class="submenu_detail"><a href="#">보도자료관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">Targetview 통계</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">패키지 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+							<li class="submenu_detail"><a href="#">Link상품 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu8">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+							<li class="submenu_detail"><a href="#">환불관리</a></li>
+							<li class="submenu_detail"><a href="#">광고주세금계산서</a></li>
+							<li class="submenu_detail"><a href="#">매체세금계산서</a></li>
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">매체지급</a></li>
+							<li class="submenu_detail"><a href="#">SP회계관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container report_make_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">캠페인</span>
+			<span class="depth2_name color_type3">보도자료관리</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_report_make.gif" alt="보도자료작성" /></h2>
+			<p class="caption">보도자료를 작성하실 수 있습니다.</p>
+		</div>
+		<div class="composition_obj_article type2">
+			<div class="category_group">
+				<dl class="mr_21">
+					<dt>와이드커버리지</dt>
+					<dd>
+						<span class="color_type3 bold mr_21">작성완료</span>
+						<!--<span class="color_type3 bold mr_21">발행완료</span>-->
+
+						<!-- 작성완료 -->
+						<a href="javascript:popuplayerOpen(1)" class="btn_type_set btn_type_set_s btn_type3 color_type6">발행처리</a>
+
+
+
+						<!-- 발행완료 -->
+						<a href="javascript:popuplayerOpen(2)" class="btn_type_set btn_type_set_s btn_type3 color_type6">발행현황</a>
+						<a href="javascript:alert('링크 주소 입력')" class="btn_type_set btn_type_set_s btn_type1 color_type1">보기</a>
+					</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>담당자 : </dt>
+					<dd>정보석</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>광고주 : </dt>
+					<dd>하이킥(sss12512)</dd>
+				</dl>
+			</div>
+		</div>
+		<table class="table_write_set1 table_headline2" summary="보도자료작성">
+			<caption>보도자료작성</caption>
+			<colgroup>
+				<col width="18%" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">기사제목</th>
+					<td>서민 대출지원 “세이브론”에서 최대5000만원까지.</td>
+				</tr>
+				<tr>
+					<th scope="row">부제목</th>
+					<td>서민 대출지원 “세이브론”에서 최대5000만원까지.</td>
+				</tr>
+				<tr>
+					<th scope="row">섹션분류</th>
+					<td>트렌드</td>
+				</tr>
+				<tr>
+					<th scope="row">기자명</th>
+					<td>김은혜</td>
+				</tr>
+				<tr>
+					<th scope="row">이메일</th>
+					<td>dssss@dksjkds.com</td>
+				</tr>
+				<tr>
+					<th scope="row">작성일시</th>
+					<td>2014-10-11 15:22:22</td>
+				</tr>
+				<tr>
+					<th scope="row">본문</th>
+					<td>
+						<div class="report_content_txt">56세 이병택씨, 2008년 그는 검사 결과 악성 뇌종양이라는 진단을 받았다. 충격적인 사실은 “종양의 위치가 절제가 힘든 위치에 있어 수술과 항암제 또한 소용이 없다”는 의사의 이야기와 함께 1년 시한부 선고를 받게 되었다.
+
+							그렇게 하루하루를 보내고 있던 그에게 아내 49세 김점순씨는 언니의 조언으로 뇌종양에 좋다는 와송을 추천 받아, 지푸라기라도 심정으로 남편 이병택씨에게 먹이기 시작했고 그 결과는 놀라웠다.
+
+							이병택씨는“검진을 받으러 병원에 갔더니, 뇌종양이 거짓말처럼 없어졌다고 했다. 이제는 살았구나 라는 생각에 눈물부터 나왔다.”또한 \"100%는 아니지만 99% 와송을 먹어 좋아진 것 같다.\"고 채널A “신 대동여지도” 인터뷰에서 밝혔다.
+
+							최근 각종 매체를 통해 항암 약초로 알려진 ‘와송(瓦松)’이 탁월한 항암효과를 지녔다는 사실이 국내 연구진에 의해 입증되면서 와송을 주목하는 시선이 급격히 늘고 있다.
+
+							그렇게 하루하루를 보내고 있던 그에게 아내 49세 김점순씨는 언니의 조언으로 뇌종양에 좋다는 와송을 추천 받아, 지푸라기라도 심정으로 남편 이병택씨에게 먹이기 시작했고 그 결과는 놀라웠다.
+
+							이병택씨는“검진을 받으러 병원에 갔더니, 뇌종양이 거짓말처럼 없어졌다고 했다. 이제는 살았구나 라는 생각에 눈물부터 나왔다.”또한 \"100%는 아니지만 99% 와송을 먹어 좋아진 것 같다.\"고 채널A “신 대동여지도” 인터뷰에서 밝혔다.
+
+							최근 각종 매체를 통해 항암 약초로 알려진 ‘와송(瓦松)’이 탁월한 항암효과를 지녔다는 사실이 국내 연구진에 의해 입증되면서 와송을 주목하는 시선이 급격히 늘고 있다.
+
+							그렇게 하루하루를 보내고 있던 그에게 아내 49세 김점순씨는 언니의 조언으로 뇌종양에 좋다는 와송을 추천 받아, 지푸라기라도 심정으로 남편 이병택씨에게 먹이기 시작했고 그 결과는 놀라웠다.
+
+							이병택씨는“검진을 받으러 병원에 갔더니, 뇌종양이 거짓말처럼 없어졌다고 했다. 이제는 살았구나 라는 생각에 눈물부터 나왔다.”또한 \"100%는 아니지만 99% 와송을 먹어 좋아진 것 같다.\"고 채널A “신 대동여지도” 인터뷰에서 밝혔다.
+
+							최근 각종 매체를 통해 항암 약초로 알려진 ‘와송(瓦松)’이 탁월한 항암효과를 지녔다는 사실이 국내 연구진에 의해 입증되면서 와송을 주목하는 시선이 급격히 늘고 있다.
+
+							그렇게 하루하루를 보내고 있던 그에게 아내 49세 김점순씨는 언니의 조언으로 뇌종양에 좋다는 와송을 추천 받아, 지푸라기라도 심정으로 남편 이병택씨에게 먹이기 시작했고 그 결과는 놀라웠다.
+
+							이병택씨는“검진을 받으러 병원에 갔더니, 뇌종양이 거짓말처럼 없어졌다고 했다. 이제는 살았구나 라는 생각에 눈물부터 나왔다.”또한 \"100%는 아니지만 99% 와송을 먹어 좋아진 것 같다.\"고 채널A “신 대동여지도” 인터뷰에서 밝혔다.
+
+							최근 각종 매체를 통해 항암 약초로 알려진 ‘와송(瓦松)’이 탁월한 항암효과를 지녔다는 사실이 국내 연구진에 의해 입증되면서 와송을 주목하는 시선이 급격히 늘고 있다.
+
+							그렇게 하루하루를 보내고 있던 그에게 아내 49세 김점순씨는 언니의 조언으로 뇌종양에 좋다는 와송을 추천 받아, 지푸라기라도 심정으로 남편 이병택씨에게 먹이기 시작했고 그 결과는 놀라웠다.
+
+							이병택씨는“검진을 받으러 병원에 갔더니, 뇌종양이 거짓말처럼 없어졌다고 했다. 이제는 살았구나 라는 생각에 눈물부터 나왔다.”또한 \"100%는 아니지만 99% 와송을 먹어 좋아진 것 같다.\"고 채널A “신 대동여지도” 인터뷰에서 밝혔다.
+
+							최근 각종 매체를 통해 항암 약초로 알려진 ‘와송(瓦松)’이 탁월한 항암효과를 지녔다는 사실이 국내 연구진에 의해 입증되면서 와송을 주목하는 시선이 급격히 늘고 있다.
+						</div>
+						<button class="btn_type_set btn_type_set_s btn_type1 btn_report_content">본문 더보기</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<span style="margin-right:20px;">옵션</span>
+						<button class="btn_type_set btn_type_set_s btn_type3 color_type6 btn_report_view_option">수정</button>
+					</th>
+					<td>
+						<div class="option_box">
+							<h4>사용자정보 DB입력폼</h4>
+							<div class="option_data_box">
+								<!--
+								
+									완성 된 DB 입력 폼
+								
+								-->
+							</div>
+						</div>
+						<div class="option_box">
+							<h4>키워드 검색</h4>
+							<div class="option_data_box">
+								<dl>
+									<dt>검색종류</dt>
+
+									<dd class="report_data_view_con normalSelect">네이버</dd>
+
+									<dd class="report_data_modify_con report_data_modify_select">
+										<input type="radio" name="report_data_radio_ch" class="report_data_radio_ch1" value="와이드 커버리지"> <label for="" style="margin-right:40px;">와이드 커버리지</label>
+										<input type="radio" name="report_data_radio_ch" class="report_data_radio_ch2" value="네이버"> <label for="">네이버</label>
+									</dd>
+
+								</dl>
+								<dl>
+									<dt>표시될 키워드</dt>
+
+									<dd class="report_data_view_con normalText">키워드, 키워드, 키워드, 키워드</dd>
+
+									<dd class="report_data_modify_con"><input type="text" class="input_w534" /></dd>
+
+								</dl>
+								<dl>
+									<dt>검색결과 URL</dt>
+
+									<dd class="report_data_view_con"><a href="https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=" target="_blank">https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=</a></dd>
+
+									<dd class="report_data_modify_con"><input type="text" class="input_w534" /></dd>
+
+								</dl>
+							</div>
+						</div>
+						<div class="option_box">
+							<h4>홈페이지 링크</h4>
+							<div class="option_data_box">
+								<dl>
+									<dt>표시될 URL</dt>
+
+									<dd class="report_data_view_con"><a href="https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=" target="_blank">https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=</a></dd>
+
+									<dd class="report_data_modify_con"><input type="text" class="input_w534" /></dd>
+
+								</dl>
+								<dl>
+									<dt>연결될 URL</dt>
+
+									<dd class="report_data_view_con"><a href="https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=" target="_blank">https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=https://www.2beon.co.kr/news/news_read.php?cvno=1167&k=&f=&st=&p=</a></dd>
+
+									<dd class="report_data_modify_con"><input type="text" class="input_w534" /></dd>
+
+								</dl>
+							</div>
+						</div>
+						<div class="option_box">
+							<h4>전화연결</h4>
+							<div class="option_data_box">
+								<dl>
+									<dt>전화번호</dt>
+
+									<dd class="report_data_view_con normalText">070-5555-9999</dd>
+
+									<dd class="report_data_modify_con"><input type="text" class="input_w224" /></dd>
+
+								</dl>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_box">
+			<a href="" class="btn_type_set btn_type_set_b btn_type5 color_type6 fl_right">목 록</a>
+		</div>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+<div class="background_layer"></div>
+
+<!-- 발행 처리 팝업 -->
+<div class="popuplayer popuplayer1 report_view_popup">
+	<div class="pop_header">
+		<h1>발행처리</h1>
+	</div>
+	<div class="pop_content">
+		<table>
+			<colgroup>
+				<col width="110">
+				<col width="*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>최근 갱신일</th>
+					<td>2014-11-11 15:22:33</td>
+				</tr>
+				<tr>
+					<th>발행완료 URL</th>
+					<td><input type="text" class="input_w420"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_box">
+			<a class="btn_type_set btn_type_set_b btn_type7 color_type1 btn_close">최 소</a>
+			<a href="" class="btn_type_set btn_type_set_b btn_type5 color_type6">확 인</a>
+		</div>
+	</div>
+</div>
+
+<!-- 발행 현황 팝업 -->
+<div class="popuplayer popuplayer2 report_view_popup">
+	<div class="pop_header">
+		<h1>발행처리</h1>
+	</div>
+	<div class="pop_content">
+		<table>
+			<colgroup>
+				<col width="110">
+				<col width="*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>최근 갱신일</th>
+					<td>2014-11-11 15:22:33</td>
+				</tr>
+				<tr>
+					<th>발행완료 URL</th>
+					<td><a href="http://www.widecoverage.co.kr/news/article.html?no=22232" target="_blank">http://www.widecoverage.co.kr/news/article.html?no=22232http://www.widecoverage.co.kr/news/article.html?no=22232http://www.widecoverage.co.kr/news/article.html?no=22232http://www.widecoverage.co.kr/news/article.html?no=22232http://www.widecoverage.co.kr/news/article.html?no=22232http://www.widecoverage.co.kr/news/article.html?no=22232</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_box">
+			<a class="btn_type_set btn_type_set_b btn_type7 color_type1 btn_close">최 소</a>
+			<a href="" class="btn_type_set btn_type_set_b btn_type5 color_type6">확 인</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr" xml:lang="kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> TARGETVIEW - 광고관리자 </title>
+	<meta name="Author" content="ADtive innovation" />
+	<meta name="Keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		.calendar_box{width:196px;}
+		.calendar_box .top_con{position:relative;text-align:center;height:37px;border-bottom:1px solid #4f5053;background:url('../images/bg/bg_header.gif') repeat;}
+		.calendar_box .top_con .btn_img{position:absolute;top:8px;}
+		.calendar_box .top_con .btn_arrow_prev{left:13px;}
+		.calendar_box .top_con .btn_arrow_next{right:13px;}
+		.calendar_box .top_con .date_num{color:#fff;font-weight:bold;font-size:16px;padding-top:9px;}
+		.calendar_box .bottom_con{padding:5px;padding-bottom:10px;border:3px solid #46484b;background:#fafafa;}
+		.calendar_box .bottom_con .carlendar_table{margin:0 auto;}
+		.calendar_box .bottom_con .carlendar_table th{padding:5px;color:#555555;}
+		.calendar_box .bottom_con .carlendar_table td{line-height:1;text-align:center;color:#999999;padding:5px;border:1px solid #e3e3e3;background:#fff;cursor:pointer;}
+		.calendar_box .bottom_con .carlendar_table td:hover{color:#000;background:#c5c5c5;}
+		.calendar_box .bottom_con .carlendar_table .sunday{color:#ff0000;}
+		.calendar_box .bottom_con .carlendar_table .selected_day{color:#fff;background:#ff0000;}
+
+	</style>
+</head>
+<body>
+
+<div class="calendar_box">
+	<div class="top_con">
+		<img onclick="" src="../images/btn/btn_arrow_prev.png" alt="이전" class="btn_img btn_arrow_prev" />
+		<img onclick="" src="../images/btn/btn_arrow_next.png" alt="다음" class="btn_img btn_arrow_next" />
+		<div class="date_num"><span class="year">2013</span>.<span class="month">05</span></div>
+	</div>
+	<div class="bottom_con">
+		<table class="carlendar_table" summary="calendar">
+			<caption>calendar</caption>
+			<colgroup>
+				<col width="23" />
+				<col width="23" />
+				<col width="23" />
+				<col width="23" />
+				<col width="23" />
+				<col width="23" />
+				<col width="23" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="sunday">일</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+					<th>토</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="sunday">01</td>
+					<td>02</td>
+					<td>03</td>
+					<td>04</td>
+					<td>05</td>
+					<td>06</td>
+					<td>07</td>
+				</tr>
+				<tr>
+					<td class="sunday">08</td>
+					<td>09</td>
+					<td>10</td>
+					<td>11</td>
+					<td class="selected_day">12</td>
+					<td>13</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td class="sunday">15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td class="sunday">22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td class="sunday">29</td>
+					<td>30</td>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

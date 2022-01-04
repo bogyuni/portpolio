@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container package_set_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">패키지</span>
+			<span class="depth2_name color_type3">패키지 설정</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_package_set.gif" alt="패키지 설정" /></h2>
+			<p class="caption">패키지를 설정하고 판매하실 수 있습니다.</p>
+		</div>
+		<div class="composition_obj_article">
+			<div class="category_group">
+				<dl class="mr_21">
+					<dt>형태</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">전체</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>판매상태</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">전체</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>매체바로가기</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">매체선택</option>
+						</select>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="material_area_article">
+			<h3>전체 슬롯</h3>
+			<div class="material_content">
+				<div class="material_table_box">
+					<table summary="슬롯 제목" class="title_table">
+						<caption>슬롯 제목</caption>
+						<colgroup>
+							<col width="103" />
+							<col width="200" />
+							<col width="220" />
+							<col width="93" />
+							<col width="99" />
+							<col width="78" />
+							<col width="140" />
+							<col width="117" />
+							<col width="113" />
+							<col width="112" />
+							<col width="*" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">슬롯선택</th>
+								<th scope="col">매체명</th>
+								<th scope="col">영역명</th>
+								<th scope="col">판매/구좌</th>
+								<th scope="col">SLOT/구좌</th>
+								<th scope="col">형태</th>
+								<th scope="col">슬롯단가</th>
+								<th scope="col">예상PV<br />(일평균)</th>
+								<th scope="col">예상click<br />(일평균)</th>
+								<th scope="col">예상 CTR</th>
+								<th scope="col">예상 CPC</th>
+							</tr>
+						</thead>
+					</table>
+					<div class="data_table_box">
+						<table summary="슬롯 내용">
+							<caption>슬롯 내용</caption>
+							<colgroup>
+								<col width="103" />
+								<col width="200" />
+								<col width="220" />
+								<col width="93" />
+								<col width="99" />
+								<col width="78" />
+								<col width="140" />
+								<col width="117" />
+								<col width="113" />
+								<col width="112" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="btn_allview" title="테이블 영역 확장">▼</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="material_area_article">
+			<h3>전체 슬롯</h3>
+			<div class="material_content">
+				<div class="material_table_box">
+					<table summary="슬롯 제목" class="title_table">
+						<caption>슬롯 제목</caption>
+						<colgroup>
+							<col width="103" />
+							<col width="200" />
+							<col width="220" />
+							<col width="93" />
+							<col width="99" />
+							<col width="78" />
+							<col width="140" />
+							<col width="117" />
+							<col width="113" />
+							<col width="112" />
+							<col width="*" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">슬롯선택</th>
+								<th scope="col">매체명</th>
+								<th scope="col">영역명</th>
+								<th scope="col">판매/구좌</th>
+								<th scope="col">SLOT/구좌</th>
+								<th scope="col">형태</th>
+								<th scope="col">슬롯단가</th>
+								<th scope="col">예상PV<br />(일평균)</th>
+								<th scope="col">예상click<br />(일평균)</th>
+								<th scope="col">예상 CTR</th>
+								<th scope="col">예상 CPC</th>
+							</tr>
+						</thead>
+					</table>
+					<div class="data_table_box">
+						<table summary="슬롯 내용">
+							<caption>슬롯 내용</caption>
+							<colgroup>
+								<col width="103" />
+								<col width="200" />
+								<col width="220" />
+								<col width="93" />
+								<col width="99" />
+								<col width="78" />
+								<col width="140" />
+								<col width="117" />
+								<col width="113" />
+								<col width="112" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="slot_count">0</span>
+										<button class="btn_plus_minus btn_plus">+</button>
+										<button class="btn_plus_minus btn_minus">-</button>
+									</td>
+									<td>TV 리포트</td>
+									<td>우측텍스트</td>
+									<td><span class="color_type3 bold">40</span> / 50</td>
+									<td>10 / 50</td>
+									<td>Thumb</td>
+									<td>2,000,000</td>
+									<td>1,000,000</td>
+									<td>50</td>
+									<td>0.0021%</td>
+									<td>250원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="btn_allview" title="테이블 영역 확장">▼</button>
+					<div class="total_table_box">
+						<table summary="total">
+							<caption>total</caption>
+							<colgroup>
+								<col width="618" />
+								<col width="119" />
+								<col width="117" />
+								<col width="113" />
+								<col width="112" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<td>
+									<span class="color_type3">TOTAL</span>
+									<span>(TEXT : 160,000원 / image : 0원)</span>
+								</td>
+								<td>2,000,000</td>
+								<td>2,000,000</td>
+								<td>500</td>
+								<td>0.0235%</td>
+								<td>250원</td>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<table summary="패키지 입력" class="table_write_set1 table_headline">
+			<caption>패키지 입력</caption>
+			<colgroup>
+				<col width="18%" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>패키지 판매금액</th>
+					<td><input type="text" class="input_w184" /> 만원</td>
+				</tr>
+				<tr>
+					<th>패키지 이름</th>
+					<td><input type="text" class="input_w184" /> <span class="color_type4">(담당자 이름이 자동 표시됩니다)</span></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_box">
+			<a href="" class="btn_type_set btn_type_set_b btn_type7">뒤 로</a>
+			<a href="" class="btn_type_set btn_type_set_b btn_type5 color_type6">저 장</a>
+		</div>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+</body>
+</html>

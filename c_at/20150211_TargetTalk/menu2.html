@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>TM 채팅 서비스 - 관리자</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<!--[if lt IE 9]>
+	<script>alert('Fucking! your browser! Fuckyou IE!!\n\n 해석:나는 당신의 썩어빠진 브라우저를\n 지원 할 생각이 없습니다.')</script>
+	<style type="text/css">.popup_waring{display:block}</style>
+	<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="wrap">
+	<div class="sideMenu_area">
+		<button class="btn_sideOut" type="button"></button>
+		<article class="user_box">
+			<div class="user_icon"><img src="images/user_icon_default.gif" alt=""></div>
+			<div class="user_id">userID</div>
+			<div class="user_name">서보균</div>
+
+			<div class="user_status_box">
+				<div class="user_status set2">
+					<div class="status_txt">상담대기</div>
+					<div class="arrow_con">close</div>
+				</div>
+				<ul class="user_status_list">
+					<li value="1">상담가능</li>
+					<li value="2">상담대기</li>
+					<li value="3">공석</li>
+				</ul>
+			</div>
+		</article>
+
+		<nav class="sideMenu">
+			<ul class="menu_list">
+				<li class="menu1">
+					<a href="" class="menu_anchor">실시간 상담</a>
+				</li>
+				<li class="menu2 on">
+					<a href="" class="menu_anchor">예약명단</a>
+				</li>
+				<li class="menu3">
+					<a href="" class="menu_anchor">히스토리</a>
+				</li>
+				<li class="menu4">
+					<a href="" class="menu_anchor">광고셋팅</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="content_area">
+		<header class="head_content">
+			<h1 class="company_tit">Adtive Innovation</h1>
+			<div class="right_con">
+				<button type="button" class="btn_logout">로그아웃</button>
+				<span class="date_txt">2015.02.23</span>
+				<span class="time_txt">AM 11:11</span>
+				<span class="week_txt">금요일</span>
+			</div>
+		</header>
+
+		<div class="container" value="0">
+			<section class="main_content">
+				<div class="reserveList sub_wrap">
+					<h3 class="menu_title">예약명단</h3>
+					<article class="topContent_box">
+						<a href="#" class="btn_link btn_previousDay">전날</a>
+						<a href="#" class="btn_link btn_nextDay">다음날</a>
+						<button class="btn_table btn_prevTable">이전 리스트</button>
+						<span class="txt_page">Page</span>
+						<span class="page_count">1</span>
+						<span class="txt_pageCount">of 7</span>
+						<button class="btn_table btn_nextTable">다음 리스트</button>
+					</article>
+					<article class="botContent_box">
+						<table class="table_set1">
+							<caption>예약자 리스트 테이블</caption>
+							<colgroup>
+								<col style="width:10%;">
+								<col style="width:15%;">
+								<col style="width:22%;">
+								<col style="width:30%;">
+								<col style="width:13%;">
+								<col style="width:10%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>순서</th>
+									<th>이름</th>
+									<th>전화번호</th>
+									<th>예약시간</th>
+									<th>상태</th>
+									<th>메모</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status1">완료</button></td>
+									<td>
+										<div class="td_memo_box">
+											<button type="button" class="btn_memoPopup">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>seobogyun</td>
+									<td>010-6666-0000</td>
+									<td>02.13 (금요일) AM 08:00</td>
+									<td><button class="btn_status btn_status2">요청중</button></td>
+									<td>
+										<div class="td_memo_box">
+											<!-- 메모장에 내용이 있을 경우 버튼에 on class 추가-->
+											<button type="button" class="btn_memoPopup on">메모창 버튼</button>
+											<div class="chat_memoBox bot">
+												<textarea name="" class="inst_memo"></textarea>
+												<div class="bot_btn_box"><button type="button" class="btn_memoConfirm">확인</button></div>
+												<div class="arrow_con"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+				</div>
+			</section>
+
+			<section class="customer_content">
+				<article class="customer_article customer_now">
+					<h4 class="customer_title">실시간 상담 명단<span class="customer_count">30</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>상담 시작하기</li>
+									<li class="btn_reserveOpen"><span class="bl_list"><span></span></span>예약 고객 설정</li>
+									<li><span class="bl_list"><span></span></span>상담종료</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="customer_article customer_end">
+					<h4 class="customer_title">상담 종료 명단<span class="customer_count">390</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>상담 시작하기</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="customer_article customer_call">
+					<h4 class="customer_title">바로 상담 요청<span class="customer_count">1</span></h4>
+					<ul class="customer_list">
+						<li class="customer_con">
+							<div class="customer_name">서보균</div>
+							<div class="customer_tell">010-1979-1993</div>
+							<div class="customer_time">AM 10:11</div>
+							<div class="customer_set_box">
+								<div class="arrow_con"></div>
+								<ul class="customer_set_list">
+									<li><span class="bl_list"><span></span></span>전화 상담하기</li>
+									<li class="btn_reserveOpen"><span class="bl_list"><span></span></span>예약 고객 설정</li>
+									<li><span class="bl_list"><span></span></span>전화 상담종료</li>
+									<li><span class="bl_list"><span></span></span>완전 삭제하기</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+
+		<footer class="foot_content">
+			<p class="copyright">Copyright (c) 2015 adtive innovation. All rights reserved.</p>
+		</footer>
+	</div>
+
+</div>
+
+<div class="popup_layer customer_reserve">
+	<div class="title_box">
+		<h5>예약고객설정</h5>
+		<button type="button" class="btn_close">창닫기</button>
+	</div>
+	<div class="bottom_box">
+		<form action="">
+			<fieldset>
+				<legend>예약고객 정보입력</legend>
+				<div class="inst_con"><input type="text" class="inst_name" placeholder="이름"></div>
+				<div class="inst_con">
+					<select name="" id="" class="select_tell">
+						<option value="010">010</option>
+						<option value="010">016</option>
+						<option value="010">017</option>
+						<option value="010">018</option>
+						<option value="010">019</option>
+					</select>
+					<span>-</span>
+					<input type="text" class="inst_tell" maxlength="4">
+					<span>-</span>
+					<input type="text" class="inst_tell" maxlength="4">
+				</div>
+				<div class="inst_con">
+					<div class="calendar_con"><span class="date_text">예약시간</span><button type="button" class="btn_calendarOpen">날짜 입력버튼</button></div>
+				</div>
+				<div class="inst_con"><textarea class="inst_reserve"></textarea></div>
+				<div class="btn_box">
+					<button type="button" class="btn_close btn_cancel">취소</button>
+					<button type="button" class="btn_save">저장</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<div class="popup_waring">
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신의 브라우저는 구형입니다.<br>
+	당신은 구형입니다... 음??<br>
+</div>
+</body>
+</html>

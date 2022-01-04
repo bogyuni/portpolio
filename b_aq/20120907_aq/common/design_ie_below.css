@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+#container .content_list_area .item_list li .iconbox .mask2{
+	background:none;
+}
+#container .content_list_area .item_list li a:hover .iconbox .mask2{
+	background: url('../images/bg/bg_mask2_2.png') 0 0 no-repeat;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+	zoom: 1;
+}
+#container .content_list_area .item_list li a:hover + .ico_view{
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+	zoom: 1;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>TM 채팅 서비스</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script_parent_i.js"></script>
+<style type="text/css">
+	.wrap{height:auto;background:url(sampleimg/bg_wrapper.gif) repeat;}
+	.head{background:url(sampleimg/bg_head.gif) repeat-x;}
+	.inhead{width:1176px;margin:0 auto;}
+	.content_wrap{width:1200px;margin:0 auto;padding-top:30px;overflow:hidden;}
+	.aside{float:left;}
+	.content{float:right;position:relative;width:998px;height:2500px;background:url(sampleimg/content.jpg) no-repeat;}
+	.foot{background:url(sampleimg/bg_foot.gif) repeat-x;}
+	.infoot{width:1198px;margin:0 auto;}
+	#targetTalk_frame_i{position:absolute;top:1312px;left:30px;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="head">
+		<div class="inhead"><img src="sampleimg/head.gif" alt=""></div>
+	</div>
+	<div class="container" style="padding:0;">
+		<div class="content_wrap">
+			<div class="aside"><img src="sampleimg/aside_left.jpg" alt=""></div>
+			<div class="content">
+
+				<!--채팅 iframe 랩퍼 태그-->
+				<div id="targetTalk_frame_i">
+					<iframe src="frame_w_i.html" width="352" height="474" frameborder="0"></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<div class="infoot"><img src="sampleimg/foot.gif" alt="foot.gif"></div>
+	</div>
+</div>
+
+<div class="popup_layer control_box">
+	<div class="title_box">
+		<h5>예약고객설정</h5>
+		<!--<button type="button" class="btn_close">창닫기</button>-->
+	</div>
+	<div class="bottom_box">
+		<p>채팅 시스템 설정 값 변경</p>
+		<button type="button" class="btn_firstAdviserOnOff">상담원 배정 [전]</button><br>
+		<button type="button" class="btn_chatUserOnOff">채팅 대상자 [상담원]</button>
+	</div>
+</div>
+
+
+
+
+<!--2015-03-17-->
+<div class="targettalk_banner_box">
+	<div class="targettalk_banner">
+		<div class="arrow_con">아래로 이동</div>
+		<div class="targettalk_banner_content">실시간 채팅상담</div>
+		<button class="btn_targettalk_close">배너닫기</button>
+	</div>
+</div>
+<!--2015-03-17-->
+
+</body>
+</html>

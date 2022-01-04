@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KIA 2019 AO</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/TweenMax.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+<body>
+<div class="desktop">
+	<main class="wrapper kv_wrapper">
+		<div class="kv chapter1">
+			<a class="btn_kv" data-value="1"></a>
+			<div class="kv_bg">
+				<h1 class="logo"><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+			</div>
+			<div class="dim"></div>
+			<div class="kv_text_area">
+				<span class="kv_number">
+					<img src="./images/kv_num1.png" alt="">
+				</span>
+				<h2 class="kv_title">
+					<img src="./images/kv_title1.png" alt="">
+				</h2>
+			</div>
+			<div class="kv_text_full_area">
+				<h2>
+					<span>
+						<img src="./images/AO_site_01_kv_text3_2.png" alt="">
+					</span>
+					<img src="./images/AO_site_01_kv_text4.png" alt="">
+				</h2>
+			</div>
+			<div class="btn_cont">
+				<span><img src="./images/side_menu_ico.png" alt=""></span>
+				<p><img src="./images/mainCon_btn1.png" alt=""></p>
+			</div>
+			<button class="icon_scroll">
+				<img src="./images/scroll.png" alt="">
+			</button>
+		</div>
+		<div class="kv chapter2">
+			<a class="btn_kv" data-value="2"></a>
+			<div class="kv_bg">
+				<h1 class="logo"><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+			</div>
+			<div class="dim"></div>
+			<div class="kv_text_area">
+				<span class="kv_number">
+					<img src="./images/kv_num2.png" alt="">
+				</span>
+				<h2 class="kv_title">
+					<img src="./images/kv_title2.png" alt="">
+				</h2>
+			</div>
+			<div class="kv_text_full_area">
+				<h2><img src="./images/AO_site_02_kv_text.png" alt=""></h2>
+			</div>
+			<div class="btn_cont">
+				<span><img src="./images/side_menu_ico.png" alt=""></span>
+				<p><img src="./images/mainCon_btn2.png" alt=""></p>
+			</div>
+			<button class="icon_scroll">
+				<img src="./images/scroll.png" alt="">
+			</button>
+		</div>
+		<div class="kv chapter3">
+			<a class="btn_kv" data-value="3"></a>
+			<div class="kv_bg">
+				<h1 class="logo"><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+			</div>
+			<div class="dim"></div>
+			<div class="kv_text_area">
+				<span class="kv_number">
+					<img src="./images/kv_num3.png" alt="">
+				</span>
+				<h2 class="kv_title">
+					<img src="./images/kv_title3.png" alt="">
+				</h2>
+			</div>
+			<div class="kv_text_full_area">
+				<h2><img src="./images/AO_site_03_kv_text.png" alt=""></h2>
+				<p>
+					<img src="./images/AO_site_03_kv_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_03_kv_text_desc_t.png" alt="" class="tablet_el">
+					
+				</p>
+			</div>
+			<div class="btn_cont">
+				<span><img src="./images/side_menu_ico.png" alt=""></span>
+				<p><img src="./images/mainCon_btn3.png" alt=""></p>
+			</div>
+			<button class="icon_scroll">
+				<img src="./images/scroll.png" alt="">
+			</button>
+		</div>
+	</main>
+
+	<div class="wrapper chapter_wrapper chapter_wrapper1">
+		<section class="sec section1">
+			<div class="background_video desktop_el">
+				<div class="video_wrap">
+					<video src="" id="vi" muted autoplay loop></video>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="bg tablet_el"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_01_cont1_tit.png" alt="open up the surprise"></h3>
+				<p><img src="./images/AO_site_01_cont1_desc3.png" alt=""></p>
+			</div>
+			<div class="btn_popup">
+				<button class="btn_play" data-ch="1" data-sec="1" data-con='1'>
+					<img src="images/AO_site_01_cont1_thumb_01.jpg" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_01_cont1_thumb_01_t.jpg" alt="" class="tablet_el">
+				</button>
+			</div>
+		</section>
+		<section class="sec section2">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_01_cont2_tit.png" alt="kia tennis week"></h3>
+				<p>
+					<img src="./images/AO_site_01_cont2_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_01_cont2_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+			<div class="quiz_area">
+				<div class="quiz_box">
+					<ul class="quiz_list">
+						<li>
+							<a class="btn_play" data-ch="1" data-sec="2" data-con="1">
+								<div class="quiz_img">
+									<img src="./images/AO_site_01_quiz_thumb1.jpg" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz_thumb1_t.jpg" alt="" class="tablet_el">
+								</div>
+								<p>
+									<img src="./images/AO_site_01_quiz1_txt.png" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz1_txt_t.png" alt="" class="tablet_el">
+								</p>
+								<span class="icon_q1">
+									<img src="./images/AO_site_01_quiz_txt_q1.png" alt="">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn_play" data-ch="1" data-sec="2" data-con="2">
+								<div class="quiz_img">
+									<img src="./images/AO_site_01_quiz_thumb2.jpg" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz_thumb2_t.jpg" alt="" class="tablet_el">
+								</div>
+								<p>
+									<img src="./images/AO_site_01_quiz2_txt.png" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz2_txt_t.png" alt="" class="tablet_el">
+								</p>
+								<span class="icon_q2">
+									<img src="./images/AO_site_01_quiz_txt_q2.png" alt="">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn_play" data-ch="1" data-sec="2" data-con="3">
+								<div class="quiz_img">
+									<img src="./images/AO_site_01_quiz_thumb3.jpg" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz_thumb3_t.jpg" alt="" class="tablet_el">
+								</div>
+								<p>
+									<img src="./images/AO_site_01_quiz3_txt.png" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz3_txt_t.png" alt="" class="tablet_el">
+								</p>
+								<span class="icon_q3">
+									<img src="./images/AO_site_01_quiz_txt_q3.png" alt="">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn_play" data-ch="1" data-sec="2" data-con="4">
+								<div class="quiz_img">
+									<img src="./images/AO_site_01_quiz_thumb4.jpg" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz_thumb4_t.jpg" alt="" class="tablet_el">
+								</div>
+								<p>
+									<img src="./images/AO_site_01_quiz4_txt.png" alt="" class="desktop_el">
+									<img src="./images/tablet/AO_site_01_quiz4_txt_t.png" alt="" class="tablet_el">
+								</p>
+								<span class="icon_q3">
+									<img src="./images/AO_site_01_quiz_txt_q4.png" alt="">
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="sec section3">
+			<div class="bg"></div>
+			<div class="text_area">
+				<p class="tit"><img src="./images/AO_site_01_cont3_b_tit.png" alt=""></p>
+				<a href="#"><img src="./images/AO_site_01_btn_learnmore.png" alt="learnmore button"></a>
+			</div>
+			<div class="car">
+				<img src="./images/AO_site_01_car.png" alt="">
+			</div>
+		</section>
+
+		<div class="indicator_wrap">
+			<div class="page_line"></div>
+			<ul class="indicator">
+				<li class="page0">
+					<img src="./images/AO_site_01_page_kv.png" alt="">
+				</li>
+				<li class="page1 on">
+					<img src="./images/AO_site_01_page1.png" alt="">
+				</li>
+				<li class="page2">
+					<img src="./images/AO_site_01_page2.png" alt="">
+				</li>
+				<li class="page3">
+					<img src="./images/AO_site_01_page3.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper chapter_wrapper chapter_wrapper2">
+		<section class="sec section1">
+			<div class="background_video desktop_el">
+				<div class="video_wrap">
+					<video src="" id="vi2" muted autoplay loop></video>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="bg tablet_el"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_02_cont1_tit.png" alt="open up the surprise"></h3>
+				<p>
+					<img src="./images/AO_site_02_cont1_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont1_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+			<div class="btn_popup">
+				<button class="btn_play" data-ch="2" data-sec="1" data-con="1">
+					<img src="./images/AO_site_02_cont1_thumb_01.jpg" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont1_thumb_01_t.jpg" alt="" class="tablet_el">
+				</button>
+			</div>
+		</section>
+		<section class="sec section2">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_02_cont2_tit.png" alt="open up the surprise"></h3>
+				<p>
+					<img src="./images/AO_site_02_cont2_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont2_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<section class="sec section3">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3>
+					<img src="./images/AO_site_02_cont3_tit.png" alt="open up the surprise" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont3_tit_t.png" alt="open up the surprise" class="tablet_el">
+				</h3>
+				<p>
+					<img src="./images/AO_site_02_cont3_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont3_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<section class="sec section4">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3>
+					<img src="./images/AO_site_02_cont4_tit.png" alt="open up the surprise" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont4_tit_t.png" alt="open up the surprise" class="tablet_el">
+				</h3>
+				<p>
+					<img src="./images/AO_site_02_cont4_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont4_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<section class="sec section5">
+			<div class="background_video desktop_el">
+				<div class="video_wrap">
+					<video src="" id="vi3" muted autoplay loop></video>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="bg tablet_el"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_02_cont5_tit.png" alt="open up the surprise"></h3>
+				<p class="description1">
+					<img src="./images/AO_site_02_cont5_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_02_cont5_desc_t.png" alt="" class="tablet_el">
+				</p>
+				<!-- <p class="description2"><img src="./images/AO_site_02_cont5_desc2.png" alt="" class="desktop_el"></p>
+				<p class="description3"><img src="./images/AO_site_02_cont5_desc3.png" alt="" class="desktop_el"></p>
+				<p class="description1"></p> -->
+			</div>
+			<div class="btn_popup">
+				<button class="btn_play" data-ch="2" data-sec="5" data-con="1">
+					<img src="images/AO_site_02_cont1_play.jpg" alt="" class="desktop_el">
+					<img src="images/tablet/AO_site_02_cont5_play_t.jpg" alt="" class="tablet_el">
+				</button>
+			</div>
+		</section>
+
+		<div class="indicator_wrap">
+			<div class="page_line"></div>
+			<ul class="indicator">
+				<li class="page0">
+					<img src="./images/AO_site_02_page_kv.png" alt="">
+				</li>
+				<li class="page1 on">
+					<img src="./images/AO_site_02_page1.png" alt="">
+				</li>
+				<li class="page2">
+					<img src="./images/AO_site_02_page2.png" alt="">
+				</li>
+				<li class="page3"> 
+					<img src="./images/AO_site_02_page3.png" alt="">
+				</li>
+				<li class="page4">
+					<img src="./images/AO_site_02_page4.png" alt="">
+				</li>
+				<li class="page5">
+					<img src="./images/AO_site_02_page5.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper chapter_wrapper chapter_wrapper3">
+		<section class="sec section1">
+			<!-- <div class="background_video desktop_el">
+				<div class="video_wrap">
+					<video src="" id="vi3" muted autoplay loop></video>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="bg tablet_el"></div> -->
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3>
+					<img src="./images/AO_site_03_cont1_tit.png" alt="open up the surprise" class="desktop_el">
+					<img src="./images/tablet/AO_site_03_cont1_desc_t.png" alt="open up the surprise" class="tablet_el">
+				</h3>
+				<p>
+					<img src="./images/AO_site_03_cont1_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_03_cont1_desc.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<section class="sec section2">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_03_cont2_tit.png" alt="kia tennis week"></h3>
+				<p>
+					<img src="./images/AO_site_03_cont2_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_03_cont2_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<section class="sec section3">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3><img src="./images/AO_site_03_cont3_tit.png" alt=""></h3>
+				<p>
+					<img src="./images/AO_site_03_cont3_desc.png" alt="" class="desktop_el">
+					<img src="./images/tablet/AO_site_03_cont3_desc_t.png" alt="" class="tablet_el">
+				</p>
+			</div>
+		</section>
+		<div class="page_line"></div>
+
+		<div class="indicator_wrap">
+			<div class="page_line"></div>
+			<ul class="indicator">
+				<li class="page0">
+					<img src="./images/AO_site_03_page_kv.png" alt="">
+				</li>
+				<li class="page1 on">
+					<img src="./images/AO_site_03_page1.png" alt="">
+				</li>
+				<li class="page2">
+					<img src="./images/AO_site_03_page2.png" alt="">
+				</li>
+				<li class="page3">
+					<img src="./images/AO_site_03_page3.png" alt="">
+				</li>
+			</ul>
+		</div>
+
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<footer class="clearfix basic_ui_set">
+		<h1><a href="#"><img src="./images/footer_logo.png" alt=""></a></h1>
+		<p class="copyright"> 
+			<img src="./images/footer_copyright.png" alt="">
+		</p>
+	</footer>
+
+	<button class="btn_top basic_ui_set">
+		<img src="./images/top.png" alt="">
+	</button>
+
+	<div class="home basic_ui_set">
+		<a href="#"></a>
+	</div>
+
+	<!-- <nav class="chapter_menu basic_ui_set desktop_el">
+		<button class="btn_chapter_change btn_chapter_change1" value="1">AO2019</button>
+		<button class="btn_chapter_change btn_chapter_change2" value="2">FESTIVAL WITH KIA</button>
+		<button class="btn_chapter_change btn_chapter_change3" value="3">FRIENDSHIP</button>
+	</nav> -->
+
+	<button class="btn_chapter_arrow btn_chapter_prev basic_ui_set" value="prev">
+		<img class="ch1" src="./images/chapter_move_txt1.png" alt="">
+		<img class="ch2" src="./images/chapter_move_txt2.png" alt="">
+	</button>
+	<button class="btn_chapter_arrow btn_chapter_next basic_ui_set" value="next">
+		<img class="ch2" src="./images/chapter_move_txt2.png" alt="">
+		<img class="ch3" src="./images/chapter_move_txt3.png" alt="">
+	</button>
+
+</div>
+
+
+<div class="mobile">
+	<div class="mo_kv_wrapper">
+		<div class="mo_chapter mo_chapter1">
+			<a class="btn_chapter" data-value="1">
+				<img class="obj obj_line1" src="./images/mo/kv_ch1_line1.png">
+				<img class="obj obj_line2" src="./images/mo/kv_ch1_line2.png">
+				<img class="obj obj_main" src="./images/mo/kv_ch1_obj.png">
+				<img class="obj obj_txt" src="./images/mo/kv_ch1_txt.png">
+			</a>
+		</div>
+		<div class="mo_chapter mo_chapter2">
+			<a class="btn_chapter" data-value="2">
+				<img class="obj obj_line1" src="./images/mo/kv_ch2_line1.png">
+				<img class="obj obj_line2" src="./images/mo/kv_ch2_line2.png">
+				<img class="obj obj_txt" src="./images/mo/kv_ch2_txt.png">
+			</a>
+		</div>
+		<div class="mo_chapter mo_chapter3">
+			<a class="btn_chapter" data-value="3">
+				<img class="obj obj_line1" src="./images/mo/kv_ch3_line1.png">
+				<img class="obj obj_line2" src="./images/mo/kv_ch3_line2.png">
+				<img class="obj obj_main" src="./images/mo/kv_ch3_obj.png">
+				<img class="obj obj_txt" src="./images/mo/kv_ch3_txt.png">
+			</a>
+		</div>
+	</div>
+
+	<div class="mo_chapter_wrapper mo_chapter_wrapper1 swpier-container">
+		<div class="swiper-wrapper">
+			<section class="mo_sec sec1 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch1_sec1_txt1.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec2 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch1_sec2_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch1_sec2_txt2.png" alt=""></p>
+				<button class="btn_play btn_play_con" data-ch="1" data-sec="1" data-con="1">
+					<img src="./images/mo/ch1_sec2_con1.jpg" alt="">
+				</button>
+			</section>
+			<section class="mo_sec sec3 swiper-slide">
+				<p><img src="./images/mo/ch1_sec3_txt.png" alt=""></p>
+				<ul class="video_popup_list">
+					<li><button class="btn_play" data-ch="1" data-sec="2" data-con="1"><img src="./images/mo/ch1_sec3_link1.jpg" alt=""></button></li>
+					<li><button class="btn_play" data-ch="1" data-sec="2" data-con="2"><img src="./images/mo/ch1_sec3_link2.jpg" alt=""></button></li>
+					<li><button class="btn_play" data-ch="1" data-sec="2" data-con="3"><img src="./images/mo/ch1_sec3_link3.jpg" alt=""></button></li>
+					<li><button class="btn_play" data-ch="1" data-sec="2" data-con="4"><img src="./images/mo/ch1_sec3_link4.jpg" alt=""></button></li>
+				</ul>
+			</section>
+			<section class="mo_sec sec4 swiper-slide">
+				<p class="txt"><img src="./images/mo/ch1_sec4_tit.png" alt=""></p>
+				<a href="#" class="btn_more"><img src="./images/mo/ch1_sec4_more.png" alt=""></a>
+				<p class="car"><img src="./images/mo/ch1_car.png" alt=""></p>
+			</section>
+		</div>
+		<div class="swiper-pagination"></div>
+		<button class="btn_mo_sec btn_mo_sec_next">Next</button>
+		<button class="btn_mo_sec btn_mo_sec_prev">Prev</button>
+	</div>
+
+	<div class="mo_chapter_wrapper mo_chapter_wrapper2 swpier-container">
+		<div class="swiper-wrapper">
+			<section class="mo_sec sec1 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec1_txt1.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec2 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec2_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch2_sec2_txt2.png" alt=""></p>
+				<button class="btn_play btn_play_con" data-ch="2" data-sec="1" data-con="1">
+					<img src="./images/mo/ch2_sec2_con1.jpg" alt="">
+				</button>
+			</section>
+			<section class="mo_sec sec3 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec3_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch2_sec3_txt2.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec4 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec4_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch2_sec4_txt2.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec5 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec5_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch2_sec5_txt2.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec6 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch2_sec6_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch2_sec6_txt2.png" alt=""></p>
+				<button class="btn_play btn_play_con" data-ch="2" data-sec="5" data-con="1">
+					<img src="./images/mo/ch2_sec6_con1.jpg" alt="">
+				</button>
+			</section>
+		</div>
+		<div class="swiper-pagination"></div>
+		<button class="btn_mo_sec btn_mo_sec_next">Next</button>
+		<button class="btn_mo_sec btn_mo_sec_prev">Prev</button>
+	</div>
+
+	<div class="mo_chapter_wrapper mo_chapter_wrapper3 swpier-container">
+		<div class="swiper-wrapper">
+			<section class="mo_sec sec1 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch3_sec1_txt1.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec2 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch3_sec2_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch3_sec2_txt2.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec3 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch3_sec3_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch3_sec3_txt2.png" alt=""></p>
+			</section>
+			<section class="mo_sec sec4 swiper-slide">
+				<p class="txt1"><img src="./images/mo/ch3_sec4_txt1.png" alt=""></p>
+				<p class="txt2"><img src="./images/mo/ch3_sec4_txt2.png" alt=""></p>
+			</section>
+		</div>
+		<div class="swiper-pagination"></div>
+		<button class="btn_mo_sec btn_mo_sec_next">Next</button>
+		<button class="btn_mo_sec btn_mo_sec_prev">Prev</button>
+	</div>
+
+	<div class="mo_footer">
+		<a href="#"><img src="./images/mo/footer_link.jpg" alt=""></a>
+		<p><img src="./images/mo/footer_copy.jpg" alt=""></p>
+		<img class="logo" src="./images/mo/footer_logo.jpg" alt="">
+	</div>
+
+	<button class="btn_mo_menu">Menu Button</button>
+
+	<div class="mo_popup_layer">
+		<button class="btn_close_popup"><img src="./images/mo/btn_popup_menu_close.png" alt=""></button>
+		<nav class="mo_menu">
+			<a class="mo_chapter_link" data-value="1"><img src="./images/mo/popup_menu1.png" alt=""></a>
+			<a class="mo_chapter_link" data-value="2"><img src="./images/mo/popup_menu2.png" alt=""></a>
+			<a class="mo_chapter_link" data-value="3"><img src="./images/mo/popup_menu3.png" alt=""></a>
+		</nav>
+		<a class="mo_home_link" href="#" target="_blank"><img src="./images/mo/popup_menu4.png" alt=""></a>
+	</div>
+
+</div>
+
+<div class="background_layer"></div>
+
+<div class="popup_layer">
+	<div class="popup_video">
+		<button class="close_popup"></button>
+		<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<div class="background_layer background_layer1"></div>
+<div class="background_layer background_layer2"></div>
+
+<div class="prod_popup">
+	<div class="pop_top">상품요약보기</div>
+	<div class="pop_mid">
+		<div class="prod_info1">
+			<div class="prod_img"><img src="images/temp/@prod_f.jpg" alt="" /></div>
+			<div class="prod_in_info">
+				<div class="prod_name">헬로네이처 쌀가게 -경기 추청(백미) 3kg-헬로네이처 쌀가게 -경기 추청(백미) 3kg-</div>
+				<div class="prod_cost_box">
+					<span class="prod_cost"><em>999,999</em>원</span>
+					<em class="prod_point">9999</em>
+					<span class="delivery_tag1">묶음배송</span>
+				</div>
+				<div class="prod_qty_box">
+					<button type="button" class="btn_qty_m t_hide">수량감소</button>
+					<input class="prod_qty" type="text" readonly value="99">
+					<button type="button" class="btn_qty_p t_hide">수량증가</button>
+				</div>
+			</div>
+		</div>
+		<div class="prod_info2">
+			<table summary="상품세부정보">
+				<tbody>
+					<tr>
+						<th>생산정보</th>
+						<td><span>생산자명</span> / <span>생산지명</span></td>
+					</tr>
+					<tr>
+						<th>재배기준</th>
+						<td>유기농인증</td>
+					</tr>
+					<tr>
+						<th>규격</th>
+						<td>1팩(4~5개)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="prod_info3">
+			<div class="total_info">
+				<span class="tit">합계금액</span>
+				<span class="qty">수량 <em>3</em>개</span>
+				<span class="cost"><em>999,999</em>원</span>
+			</div>
+			<div class="btn_box">
+				<button type="button" class="btn_picked t_hide" onclick="pickedIn()">찜하기</button>
+				<button type="button" class="btn_cart" onclick="prodCartIn(true)">장바구니</button>
+				<a class="link_detaile_prod" href="">상품상세</a>
+			</div>
+		</div>
+	</div>
+	<div class="pop_bot">
+		<button type="button" class="btn_prod_sum_ch" onclick="prodSumCheck()">[상품요약보기] 보지않기</button>
+
+		<button type="button" class="btn_close">닫기</button>
+	</div>
+</div>
+
+<div class="alert_layer alert_layer1">
+	<div class="alert_top">장바구니 알림</div>
+	<div class="alert_mid">
+		선택하신 상품이 장바구니에 담겼습니다.<br>
+		장바구니로 이동 하시겠습니까?
+	</div>
+	<div class="alert_bot">
+		<button type="button" class="btn_cancel">계속장보기</button>
+		<a class="btn_go_cart" href="">확인</a>
+	</div>
+</div>
+
+<div class="alert_layer alert_layer1_1">
+	<div class="alert_top">장바구니 알림</div>
+	<div class="alert_mid">
+		선택하신 상품은 일시적으로.<br>
+		담을 수 없는 상품입니다.
+	</div>
+	<div class="alert_bot">
+		<button type="button" class="btn_cancel">계속장보기</button>
+	</div>
+</div>
+
+<div class="alert_layer alert_layer2">
+	<div class="alert_top">찜바구니 알림</div>
+	<div class="alert_mid">
+		선택하신 상품이 찜바구니에 담겼습니다.
+	</div>
+	<div class="alert_bot">
+		<button type="button" class="btn_cancel">계속장보기</button>
+		<!--<a class="btn_go_picked" href="">확인</a>-->
+	</div>
+</div>
+
+<div class="alert_layer alert_layer2_1">
+	<div class="alert_top">찜바구니 알림</div>
+	<div class="alert_mid">
+		이미 찜바구니에 담겨있는 상품입니다.
+	</div>
+	<div class="alert_bot">
+		<button type="button" class="btn_cancel">계속장보기</button>
+	</div>
+</div>
+
+
+<div class="alert_layer alert_layer3">
+	<div class="alert_top">상품요약 알림</div>
+	<div class="alert_mid">
+		[상품요약보기]를 활성화 하시려면<br>
+		마이페이지 정보수정에서 수정하여 주세요.
+	</div>
+	<div class="alert_bot">
+		<button type="button" class="btn_cancel">확인</button>
+	</div>
+</div>

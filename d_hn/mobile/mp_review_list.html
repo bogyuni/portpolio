@@ -1,0 +1,118 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>내 후기</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+<div class="sub_container">
+
+	<section class="review_list_section">
+
+		<ul class="ord_list">
+			<li class="ord_item">
+				<div class="in_item">
+					<div class="prod_img">
+						<a href=""><img src="images/temp/@prod_f.jpg" alt=""></a>
+					</div>
+					<div class="prod_info">
+						<a class="prod_name" href="">헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위</a>
+						<div class="grade_box">
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="half"></span>
+						</div>
+						<div class="btn_row_box">
+							<button type="button" class="btn_t btn_view">후기보기</button>
+							<button type="button" class="btn_t btn_modify">수정하기</button>
+						</div>
+					</div>
+					<button type="button" class="btn_prod_delete t_hide">상품삭제</button>
+				</div>
+
+				<div class="review_view_box">
+					<div class="review_tit">후기 제목후기 제목후기 제목후기 제목후기 제목후기 제목후기 제목</div>
+					<div class="review_txt">후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 </div>
+				</div>
+			</li>
+			<li class="ord_item">
+				<div class="in_item">
+					<div class="prod_img">
+						<a href=""><img src="images/temp/@prod_f.jpg" alt=""></a>
+					</div>
+					<div class="prod_info">
+						<a class="prod_name" href="">헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위헬로네이처 키위 키위</a>
+						<div class="grade_box">
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="full"></span>
+							<span class="half"></span>
+						</div>
+						<div class="btn_row_box">
+							<button type="button" class="btn_t btn_view">후기보기</button>
+							<button type="button" class="btn_t btn_modify">수정하기</button>
+						</div>
+					</div>
+					<button type="button" class="btn_prod_delete t_hide">상품삭제</button>
+				</div>
+
+				<div class="review_view_box">
+					<div class="review_tit">후기 제목후기 제목후기 제목후기 제목후기 제목후기 제목후기 제목</div>
+					<div class="review_txt">후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 후기 내용 </div>
+				</div>
+			</li>
+		</ul>
+
+		<button type="button" class="btn_more">더보기 (10/20)</button>
+	</section>
+
+</div>
+
+<script>
+	$(function (){
+		$('.ord_list').on('click', '.btn_view', function (){
+			if ( !$(this).data('click') ){
+				$(this).addClass('on').data('click',1).text('그만보기').parent().parent().parent().next('.review_view_box').show();
+			}else{
+				$(this).removeClass('on').data('click',0).text('후기보기').parent().parent().parent().next('.review_view_box').hide();
+			}
+		});
+
+		$('.ord_list').on('click', '.btn_prod_delete', function (){
+			var delete_cal = confirm('작성한 후기를 삭제 하시겠습니까? \n삭제된 후기는 복구되지 않습니다.');
+			if ( delete_cal == true ){
+				$(this).parent().parent().remove();
+			}
+		});
+
+	});
+</script>
+
+
+
+<!--  footer info -->
+<?php
+	include('outline/footer_info.html');
+?>
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

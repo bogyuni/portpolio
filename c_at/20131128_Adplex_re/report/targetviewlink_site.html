@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 2beon 투비온 - 클라이언트 계정관리 시스템</title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script src="../js/script.js"></script>
+	<style type="text/css">
+		.retarget_table_set{table-layout:fixed;border-collapse:collapse;width:100%;margin-bottom:8px;border:1px solid #d9d9d9;}
+		.retarget_table_set_head{border:1px solid #000;}
+		.retarget_table_set thead th{font-weight:normal;border-collapse:collapse;font-size:14px;height:36px;}
+		.retarget_table_set thead th:first-child{border-left:0;}
+		.retarget_table_set tbody td{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;height:36px;padding:0;border-bottom:1px solid #d9d9d9;}
+		.retarget_table_set tbody tr:first-child td{border-bottom:0;}
+		.retarget_table_set tbody tr:last-child td{border-bottom:0;}
+		.retarget_table_set tbody td a{color:#000;}
+		.retarget_table_set_body:hover{border:1px solid #ebb5b4;}
+		.retarget_table_set tbody td.tit_td{text-align:left;}
+		.retarget_table_set .user_info_td{background:#f2f2f2;}
+		.retarget_table_set_body:hover .user_info_td{background:#f9ecec;}
+		.retarget_table_set .user_info_box{text-align:left;height:36px;overflow:hidden;color:#7f7f7f;}
+		.user_info_box li{padding-left:10%;margin-bottom:10px;overflow:hidden;}
+		.user_info_box .user_title{font-weight:bold;height:36px;line-height:34px;padding-left:10px;margin-right:0;cursor:pointer;border-bottom:1px dashed #ccc;}
+		.user_info_box .user_title span{font-weight:normal;}
+		.user_info_box .user_title.on{color:#f00;}
+		.user_info_box .user_title table{width:100%;}
+		.user_info_box .user_title td{font-weight:normal;}
+		.user_info_box dl,.user_info_box dt,.user_info_box dd{display:inline-block;vertical-align:top;}
+		.user_info_box dl{margin-right:40px;}
+		.user_info_box dt{margin-right:6px;font-weight:bold;}
+		.user_info_box dd{white-space:nowrap;overflow:hidden;}
+		.user_info_box dd div{margin-bottom:4px;}
+		.user_info_box dd div a{color:#7f7f7f;}
+		.pagelist_article{text-align:center;padding-top:20px;}
+		.pagelist_article li{display:inline;margin:0 4px;}
+		.pagelist_article li a{color:#7f7f7f}
+		.pagelist_article li a.on{color:#f00;text-decoration:underline;}
+		.pagelist_article li a.on:hover{color:#f00;text-decoration:underline;}
+		.pagelist_article li a:hover{color:#444;text-decoration:underline;}
+	</style>
+	<script >
+		$(function(){
+			$('.retarget_table_set').on('click','.user_title',function(){
+				if (!$(this).data('clickData')){
+					//$('.user_info_box').css({height:'34px'});
+					$(this).parent().parent().animate({height:'180px'},150);
+					//$('.user_title').data('clickData',0);
+					$(this).data('clickData',1);
+					//$('.user_title').removeClass('on').find('.arrow_con').text('▼');
+					//$('.user_title').find('.arrow_con').text('▼');
+					//$(this).addClass('on').find('.arrow_con').text('▲');
+					$(this).find('.arrow_con').text('▲');
+				}else{
+					$(this).parent().parent().animate({height:'36px'},150);
+					$(this).data('clickData',0);
+					$(this).find('.arrow_con').text('▼');
+					//$(this).removeClass('on');
+				}
+			});
+
+			$.ajax({
+				type: "post",
+				dataType: "json",
+				url: "./ajax_getname_media_zone.php",
+				data: {zncodes:$("#zncodes").val()},
+				success: function(data){
+					$.each(data, function(key, val){
+						$(".load_zn_"+key).html(val.join(" "));
+					});
+				}
+			});
+			$("#smode, #date_ym, #date_d").bind("change", function(){
+				var frm		= document.mfrm,
+					$that	= $(this),
+					obj_id	= $that[0].id;
+				if(obj_id=="smode")	frm.smode.value = $(this).val();
+				if(obj_id=="date_ym" || obj_id=="date_d"){
+					frm.date.value = $("#date_ym").val()+""+$("#date_d").val();
+				}
+				frm.submit();
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<!--container-->
+	<div class="area_statistic_container">
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_targetviewlink_site.gif" alt="Targetview Link(사이트) 전환 리스트" /></h2>
+		</div>
+		<div class="composition_obj_article type2" style="margin-bottom:60px">
+			<div class="category_group">
+				<select name="" id="" class="mr_21">
+					<option value="">구매 모든전환</option>
+				</select>
+				<select name="" id="" class="mr_21">
+					<option value="">2014 / 12</option>
+				</select>
+				<select name="" id="" class="mr_21">
+					<option value="">10 일</option>
+				</select>
+				<dl class="mr_21">
+					<dt>Total :</dt>
+					<dd>9</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>광고주명 :</dt>
+					<dd>test_11</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>캠페인명 :</dt>
+					<dd>상품리타겟팅 테스트(ㄴㄴㄴ)</dd>
+				</dl>
+			</div>
+		</div>
+
+		<table class="table_set8" summary="전환 리스트" style="margin-bottom:10px">
+			<caption>전환 리스트</caption>
+			<colgroup>
+				<col width="10%" />
+				<col width="40%" />
+				<col width="10%" />
+				<col width="10%" />
+				<col width="20%" />
+				<col width="10%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col" style="border-right:0;">유저</th>
+					<th scope="col"></th>
+					<th scope="col">플랫폼</th>
+					<th scope="col" style="border-right:0;">전환시간</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+		</table>
+
+
+		<table summary="액션전환 리스트" class="retarget_table_set retarget_table_set_body">
+			<tbody>
+			<tr class="user_info_tr">
+				<td class="user_info_td" colspan="6" style="padding:0;">
+					<div class="user_info_box" style="height: 36px;">
+						<ul>
+							<li class="user_title">
+								<table>
+								<colgroup>
+									<col width="10%">
+									<col width="40%">
+									<col width="10%">
+									<col width="10%">
+									<col width="20%">
+									<col width="10%">
+								</colgroup>
+								<tbody><tr>
+									<td>2</td>
+									<td><span>48bc1b8d863bdd9ec841921ace0a1430</span></td>
+									<td></td>
+									<td>M</td>
+									<td>2014.12.09 / 11:48</td>
+									<td><span class="arrow_con">▼</span></td>
+								</tr>
+								</tbody></table>
+							</li>
+							<li>
+								<dl><dt>전환유형 : </dt><dd>직접전환</dd></dl>
+								<dl><dt>전환까지 유입횟수 : </dt><dd>2 회</dd></dl>
+								<dl><dt>전환까지의 시간 : </dt><dd>1m 17s </dd></dl>
+							</li>
+							<li>
+								<dl>
+									<dt>최초유입 정보 : </dt>
+									<dd>
+										<div><span class="load_zn_DQLLLLLF">타겟뷰 타겟뷰존M_하단텍스트(8slot)</span> [2014.12.09 / 11:21 10s] 
+											<!-- a href="" target="_blank">[클릭상품 보기]</a -->
+										</div>
+										<div><a href="http://plugin.2beon.co.kr/iframe/DQLLLLLF.html?rnd=1411710487" target="_blank" title="http://plugin.2beon.co.kr/iframe/DQLLLLLF.html?rnd=1411710487">http://plugin.2beon.co.kr/iframe/DQLLLLLF.html?rnd=1411710487</a></div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>전환유입 정보 : </dt>
+									<dd>
+										<div><span class="load_zn_JFLLLLLF">노컷뉴스 썸네일(2slot)</span> [2014.12.09 / 11:47 24s] 
+											<!-- a href="" target="_blank">[클릭상품 보기]</a -->
+										</div>
+										<div><a href="http://plugin.2beon.co.kr/iframe/JFLLLLLF.html?rnd=1417072726" target="_blank" title="http://plugin.2beon.co.kr/iframe/JFLLLLLF.html?rnd=1417072726">http://plugin.2beon.co.kr/iframe/JFLLLLLF.html?rnd=1417072726</a></div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<!--//container-->
+
+</body>
+</html>

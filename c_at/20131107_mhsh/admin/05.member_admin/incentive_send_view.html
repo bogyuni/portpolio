@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> 문화생활 - 관리자 페이지 </title>
+	<meta name="Author" content="Adtive inovation" />
+	<meta name="Keywords" content="문화생활, 공연, 콘서트, 공연할인, 광고설정" />
+	<link rel="shortcut icon" href="ico/ico.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="../css/style_ie8.css" />
+	<![endif]-->
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="header_wrap">
+			<ul class="util_menu">
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">회원정보</a></li>
+				<li><a href="#">로그아웃</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container_topline">
+		<div class="decoration decoration1"></div>
+		<div class="decoration decoration2"></div>
+		<div class="decoration decoration3"></div>
+	</div>
+
+	<div class="container ad_set">
+		<!--gnb-->
+		<div class="gnb">
+			<div class="logo_box"><a href="/"><img src="../images/common/logo.png" alt="문화생활" /></a></div>
+			<ul class="gnb_list">
+				<li class="menu1">
+					<a href="#">광고설정</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu2">
+					<a href="#">효과관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu3">
+					<a href="#">상정관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu4">
+					<a href="#">판매관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu5 on">
+					<a href="#">회원관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu6">
+					<a href="#">주문관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu7">
+					<a href="#">게시판관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu8">
+					<a href="#">검색어관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu9">
+					<a href="#">쿠폰관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu10">
+					<a href="#">로딩관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu11">
+					<a href="#">계정관리</a>
+					<div class="mask"></div>
+				</li>
+			</ul>
+		</div>
+		<!--//gnb-->
+		<!--snb-->
+		<div class="snb">
+			<div class="title_article">
+				<h1><img src="../images/tit/h1_member_admin.gif" alt="회원관리" /></h1>
+				<p class="caption"><img src="../images/content/depth1_menu5_caption1.gif" alt="전체 회원관리 및 알람발송 진행" /></p>
+			</div>
+			<a href="#" class="btn_new_register"><img src="../images/btn/btn_incentive_send.gif" alt="장려금보내기" /></a>
+			<ul class="snb_list">
+				<li class="depth2_menu menu1"><img src="../images/common/depth2_menu10_off.gif" alt="전체회원명단" /></li>
+				<li class="depth2_menu menu2"><a href="#"><img src="../images/common/depth2_menu11_off.gif" alt="알람발송" /></a></li>
+				<li class="depth2_menu menu3"><a href="#"><img src="../images/common/depth2_menu20_on.gif" alt="장려금발송" /></a></li>
+			</ul>
+		</div>
+		<!--//snb-->
+		<!--content-->
+		<div class="content">
+			<div class="title_article">
+				<h2><img src="../images/tit/h2_incentive_send.gif" alt="장려금 발송" /></h2>
+				<p class="caption"><img src="../images/content/depth2_menu12_caption1.gif" alt="특정인에게 문화장려금을 지급할 수 있습니다." /></p>
+			</div>
+			<div class="content_section memberlist_section">
+				<div class="insertform_article">
+					<div class="insert_con">
+						<h3>장려금금액:</h3>
+						<span class="incentive_send_view_span">50,000</span>
+					</div>
+					<div class="insert_con">
+						<h3>팝업공지:</h3>
+						<span class="incentive_send_view_span">문화생활 '000'이벤트에 당첨되셔서 장려금을 지급합니다.</span>
+						<p class="caption_p">* 장려금발송 후 발송대상에게 보여지는 팝업공지 내용을 입력하세요.</p>
+						<p class="caption_p">* 팝업공지는 발송대상이 앱 로그인 시 1회만 노출됩니다.</p>
+					</div>
+					<div class="insert_con">
+						<h3>발송대상:</h3>
+						<label for="incentive_send_select1" class="btn_incentive_send">
+							<input type="radio" name="incentive_send_select" id="incentive_send_select1" checked="checked" /> 1인 이상 대량발송
+						</label>
+						<div class="input_box input_box_incentive_send1">
+							<input type="text" class="input_text type_w116" readonly="readonly" />
+							<div class="mask" style="display:none"></div>
+						</div>
+						<span class="filesearch_box mr_30">
+							<a class="btn_filesearch2"><img src="../images/btn/btn_filesearch.gif" alt="파일찾기" /></a>
+							<input type="file" class="inst_fileHidden" />
+							<div class="mask" style="display:none"></div>
+						</span>
+						<span class="caption">1열 : '-'없이 회원 ID</span>
+						<div class="insert_con_in">
+							<label for="incentive_send_select2" class="btn_incentive_send">
+								<input type="radio" name="incentive_send_select" id="incentive_send_select2" /> 1인 대상 개별발송
+							</label>
+							<div class="input_box input_box_incentive_send2 mr_30">
+								<input type="text" class="input_text type_w204" placeholder="" />
+								<div class="mask"></div>
+							</div>
+							<span class="caption">'-'없이 회원ID를 입력하세요.</span>
+						</div>
+					</div>
+					<div class="btn_box">
+						<a href=""><img src="../images/btn/btn_list.gif" alt="목록" /></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--//content-->
+		<div style="clear:both;"></div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_wrap">
+			<div class="footer_logo"><img src="../images/common/logo_footer.gif" alt="애드티브 컨텐츠베이" /></div>
+			<address><img src="../images/common/address.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주)  대표이사 : 조홍성     등록번호 : 서울 아 01569      사업자등록번호 : 120-87-11103       개인정보취급자 : 김종렬      이메일  jrkim@adtive.co.kr" /></address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2012. TARGET VIEW. All Rights Reserved." /></p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

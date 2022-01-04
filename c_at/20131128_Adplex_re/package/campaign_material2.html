@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container campaign_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">패키지</span>
+			<span class="depth2_name color_type3">캠페인별 예약소재관리</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_campaign_material_set.gif" alt="캠페인별 예약소재관리" /></h2>
+			<p class="caption">캠페인별 예약소재를 설정하실 수 있습니다.</p>
+		</div>
+		<div class="composition_obj_article">
+			<div class="category_group">
+				<dl class="mr_21">
+					<dt>판매완료 캠페인 선택</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">캠페인 선택</option>
+						</select>
+					</dd>
+				</dl>
+				<p class="caption color_type7">※ 붉은 영역명 소재는 전회차 동일 영역의 동일 캠페인 소재이므로, 변경할 필요가 없습니다.</p>
+			</div>
+		</div>
+
+		<table class="table_set5" summary="소재관리">
+			<caption>소재관리</caption>
+			<colgroup>
+				<col width="4%" />
+				<col width="6%" />
+				<col width="6%" />
+				<col width="16%" />
+				<col width="14%" />
+				<col width="34%" />
+				<col width="9%" />
+				<col width="12%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">선택</th>
+					<th scope="col">번호</th>
+					<th scope="col">슬롯구분</th>
+					<th scope="col">매체명</th>
+					<th scope="col">영역명</th>
+					<th scope="col">소재</th>
+					<th scope="col">슬롯단가</th>
+					<th scope="col">소재관리</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">TOTAL</th>
+					<td colspan="5" style="text-align:right;padding-right:20px">4개 슬롯</td>
+					<td class="center_td">400,000원</td>
+					<td></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<!-- 
+					기존 소재와 똑같이 넘어온 슬롯이면 빨간색 글씨로 표시 
+					<tr> 태그에 color_type3 클래스를 가지면 그 영역의 폰트 컬러는 붉은색
+				-->
+				<tr class="color_type3">
+					<td><input type="checkbox" /></td>
+					<td>100</td>
+					<td>기존</td>
+					<td>머니투데이</td>
+					<td>썸네일(3 slot)</td>
+					<td class="material_td">
+						<span class="material_tit">영어교육 이것만 알면은 개뿔 그럴리가있나.</span><br />
+						<a href="">http://www.naver.en</a>
+					</td>
+					<td>100,000원</td>
+					<td>
+						<button class="btn_type_set btn_type_set_s btn_type3 color_type6" onclick="popuplayerOpen(1)">소재관리</button>
+						<a href="#" class="btn_type_set btn_type_set_s btn_type2 color_type7">미리보기</a>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>100</td>
+					<td>기존</td>
+					<td>머니투데이</td>
+					<td>썸네일(3 slot)</td>
+					<td class="material_td">
+						<img src="../images/temp/banner1.gif" alt="" /><br />
+						<a href="">http://www.naver.en</a>
+					</td>
+					<td>100,000원</td>
+					<td>
+						<button class="btn_type_set btn_type_set_s btn_type3 color_type6" onclick="popuplayerOpen(2)">소재관리</button>
+						<a href="" class="btn_type_set btn_type_set_s btn_type2 color_type7">미리보기</a>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>100</td>
+					<td>기존</td>
+					<td>머니투데이</td>
+					<td>썸네일(3 slot)</td>
+					<td class="material_td">
+						<img src="../images/temp/banner1.gif" alt="" /><br />
+						<span class="material_tit">영어교육 이것만 알면은 개뿔 그럴리가있나.</span><br />
+						<a href="">http://www.naver.en</a>
+					</td>
+					<td>100,000원</td>
+					<td>
+						<button class="btn_type_set btn_type_set_s btn_type3 color_type6" onclick="popuplayerOpen(3)">소재관리</button>
+						<a href="" class="btn_type_set btn_type_set_s btn_type2 color_type7">미리보기</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_box">
+			<ul class="check_box_list fl_left">
+				<li><input type="checkbox" /> <label for="">전체</label></li>
+				<li><input type="checkbox" /> <label for="">기존</label></li>
+				<li><input type="checkbox" /> <label for="">신규</label></li>
+				<li><input type="checkbox" /> <label for="">텍스트</label></li>
+				<li><input type="checkbox" /> <label for="">이미지</label></li>
+			</ul>
+			<button class="btn_type_set btn_type_set_b btn_type9 color_type6 fl_right" onclick="javascript:popuplayerOpen(3)" style="margin-left:20px">이미지 요청</button>
+			<button class="btn_type_set btn_type_set_b btn_type5 color_type6 fl_right">선택 소재 일괄등록</button>
+		</div>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+<div class="background_layer"></div>
+
+<!-- 텍스트 소재관리 -->
+<div class="popuplayer popuplayer1 popuplayer_type4 material_popup1">
+	<div class="pop_header">
+		<h1><img src="../images/tit/pop_h1_material.png" alt="소재관리" /> <span class="sub_tit">(머니투데이)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table class="material_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>텍스트</h3>
+						<button class="btn_type_set btn_type_set_s btn_type10 color_type6 btn_library_table">라이브러리 열기</button>
+					</th>
+					<td>
+						<div class="td_wrap">
+							<div class="td_box">
+								<input type="text" class="input_w420" />
+							</div>
+							<button class="btn_add_input" value="1"></button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="material_table_article library_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>라이브러리</h3>
+					</th>
+					<td>
+						<div class="td_box2">
+							<div class="library_con">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="txt_con">영어교제 이대로 좋은가?</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="txt_con">영어교제 이대로 좋은가?</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="txt_con">영어교제 이대로 좋은가?</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="txt_con">영어교제 이대로 좋은가?</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="txt_con">영어교제 이대로 좋은가?</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="material_text_article">
+			<div class="url_con">
+				<h3>랜딩 URL</h3>
+				<input type="text" class="input_w420" />
+				<button class="btn_type_set btn_type_set_s btn_type2 color_type7">랜딩체크</button>
+			</div>
+		</div>
+		<div class="btn_box">
+			<button class="btn_type_set btn_type_set_s btn_type7 color_type7 btn_close">취소</button>
+			<button class="btn_type_set btn_type_set_s btn_type5 color_type6">확인</button>
+		</div>
+	</div>
+</div>
+
+<!-- 이미지 배너 소재관리 -->
+<div class="popuplayer popuplayer2 popuplayer_type4 material_popup1">
+	<div class="pop_header">
+		<h1><img src="../images/tit/pop_h1_material.png" alt="소재관리" /> <span class="sub_tit">(머니투데이)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table class="material_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>이미지</h3>
+						<button class="btn_type_set btn_type_set_s btn_type10 color_type6 btn_library_table">라이브러리 열기</button>
+					</th>
+					<td>
+						<div class="td_wrap">
+							<div class="td_box">
+								<!--
+									input file의 아이디는 아무 것이나 해도 괜찮지만, 형제 label의 for 와 일치해야 합니다.
+
+									image file  슬롯 추가는 
+									script.js 의 주석 // 소재관리 이미지 소재 추가하기 를 변경 하셔서 사용 하세요.
+
+									동적 추가 하더라도 아이디는 개별 적으로 적용 되어야 합니다~
+								-->
+								<div class="file_set">
+									<input type="text" class="input_w420" readonly>
+									<label for="file_set" class="btn_type_set btn_type_set_s btn_type2 color_type7">이미지 변경</label>
+									<input type="file" id="file_set">
+								</div>
+							</div>
+							<button class="btn_add_input" value="2">add+</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="material_table_article library_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>라이브러리</h3>
+					</th>
+					<td>
+						<div class="td_box2">
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px" />
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px"/>
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px"/>
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="material_text_article">
+			<div class="url_con">
+				<h3>랜딩 URL</h3>
+				<input type="text" class="input_w420" />
+				<button class="btn_type_set btn_type_set_s btn_type2 color_type7">랜딩체크</button>
+			</div>
+		</div>
+		<div class="btn_box">
+			<button class="btn_type_set btn_type_set_s btn_type7 color_type7 btn_close">취소</button>
+			<button class="btn_type_set btn_type_set_s btn_type5 color_type6">확인</button>
+		</div>
+	</div>
+</div>
+
+<!-- 이미지 썸네일 소재관리 -->
+<div class="popuplayer popuplayer3 popuplayer_type4 material_popup1">
+	<div class="pop_header">
+		<h1><img src="../images/tit/pop_h1_material.png" alt="소재관리" /> <span class="sub_tit">(머니투데이)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table class="material_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>이미지</h3>
+						<button class="btn_type_set btn_type_set_s btn_type10 color_type6 btn_library_table">라이브러리 열기</button>
+					</th>
+					<td>
+						<div class="td_wrap">
+							<div class="td_box">
+								<!--
+									input file의 아이디는 아무 것이나 해도 괜찮지만, 형제 label의 for 와 일치해야 합니다.
+
+									image file  슬롯 추가는 
+									script.js 의 주석 // 소재관리 이미지 소재 추가하기 를 변경 하셔서 사용 하세요.
+
+									동적 추가 하더라도 아이디는 개별 적으로 적용 되어야 합니다~
+								-->
+								<div class="file_set">
+									<input type="text" class="input_w420" readonly>
+									<label for="file_set" class="btn_type_set btn_type_set_s btn_type2 color_type7">이미지 변경</label>
+									<input type="file" id="file_set">
+								</div>
+							</div>
+							<button class="btn_add_input" value="2">add+</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="material_table_article library_table_article">
+			<tbody>
+				<tr>
+					<th>
+						<h3>라이브러리</h3>
+					</th>
+					<td>
+						<div class="td_box2">
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px" />
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+										<div class="txt_con">영어교제 이대로 좋은가?</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px"/>
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+										<div class="txt_con">영어교제 이대로 좋은가?</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+							<div class="library_con library_con2">
+								<div class="number_con">1</div>
+								<div class="percent_con">11.8%</div>
+								<div class="preview_con">
+									<div class="banner_set">
+										<div class="img_con">
+											<img src="../images/temp/banner2.gif" alt="" style="width:140px;height:100px"/>
+											<p>사이즈 140 x 100 (50kb)</p>
+										</div>
+										<div class="txt_con">영어교제 이대로 좋은가?</div>
+									</div>
+									<button class="btn_library_close"><img src="../images/btn/btn_close3.gif" alt="소재닫기"></button>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="material_text_article">
+			<div class="txt_con">
+				<h3>텍스트</h3>
+				<input type="text" class="input_w184" />
+				&#60;br&#62;
+				<input type="text" class="input_w184" />
+			</div>
+			<div class="url_con">
+				<h3>랜딩 URL</h3>
+				<input type="text" class="input_w420" />
+				<button class="btn_type_set btn_type_set_s btn_type2 color_type7">랜딩체크</button>
+			</div>
+		</div>
+		<div class="btn_box">
+			<button class="btn_type_set btn_type_set_s btn_type7 color_type7 btn_close">취소</button>
+			<button class="btn_type_set btn_type_set_s btn_type5 color_type6">확인</button>
+		</div>
+	</div>
+</div>
+
+<!-- 이미지요청 -->
+<div class="popuplayer popuplayer4 popuplayer_type2 material_popup3">
+	<div class="pop_header">
+		<h1><img src="../images/tit/pop_h1_img_request.png" alt="이미지요청" /></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<div class="imgview_article">
+		</div>
+		<div class="btn_box">
+			<button class="btn_type_set btn_type_set_s btn_type7 color_type7">복사하기</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

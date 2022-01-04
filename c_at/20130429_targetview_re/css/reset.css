@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;-webkit-text-size-adjust:none;}
+body,html{height:auto;min-height:100%;}
+body,input{font:12px/1.2 Dotum, "돋음", verdana, sans-serif;color:#555555;}
+table{border-collapse:collapse;border-spacing:0;}
+select, input, label, table tr td, table tr th{vertical-align:middle;}
+form, fieldset{border:0 none;}
+img{border:0;vertical-align:top;}
+address, caption, cite, code, dfn, em, h1, h2, h3, h4, h5, h6, th, var{font-weight:normal;font-style:normal;font-size:12px;}
+ol, ul, li{list-style: none;}
+a{text-decoration:none;color:#636363;}
+a:hover{text-decoration:underline;}
+label{cursor:pointer;}
+
+/* 화면숨김 */
+hr, legend{position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;text-indent:-5000px;}
+/*웹킷용 캡션 숨기기*/
+caption{width:0;height:0;padding:0px;margin:0px;visibility:hidden;}
+
+/* 버튼셋팅 */
+.btn_img{cursor:pointer;}

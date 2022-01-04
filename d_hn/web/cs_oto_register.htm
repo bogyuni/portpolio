@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>자연과 인사하세요 : 헬로네이처</title>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form action="">
+	<fieldset>
+		<legend>상품 리뷰 작성 폼</legend>
+		<div class="oto_register_box">
+			<div class="top_con">1:1 문의작성</div>
+			<div class="table_box">
+				<p class="caption">표시 항목은 필수 항목입니다.</p>
+				<table class="review_register_table">
+					<caption>후기작성</caption>
+					<tbody>
+						<tr>
+							<th>아디디</th>
+							<td>natureboy</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td>
+								<input type="text" class="inst_txt">
+								<p><input type="checkbox"> 받습니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th>문자메시지</th>
+							<td>
+								<input type="text" class="inst_txt inst_w67">
+								<span>-</span>
+								<input type="text" class="inst_txt inst_w67">
+								<span>-</span>
+								<input type="text" class="inst_txt inst_w67">
+								<p><input type="checkbox"> 받습니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th class="check_th">질문유형</th>
+							<td>
+								<select class="basic_box" name="itemcd" required="" fld_esssential="" label="질문유형">
+									<option value="">상담내용을 선택하세요.</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>주문번호</th>
+							<td>
+								<input type="text" class="inst_txt">
+								<a class="btn_orderview" href="javascript:order_open();">주문조회</a>
+							</td>
+						</tr>
+						<tr>
+							<th class="check_th">제목</th>
+							<td>
+								<input type="text" class="inst_txt">
+							</td>
+						</tr>
+						<tr>
+							<th class="check_th">내용</th>
+							<td>
+								<textarea name="" class="inst_textarea" placeholder="상품에 대한 평가를 적어주세요 ^^"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>이미지</th>
+							<td>
+								<input type="file"><br><br>
+								<p class="caption">※ 사진첨부는 1개만 가능합니다.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_box">
+					<input type="submit" value="작성완료" class="btn_review_register">
+				</div>
+			</div>
+		</div>
+	</fieldset>
+</form>
+
+
+</body>
+</html>

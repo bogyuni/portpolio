@@ -1,0 +1,452 @@
+@charset "utf-8";
+
+/*
+	Targetview Link CSS ver 1.0
+	date : 2015-02-09
+
+
+	[ Targetview Link Product  - Style Guide ]
+		* 각 명칭의 앞 숫자는 코드번호. 
+			차후 형태가 추가 될 때마다 코드번호 증가.
+
+		A. 슬롯 구조(structure)
+			1 : 분리구조 (className = ATLP_structure_1)
+			2 : 일체구조 (className = ATLP_structure_2)
+			3 : 카드구조 (className = ATLP_structure_3)
+		B. 영역 형태(shape)
+			1 : 와이드형 (className = ATLP_shape_1)
+			2 : 사각형 (className = ATLP_shape_2)
+			3 : 스카이형 (className = ATLP_shape_3)
+			4 : 라인형 (className = ATLP_shape_4)
+			5 : 라인형(1슬롯) (className = ATLP_shape_5)
+			6 : 사각형(2줄) (className = ATLP_shape_6)
+			7 : 와이드형(썸네일내부형식) (className = ATLP_shape_7)
+			8 : 라인형(썸네일내부형식) (className = ATLP_shape_8)
+			9 : 라인형(썸네일내부형식 2줄) (className = ATLP_shape_9)
+			10 : 스카이형(썸네일내부형식) (className = ATLP_shape_10)
+		C. 스킨타입 설정 (skinType)
+			0 : 스킨없음 (커스텀)  (className = ATLP_skin_0)
+			1 : 밝은스킨 (className = ATLP_skin_1)
+			2 : 어두운스킨 (className = ATLP_skin_2)
+			3 : 특별스킨 (className = ATLP_skin_3) - 특별스킨은 현재 분리형구조만 가지고있음
+
+		D. 세부 설정 (detailCustom)
+			areaBG : 영역 배경 색 (targetviewLinkStyleBanner)
+			headBG : 상단 배경 (ATLP_head)
+			bodyBG : 슬롯 리스트 영역 배경 (ATLP_body)
+			infoBG : 상품정보영역 배경 색 (ATLP_foot)
+			focusBD : 슬롯 포커스 색상 (ATLP_slotBorder)
+			infoTxt : 상품정보 색상 (slotInfo_product)
+			priceTxt : 상품가격 색상 (slotInfo_price)
+			maskBG : 비활성 슬롯 색상 (ATLP_maskLayer)
+			btnType : 상품 슬롯 내부 버튼 이미지 (slotInfo_button)
+
+*/
+
+/*공통*/
+	.targetviewLinkStyleBanner{position:relative;font:normal 12px/1.2 Dotum,"돋움",sans-serif;color:#000;padding:0;margin:0 auto;}
+	.targetviewLinkStyleBanner *{padding:0 !important;margin:0;border:0;background:none;text-decoration:none;}
+	.targetviewLinkStyleBanner img{border:0;vertical-align:top;}
+	.targetviewLinkStyleBanner button{cursor:pointer;text-indent:-9999px;outline:0;}
+	.targetviewLinkStyleBanner .ATLP_ad_link{z-index:6;position:absolute;display:block;text-indent:-9999px;width:15px;height:15px;background:url("images/ico_adinfo.png") no-repeat right top;}
+	.targetviewLinkStyleBanner .ATLP_ad_link:hover{width:70px;height:15px;background-position:right bottom;}
+	.targetviewLinkStyleBanner .ATLP_head{position:relative;}
+	.targetviewLinkStyleBanner .ATLP_biLogo{position:absolute;}
+	.targetviewLinkStyleBanner .ATLP_banner_box{overflow:hidden;position:relative;margin:0 auto;}
+	.targetviewLinkStyleBanner .ATLP_slotBox{text-align:center;border:1px solid #e1e1e1;background:#fff;}
+	.targetviewLinkStyleBanner .ATLP_slotAnchor{display:block;overflow:hidden;width:100%;height:100%;cursor:pointer;}
+	.targetviewLinkStyleBanner .ATLP_slotThum{overflow:hidden;display:inline-block;*display:inline;}
+	.targetviewLinkStyleBanner .ATLP_slotThum img{width:100%;height:100%;}
+	.targetviewLinkStyleBanner .ATLP_slotBox.on .ATLP_slotBorder{border-width:4px;border-style:solid;}
+	.targetviewLinkStyleBanner .ATLP_slotInfo{font-weight:bold;width:100%;cursor:pointer;}
+	.targetviewLinkStyleBanner .slotInfo_product{overflow:hidden;word-break:break-all;line-height:1.3;margin:0 auto;}
+	.targetviewLinkStyleBanner .slotInfo_price{font-size:14px;word-break:break-all;letter-spacing:-1px;margin:0 auto;}
+	.targetviewLinkStyleBanner .slotInfo_button{text-indent:-9999px;margin:0 auto;}
+	.targetviewLinkStyleBanner .ATLP_slotBorder{position:absolute;left:-1px;top:-1px;}
+	.targetviewLinkStyleBanner .ATLP_maskLayer{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0.6;filter:alpha(opacity=60);background:#ffffff;}
+	.targetviewLinkStyleBanner .ATLP_btn{position:absolute;z-index:5;}
+/*스킨*/
+	.ATLP_skin_1{background:#efefef;}
+	.ATLP_skin_2{background:#3a3a3a;}
+	.ATLP_skin_3{background:#3a3a3a;}
+	/*버튼 스타일*/
+		.ATLP_btn1 .slotInfo_button{width:109px !important;height:24px !important;background:url("images/btn_buynow_off_1.png") no-repeat center !important;}
+		.ATLP_btn1 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_1.png") no-repeat center !important;}
+		.ATLP_btn1.ATLP_structure_1 .ATLP_body:hover .slotInfo_button{background:url("images/btn_buynow_on_1.png") no-repeat center !important;}
+
+		.ATLP_btn2 .slotInfo_button{width:50px !important;height:23px !important;background:url("images/btn_buynow_off_2.png") no-repeat center !important;}
+		.ATLP_btn2 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_2.png") no-repeat center !important;}
+		.ATLP_btn2.ATLP_structure_1 .ATLP_body:hover .slotInfo_button{background:url("images/btn_buynow_on_2.png") no-repeat center !important;}
+
+		.ATLP_btn3 .slotInfo_button{width:78px !important;height:28px !important;background:url("images/btn_buynow_off_3.png") no-repeat center !important;}
+		.ATLP_btn3 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center !important;}
+		.ATLP_btn3.ATLP_structure_1 .ATLP_body:hover .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center !important;}
+
+/*구조1 - 분리형*/
+	.ATLP_structure_1 .ATLP_slotBox .ATLP_slotInfo{display:none;}
+	.ATLP_structure_1 .ATLP_head{height:30px;}
+	.ATLP_structure_1 .ATLP_head .ATLP_biLogo{left:6px;top:6px;}
+	.ATLP_structure_1 .ATLP_head .ATLP_biLogo img{height:18px;width:auto;}
+	.ATLP_structure_1 .ATLP_foot{position:absolute;left:0;bottom:0;width:100%;}
+	.ATLP_structure_1 .ATLP_body{position:relative;}
+	.ATLP_structure_1 .ATLP_body .ATLP_slot_wrap{overflow:hidden;}
+	.ATLP_structure_1 .ATLP_body .slotInfo_product{white-space:nowrap;text-overflow:ellipsis;}
+	.ATLP_structure_1 .ATLP_body .slotInfo_price{font-weight:bold;}
+	.ATLP_structure_1 .ATLP_body .ATLP_coursor{position:absolute;text-indent:-9999px;width:24px;height:11px;margin-left:-12px;}
+	.ATLP_structure_1 .ATLP_ad_link{right:4px;top:6px;}
+	/*형태1 - 와이드형*/
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_foot{height:30px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .ATLP_slot_wrap{position:absolute;top:0;left:0;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .ATLP_slotBox{float:left;position:relative;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .ATLP_maskLayer{display:none;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .ATLP_Info_wrap{position:absolute;left:0;top:0;width:100%;height:30px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .slotInfo_product{font-weight:bold;float:left;line-height:30px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .slotInfo_price{text-align:center;float:left;padding:0 10px !important;line-height:30px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .slotInfo_button{float:right;width:109px;height:24px;max-height:26px;background:url("images/btn_buynow_off_1.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body:hover .slotInfo_button{background:url("images/btn_buynow_on_1.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_body .ATLP_coursor{top:-11px;background:url("images/arrow_con1_1.png") no-repeat;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_btn{width:18px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_btn_left{left:0;background:url("images/btn_arrow_l_1.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_btn_right{right:0;background:url("images/btn_arrow_r_1.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_panList{position:absolute;right:40px;top:9px;}
+		.ATLP_structure_1.ATLP_shape_1 .ATLP_panList .ATLP_panNum{*text-indent:0;color:transparent;width:8px;height:8px;margin:0 2px;border-radius:5px;background:#cecece;}
+	/*형태2 - 사각형*/
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_foot{height:38px;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_slot_wrap{position:relative;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_slotBox{position:absolute;box-shadow: 0px 4px 6px rgba(0,0,0, .3);}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_Info_wrap{position:relative;width:100%;height:38px;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_maskLayer{display:block;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_slotBox.on .ATLP_maskLayer{display:none;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .slotInfo_product{font-weight:bold;margin:4px 0 1px 6px;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .slotInfo_price{margin-left:6px;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .slotInfo_button{position:absolute;right:6px;width:50px;height:23px;max-height:34px;background:url("images/btn_buynow_off_2.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body:hover .slotInfo_button{background:url("images/btn_buynow_on_2.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_body .ATLP_coursor{top:-11px;left:50%;background:url("images/arrow_con2_1.png") no-repeat;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_btn{width:20px;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_btn_left{left:6px;background:url("images/btn_arrow_l_2.png") no-repeat center;}
+		.ATLP_structure_1.ATLP_shape_2 .ATLP_btn_right{right:6px;background:url("images/btn_arrow_r_2.png") no-repeat center;}
+
+	/*스킨1*/
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .ATLP_coursor{background:url("images/arrow_con1_1.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#fd0c89;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .slotInfo_product{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .slotInfo_price{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .ATLP_panNum.on{background:#ff0000;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_1 .ATLP_foot{background:#3a3a3a;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_2 .ATLP_coursor{background:url("images/arrow_con2_1.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_2 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#fd0c89;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_2 .slotInfo_product{color:#ebebeb;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_2 .slotInfo_price{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_1.ATLP_shape_2 .ATLP_foot{background:#3a3a3a;}
+	/*스킨2*/
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#198be5;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .ATLP_coursor{background:url("images/arrow_con1_1.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .slotInfo_product{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .slotInfo_price{color:#ffde00;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .ATLP_panNum.on{background:#ffde00;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_1 .ATLP_foot{background:#3a3a3a;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_2 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#ff0000;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_2 .ATLP_coursor{background:url("images/arrow_con2_2.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_2 .slotInfo_product{color:#ebebeb;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_2 .slotInfo_price{color:#ffde00;}
+		.ATLP_structure_1.ATLP_skin_2.ATLP_shape_2 .ATLP_foot{background:#3a3a3a;}
+	/*스킨3*/
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#ff0000;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .ATLP_coursor{background:url("images/arrow_con1_2.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .slotInfo_product{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .slotInfo_price{color:#ffde00;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .ATLP_panNum.on{background:#198be5;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_1 .ATLP_foot{background:url("images/bg_product_info1_2.gif") repeat-x;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_2 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#ff0000;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_2 .ATLP_coursor{background:url("images/arrow_con2_3.png") no-repeat;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_2 .slotInfo_product{color:#fff;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_2 .slotInfo_price{color:#ffde00;}
+		.ATLP_structure_1.ATLP_skin_3.ATLP_shape_2 .ATLP_foot{background:url("images/bg_product_info2_2.gif") repeat;}
+
+/*구조2 - 일체형*/
+	.ATLP_structure_2 .ATLP_maskLayer{z-index:1;display:none;}
+	/*형태1 - 와이드형*/
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_head{height:30px;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_head .ATLP_biLogo{left:6px;top:6px;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_head .ATLP_biLogo img{height:18px;width:auto;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_ad_link{right:4px;top:6px;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_slotBox{float:left;position:relative;padding:3px !important;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_slotBox:hover .slotInfo_button{display:block;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_slotBox:hover .slotInfo_product{display:none;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_slotBox:hover .slotInfo_price{display:none;}
+		.ATLP_structure_2.ATLP_shape_1 .ATLP_slotInfo{position:relative;}
+		.ATLP_structure_2.ATLP_shape_1 .slotInfo_button{display:none;width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_1 .slotInfo_product{max-height:30px;padding:3px 3px 0px !important;}
+	/*형태2 - 사각형*/
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_head{height:34px;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_head .ATLP_biLogo{left:6px;top:7px;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_head .ATLP_biLogo img{height:20px;width:auto;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_ad_link{right:4px;top:9px;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_slotBox{float:left;position:relative;padding:3px !important;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_slotInfo{position:relative;}
+		.ATLP_structure_2.ATLP_shape_2 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_off_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_2 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_2 .slotInfo_product{max-height:30px;padding:3px 3px 0px !important;}
+		.ATLP_structure_2.ATLP_shape_2 .slotInfo_price{padding:0 0 3px !important;}
+	/*형태3 - 스카이형*/
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_head{height:47px;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_head .ATLP_biLogo{left:6px;top:13px;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_head .ATLP_biLogo img{height:22px;width:auto;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_ad_link{right:4px;top:9px;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_slotBox{position:relative;padding:3px !important;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_slotInfo{position:relative;}
+		.ATLP_structure_2.ATLP_shape_3 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_off_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_3 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_3 .slotInfo_product{padding:0px 3px 0px !important;max-height:30px;}
+		.ATLP_structure_2.ATLP_shape_3 .slotInfo_price{padding:3px 0 !important;}
+	/*형태4 - 라인형*/
+		.ATLP_structure_2.ATLP_shape_4{min-width:320px;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_head{float:left;width:100px;height:100%;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_head .ATLP_biLogo{left:0;top:50%;width:100%;text-align:center;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_head .ATLP_biLogo img{height:auto;width:90%;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_body{float:left;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_ad_link{top:2px;left:80px;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_ad_link:hover{margin-left:-76px;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_slotBox{float:left;position:relative;padding:3px !important;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_slotThum{float:left;}
+		.ATLP_structure_2.ATLP_shape_4 .ATLP_slotInfo{float:left;position:relative;}
+		.ATLP_structure_2.ATLP_shape_4 .slotInfo_product{padding:0 3px !important;max-height:30px;}
+		.ATLP_structure_2.ATLP_shape_4 .slotInfo_price{display:none;white-space:nowrap;font-size:12px;line-height:30px;padding:0 3px !important;}
+		.ATLP_structure_2.ATLP_shape_4 .slotInfo_button{display:none;}
+	/*형태5 - 라인형(1슬롯)*/
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_head{float:left;width:100px;height:100%;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_head .ATLP_biLogo{left:0;top:50%;width:100%;text-align:center;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_head .ATLP_biLogo img{height:auto;width:90%;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_body{float:left;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_ad_link{top:2px;left:80px;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_ad_link:hover{margin-left:-76px;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_slotBox{float:left;position:relative;padding:3px !important;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_slotThum{float:left;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_slotInfo{float:left;position:relative;}
+		.ATLP_structure_2.ATLP_shape_5 .slotInfo_product{padding:0 3px !important;max-height:30px;}
+		.ATLP_structure_2.ATLP_shape_5 .slotInfo_price{display:none;white-space:nowrap;line-height:30px;}
+		.ATLP_structure_2.ATLP_shape_5 .slotInfo_button{display:none;}
+		.ATLP_structure_2.ATLP_shape_5 .ATLP_slotBorder{display:none;}
+	/*형태6 - 사각형(2줄)*/
+		.ATLP_structure_2.ATLP_shape_6{border:1px solid #e1e1e1;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_head{height:24px;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_head .ATLP_biLogo{left:5px;top:5px;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_head .ATLP_biLogo img{height:14px;width:auto;}
+		.ATLP_structure_2.ATLP_shape_6.ATLP_skin_1 .ATLP_body{background:#fff;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_ad_link{right:5px;top:3px;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_slot_wrap{position:relative;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_slotBox{position:absolute;border:0;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_slotThum img{position:relative;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_slotInfo{display:none;z-index:2;position:absolute;left:0;top:0;}
+		.ATLP_structure_2.ATLP_shape_6 .slotInfo_button{position:relative;width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat;}
+		.ATLP_structure_2.ATLP_shape_6 .slotInfo_product{position:relative;padding:3px 10px 0px !important;max-height:46px;}
+		.ATLP_structure_2.ATLP_shape_6 .slotInfo_price{position:relative;padding:3px 4px !important;color:#f00;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_maskLayer{background:#fff;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_slotBorder{display:none;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_btn{width:18px;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_btn_left{left:0px;background:url("images/btn_arrow_l_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_6 .ATLP_btn_right{right:0px;background:url("images/btn_arrow_r_3.png") no-repeat center;}
+	/*형태7 - 와이드형(썸네일내부형식)*/
+		.ATLP_structure_2.ATLP_shape_7{border:1px solid #e1e1e1;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_head{height:22px;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_head .ATLP_biLogo{left:7px;top:3px;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_head .ATLP_biLogo img{height:16px;width:auto;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_ad_link{right:4px;top:3px;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_banner_box{padding-top:3px !important;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotBox{position:relative;float:left;border:0;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotBorder{z-index:2;display:none;left:0;top:0;border-color:#fd0c89;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotBox.on .ATLP_slotBorder{display:block;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotBox.on .ATLP_maskLayer{display:block;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotThum img{position:relative;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotInfo{display:none;z-index:2;position:absolute;left:0;top:0;width:100%;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_slotBox.on .ATLP_slotInfo{display:block;}
+		.ATLP_structure_2.ATLP_shape_7 .slotInfo_product{padding:0 6px !important;max-height:30px;color:#fff;}
+		.ATLP_structure_2.ATLP_shape_7 .slotInfo_price{font-size:12px;padding:4px 4px !important;color:#f00;}
+		.ATLP_structure_2.ATLP_shape_7 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_btn{top:1px;width:20px;height:19px;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_btn_left{right:55px;background:url("images/btn_arrow_l_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_7 .ATLP_btn_right{right:30px;background:url("images/btn_arrow_r_3.png") no-repeat center;}
+	/*형태8 - 라인형(썸네일내부형식)*/
+		.ATLP_structure_2.ATLP_shape_8{border:1px solid #e1e1e1;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_head{float:left;width:92px;height:100%;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_head .ATLP_biLogo{left:0;top:50%;width:100%;text-align:center;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_head .ATLP_biLogo img{height:auto;width:88%;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_body{float:left;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_ad_link{top:4px;left:72px;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_ad_link:hover{margin-left:-55px;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotBox{float:left;position:relative;border:0;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotThum{position:absolute;left:0;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotThum img{position:relative;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotBorder{z-index:2;display:none;left:0;top:0;border-color:#fd0c89;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotBox.on .ATLP_slotBorder{display:block;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotInfo{display:none;z-index:2;position:absolute;left:0;top:0;width:100%;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotBox.on .ATLP_slotInfo{display:block;}
+		.ATLP_structure_2.ATLP_shape_8 .slotInfo_product{max-height:30px;padding:3px 6px 0 !important;color:#fff;}
+		.ATLP_structure_2.ATLP_shape_8 .slotInfo_price{padding:4px 4px !important;color:#f00;font-size:12px;}
+		.ATLP_structure_2.ATLP_shape_8 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_slotBox.on .ATLP_maskLayer{display:block;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_btn{bottom:6px;width:20px;height:19px;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_btn_left{left:22px;background:url("images/btn_arrow_l_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_8 .ATLP_btn_right{left:50px;background:url("images/btn_arrow_r_3.png") no-repeat center;}
+	/*형태9 - 라인형(썸네일내부형식 2줄)*/
+		.ATLP_structure_2.ATLP_shape_9{border:1px solid #e1e1e1;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_head{float:left;width:92px;height:100%;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_head .ATLP_biLogo{left:0;top:50%;width:100%;text-align:center;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_head .ATLP_biLogo img{height:auto;width:88%;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_body{float:left;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_ad_link{top:4px;left:72px;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_ad_link:hover{margin-left:-55px;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotBox{float:left;position:relative;border:0;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotThum{position:absolute;left:0;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotThum img{position:relative;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotBorder{z-index:2;display:none;left:0;top:0;border-color:#fd0c89;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotBox.on .ATLP_slotBorder{display:block;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotInfo{display:none;z-index:2;position:absolute;left:0;top:0;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotBox.on .ATLP_slotInfo{display:block;}
+		.ATLP_structure_2.ATLP_shape_9 .slotInfo_button{display:none;}
+		.ATLP_structure_2.ATLP_shape_9 .slotInfo_product{padding:0 4px !important;max-height:13px;color:#fff;}
+		.ATLP_structure_2.ATLP_shape_9 .slotInfo_price{padding:4px 4px !important;color:#f00;font-size:12px;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_slotBox.on .ATLP_maskLayer{display:block;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_btn{bottom:6px;width:20px;height:19px;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_btn_left{left:22px;background:url("images/btn_arrow_l_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_9 .ATLP_btn_right{left:50px;background:url("images/btn_arrow_r_3.png") no-repeat center;}
+	/*형태10 - 스카이형(썸네일내부형식)*/
+		.ATLP_structure_2.ATLP_shape_10{border:1px solid #e1e1e1;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_head{height:50px;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_head .ATLP_biLogo{left:11px;top:20px;width:82%;text-align:center;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_head .ATLP_biLogo img{height:22px;width:auto;max-width:94%;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_ad_link{right:3px;top:3px;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotBox{position:relative;border:0;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotBorder{z-index:2;display:none;left:0;top:0;border-color:#fd0c89;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotBox.on .ATLP_slotBorder{display:block;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotThum img{position:relative;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotInfo{display:none;z-index:2;position:absolute;left:0;top:0;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotBox.on .ATLP_slotInfo{display:block;}
+		.ATLP_structure_2.ATLP_shape_10 .slotInfo_product{padding:3px 10px 0px !important;max-height:30px;color:#fff;}
+		.ATLP_structure_2.ATLP_shape_10 .slotInfo_price{padding:4px 4px !important;color:#f00;}
+		.ATLP_structure_2.ATLP_shape_10 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_slotBox.on .ATLP_maskLayer{display:block;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_btn{bottom:4px;width:20px;height:19px;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_btn_left{left:30%;background:url("images/btn_arrow_l_3.png") no-repeat center;}
+		.ATLP_structure_2.ATLP_shape_10 .ATLP_btn_right{right:30%;background:url("images/btn_arrow_r_3.png") no-repeat center;}
+
+	/*스킨1*/
+		.ATLP_structure_2.ATLP_skin_1 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#fd0c89;}
+		.ATLP_structure_2.ATLP_skin_1 .slotInfo_product{color:#3a3a3a;}
+		.ATLP_structure_2.ATLP_skin_1.ATLP_shape_7 .ATLP_body{background:#fff;}
+		.ATLP_structure_2.ATLP_skin_1.ATLP_shape_7 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_1.ATLP_shape_8 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_1.ATLP_shape_9 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_1.ATLP_shape_10 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_1 .slotInfo_price{color:#a1a1a1;}
+		.ATLP_structure_2.ATLP_skin_1 .ATLP_slotBox.on .slotInfo_price{color:#f00;}
+	/*스킨2*/
+		.ATLP_structure_2.ATLP_skin_2 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#2ca8ff;}
+		.ATLP_structure_2.ATLP_skin_2 .slotInfo_product{color:#3a3a3a;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_7 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_8 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_9 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_10 .slotInfo_product{color:#fff;}
+		.ATLP_structure_2.ATLP_skin_2 .slotInfo_price{color:#a1a1a1;}
+		.ATLP_structure_2.ATLP_skin_2 .ATLP_slotBox.on .slotInfo_price{color:#2ca8ff;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_6 .ATLP_slotBox.on .slotInfo_price{color:#f00;}
+		.ATLP_structure_2.ATLP_skin_2 .ATLP_maskLayer{background:#888;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_6 .ATLP_maskLayer{background:#fff;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_7 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_8 .ATLP_maskLayer{background:#000;}
+		.ATLP_structure_2.ATLP_skin_2.ATLP_shape_10 .ATLP_maskLayer{background:#000;}
+
+/*구조3 - 카드형*/
+	.ATLP_structure_3 .ATLP_ad_link{right:4px;top:4px;}
+	.ATLP_structure_3 .ATLP_maskLayer{display:none;}
+	.ATLP_structure_3 .ATLP_slotBox{position:absolute;padding:3px !important;border:1px solid #e1e1e1;background:#fff;
+		transition: transform .2s linear;-webkit-transition: -webkit-transform .2s linear;
+		transform-origin: center;-webkit-transform-origin: center;
+	;}
+	.ATLP_structure_3 .ATLP_slotBox.on{z-index:21 !important;transform-origin: center;}
+	.ATLP_structure_3 .ATLP_slotBox.af{transform-origin: center;-webkit-transform-origin: center;}
+	.ATLP_structure_3 .slotInfo_product{line-height:1.3;color:#3a3a3a;}
+	/*형태1 - 와이드형*/
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_head{height:30px;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_head .ATLP_biLogo{left:6px;top:6px;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_head .ATLP_biLogo img{height:18px;width:auto;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox{left:100%;box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+			transform: perspective(180px) rotateY(-20deg) scale(0.75,0.75);
+			-webkit-transform: perspective(180px) rotateY(-20deg) scale(0.75,0.75);}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.on{
+			transform: perspective(1800px) rotateY(0deg);
+			-webkit-transform: perspective(1800px) rotateY(0deg);}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.af{
+			transform: perspective(180px) rotateY(20deg) scale(0.75,0.75);
+			-webkit-transform: perspective(180px) rotateY(20deg) scale(0.75,0.75);}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotThum{float:right;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotInfo{float:left;position:relative;}
+		.ATLP_structure_3.ATLP_shape_1 .slotInfo_product{max-height:46px;padding:0 4px !important;}
+		.ATLP_structure_3.ATLP_shape_1 .slotInfo_price{padding:3px 0 !important;}
+		.ATLP_structure_3.ATLP_shape_1 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.on .ATLP_slotThum,
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.af .ATLP_slotThum{float:left;}
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.on .ATLP_slotInfo,
+		.ATLP_structure_3.ATLP_shape_1 .ATLP_slotBox.af .ATLP_slotInfo{float:right;}
+	/*형태2 - 사각형*/
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_head{height:34px;}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_head .ATLP_biLogo{left:8px;top:7px;}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_head .ATLP_biLogo img{height:20px;width:auto;}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_slotBox{left:0;top:100%;box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+			transform: perspective(180px) rotateY(-20deg) scale(0.82,0.82);
+			-webkit-transform: perspective(180px) rotateY(-20deg) scale(0.82,0.82);}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_slotBox.on{
+			transform: perspective(1800px) rotateY(0deg);
+			-webkit-transform: perspective(1800px) rotateY(0deg);}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_slotBox.af{
+			transform: perspective(180px) rotateY(20deg) scale(0.82,0.82);
+			-webkit-transform: perspective(180px) rotateY(20deg) scale(0.82,0.82);}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_slotInfo{position:relative;}
+		.ATLP_structure_3.ATLP_shape_2 .slotInfo_product{max-height:30px;padding:3px 3px 0 !important;}
+		.ATLP_structure_3.ATLP_shape_2 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_off_3.png") no-repeat center;}
+		.ATLP_structure_3.ATLP_shape_2 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_3.ATLP_shape_2 .slotInfo_price{padding:3px 0 !important;}
+	/*형태3 -  스카이형*/
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_head{height:46px;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_head .ATLP_biLogo{left:0px;top:16px;width:100%;text-align:center;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_head .ATLP_biLogo img{height:20px;width:auto;max-width:96%;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox{left:0;top:100%;box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+			transform: perspective(180px) rotateX(20deg) scale(0.75,0.75);
+			-webkit-transform: perspective(180px) rotateX(20deg) scale(0.75,0.75);}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.on{
+			transform: perspective(1800px) rotateX(0deg);
+			-webkit-transform: perspective(1800px) rotateX(0deg);}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.af{
+			transform: perspective(180px) rotateX(-20deg) scale(0.75,0.75);
+			-webkit-transform: perspective(180px) rotateX(-20deg) scale(0.75,0.75);}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotThum{position:absolute;left:3px;bottom:3px;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotInfo{position:absolute;left:3px;top:3px;}
+		.ATLP_structure_3.ATLP_shape_3 .slotInfo_product{max-height:30px;padding:4px 4px 0 !important;}
+		.ATLP_structure_3.ATLP_shape_3 .slotInfo_price{padding:3px 0 !important;}
+		.ATLP_structure_3.ATLP_shape_3 .slotInfo_button{width:78px;height:28px;background:url("images/btn_buynow_off_3.png") no-repeat center;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.on .slotInfo_button{background:url("images/btn_buynow_on_3.png") no-repeat center;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.on .ATLP_slotThum,
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.af .ATLP_slotThum{top:3px;bottom:auto;}
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.on .ATLP_slotInfo,
+		.ATLP_structure_3.ATLP_shape_3 .ATLP_slotBox.af .ATLP_slotInfo{top:auto;bottom:3px;}
+
+	/*스킨1*/
+		.ATLP_structure_3.ATLP_skin_1 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#fd0c89;}
+		.ATLP_structure_3.ATLP_skin_1 .slotInfo_product{color:#3a3a3a;}
+		.ATLP_structure_3.ATLP_skin_1 .slotInfo_price{color:#a1a1a1;}
+		.ATLP_structure_3.ATLP_skin_1 .ATLP_slotBox.on .slotInfo_price{color:#f00;}
+	/*스킨2*/
+		.ATLP_structure_3.ATLP_skin_2 .ATLP_slotBox.on .ATLP_slotBorder{border-color:#0c9ffd;}
+		.ATLP_structure_3.ATLP_skin_2 .slotInfo_product{color:#3a3a3a;}
+		.ATLP_structure_3.ATLP_skin_2 .slotInfo_price{color:#0c9ffd;}
+		.ATLP_structure_3.ATLP_skin_2 .ATLP_slotBox.on .slotInfo_price{color:#0c9ffd;}
+
+
+
+
+
+

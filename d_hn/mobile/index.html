@@ -1,0 +1,80 @@
+<?php
+	include('outline/header_main.html');
+?>
+
+
+
+<div class="wrapper">
+<div class="container">
+
+	<section class="flick_section arc1">
+		<?php
+			include('main/pl_list.html');
+		?>
+	</section>
+	<section class="flick_section arc2">
+		<?php
+			include('main/main.html');
+		?>
+	</section>
+	<section class="flick_section arc3">
+		<?php
+			include('main/pl_country.html');
+		?>
+	</section>
+
+</div><!--//container-->
+</div><!--//wrapper-->
+
+
+<script>
+	function getUrlParam(param){
+		var indexUrl = window.location.search.substring(1);
+		var urlArry = indexUrl.split('&');
+		if (urlArry != ''){
+			for(var i = 0; urlArry.length; i++) {
+				var keyVal = urlArry[i].split('=');
+				if(keyVal[0] == param){
+					return keyVal[1];
+				}
+			}
+		}else{
+			return;
+		}
+	}
+
+	$(document).ready(function (){
+		if ( getUrlParam('linkTab') == 'country' ){
+			$('.link_country a').click();
+		}else if ( getUrlParam('linkTab') == 'garden' ){
+			$('.link_garden a').click();
+		}else if ( getUrlParam('linkTab') == 'meatshop' ){
+			$('.link_meatshop a').click();
+		}else if ( getUrlParam('linkTab') == 'ricestore' ){
+			$('.link_ricestore a').click();
+		}else if ( getUrlParam('linkTab') == 'sp_price' ){
+			$('.section_menu').find('a').eq(1).click();
+		}else if ( getUrlParam('linkTab') == 'timesale' ){
+			$('.section_menu').find('a').eq(2).click();
+		}
+
+		//console.log( getUrlParam('linkTab') );
+		
+	});
+</script>
+
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

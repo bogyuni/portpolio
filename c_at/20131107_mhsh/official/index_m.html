@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 문화생활 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="Author" content="Adtive innonvation" />
+	<meta name="Keywords" content="문화생활,공연정보,콘서트정보,티켓할인,문화정보,저렴한공연,최신앱,신규앱" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if lt IE 8]><link rel="stylesheet" href="css/style_ie7.css"></style><![endif]-->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script>
+		var agt = navigator.userAgent.toLowerCase();
+		function setCookie( name, value, expiredays ){
+			var todayDate = new Date(); 
+			todayDate.setDate( todayDate.getDate() + expiredays ); 
+			document.cookie = name + "_kor=" + escape( value ) + "; path=/; expires=" +    todayDate.toGMTString() + ";" 
+		}
+		function closeNotice(){
+			if ( document.forms[0].Notice.checked )
+			setCookie( "mhsh_notice", "done" , 1);
+			$(".popup_layer").hide();
+		}
+		function getCookie( name ){
+			var nameOfCookie = name + "_kor=";
+			var x = 0;
+			while ( x <= document.cookie.length ){
+				var y = (x+nameOfCookie.length);
+				if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+					if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+						endOfCookie = document.cookie.length;
+					return unescape( document.cookie.substring( y, endOfCookie ) );
+				}
+				x = document.cookie.indexOf( " ", x ) + 1;
+				if ( x == 0 ) break;
+			}
+			return "";
+		}
+		function noticePopup(){
+			if ( getCookie( "mhsh_notice" ) != "done" ) $(".popup_layer").show();
+		}
+		$(document).ready(function(){
+			noticePopup();
+			$(".btn_close").click(function(){$(".popup_layer").hide();});
+			if ($("header").width() < 1000){
+				$("header").removeClass('web_device');
+			}else{
+				$("header").addClass('web_device');
+			}
+		});
+		$(window).resize(function(){
+			if ($("header").width() < 1000){
+				$("header").removeClass('web_device');
+			}else{
+				$("header").addClass('web_device');
+			}
+		});
+</script>
+</head>
+<body>
+
+<header class="web_device">
+	<div class="header_wrap">
+		<h1><a href="/">문화생활</a></h1>
+		<nav>
+			<a href="index.html" class="menu1">처음으로</a>
+			<a href="service.html" class="menu2">서비스소개</a>
+			<a href="show.html" class="menu3">쑈-</a>
+			<a href="adntell.html" class="menu4">광고및연락처</a>
+		</nav>
+		<aside>
+			<a href="https://www.facebook.com/mhshlife2014" target="_blank" class="sns_menu1">페이스북</a>
+			<a href="https://twitter.com/mhshlife" target="_blank" class="sns_menu2">트위터</a>
+		</aside>
+	</div>
+</header>
+
+<div class="container">
+	<div class="content">
+		<section class="main_content cycle-slideshow"
+			data-cycle-fx="scrollHorz"
+			data-cycle-timeout="3000"
+			data-cycle-pause-on-hover="true"
+			data-cycle-prev=".btn_prev"
+			data-cycle-next=".btn_next"
+			>
+			<img src="images/main_con1.jpg" alt="공연정보를 한 눈에 보는 돈버는 문화생활" />
+			<img src="images/main_con2.jpg" alt="비싼 티켁 걱정은 NO~ 즐기는 문화생활" />
+			<img src="images/main_con3.jpg" alt="10출석완료하고 2%쿠폰 모아 추가할인까지! 풍성한 문화생활" />
+			<div class="cycle-pager"></div>
+			<button class="btn_prev">Prev</button>
+			<button class="btn_next">Next</button>
+		</section>
+		<section class="bottom_content">
+			<article class="link_service">
+				<h2><img src="images/h2_sms_article.gif" alt="스마트-폰으로 앱 다운-로드 링크 받기" /></h2>
+				<p><img src="images/main_txt_con1.gif" alt="핸드폰 번호를 입력하시면 다운로드 받을 수 있는 URL을 문자로 보내드립니다." /></p>
+				<div class="sms_box">
+					<input type="text" class="inst_number" maxlength="11" placeholder="숫자만 입력해 주세요." />
+					<a href="" class="btn_sms"><img src="images/btn_sms.gif" alt="전송" /></a>
+				</div>
+			</article>
+			<article class="app_store">
+				<h2><img src="images/h2_appstore.gif" alt="맵-스토어 바로가기" /></h2>
+				<a href="https://play.google.com/store/apps/details?id=com.adtive.mhsh" target="_blank"><img src="images/btn_googleplay.gif" alt="구글플레이" /></a>
+				<a href="javascript:alert('아이폰용 문화생활 앱은 4월 중 오픈 예정입니다.')"><img src="images/btn_appstore.gif" alt="아이튠즈 앱스토어" /></a>
+				<p class="caption"><img src="images/main_txt_con2.gif" alt="아이폰용 문화생활 앱은 4월 중 오픈 예정입니다." /></p>
+			</article>
+		</section>
+	</div>
+</div>
+
+<footer>
+	<div class="footer_wrap">
+		<a href="http://www.adtive.com" target="_blank" class="company_link"><img src="images/company_logo.gif" alt="애드티브 이노베이션" /></a>
+		<aside>
+			<a href="clause.html"><img src="images/btn_clause.gif" alt="이용약관" /></a>
+			<a href="personal_info.html"><img src="images/btn_personal_info.gif" alt="개인정보취급방침" /></a>
+		</aside>
+		<address>서울시 강남구 역삼동 719번지 신웅빌딩 14층 애드티브이노베이션(주)  |  대표이사 : 조재범  |  사업자등록번호 : 120-87-11103</address>
+		<p class="copyright">Copyright(c) 2014 adtive innovation. All rights reserved.</p>
+	</div>
+</footer>
+
+<div class="popup_layer">
+	<img class="bg_img" src="images/bg_popup_main.jpg" alt="" />
+	<button class="btn_close"><img src="images/btn_close.png" alt="close" /></button>
+	<div class="ch_box">
+		<form action="">
+			<input id="todayCheck" type="checkbox" name="Notice" value="" />
+			<label for="todayCheck">1일간 열지 않음 </label>
+			<a href="javascript:history.onclick=closeNotice()"><img src="images/btn_close_ch.png" alt="close" /></a>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>

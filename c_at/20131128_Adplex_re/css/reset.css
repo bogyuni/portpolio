@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;-webkit-text-size-adjust:none;}
+body,input,textarea{font:12px/1.2 Dotum, "돋음", verdana, sans-serif;color:#555555;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object, textarea, a, img{padding:0;margin:0;}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed;}
+td,th{word-break:break-all;}
+select, input, table tr td, table tr th{vertical-align:middle;}
+form, fieldset, abbr, acronym, input{border:0 none;}
+textarea{line-height:1.6;}
+img{border:0;vertical-align:top;}
+table img{vertical-align:middle;}
+address, caption, em, h1, h2, h3, h4, h5, h6, var, button{font:12px/1.2 Dotum, "돋음", verdana, sans-serif;color:#555555;}
+ol, ul, li{list-style: none;}
+a{text-decoration:none;color:#353535;}
+a:hover{text-decoration:underline;}
+label{cursor:pointer;}
+button{cursor:pointer;border:0 none;background:none;}
+/*FF용 버튼 내부 이미지 간격*/
+button::-moz-focus-inner{margin:-1px;padding:0;border-width:1px;}
+/* html5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+/* 화면숨김 */
+hr, legend{position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;text-indent:-5000px;}
+/*웹킷용 캡션 숨기기*/
+caption{width:0;height:0;padding:0px;margin:0px;visibility:hidden;}
+/*clear*/
+.clearfix:after{display:block;clear:both;content:'';}

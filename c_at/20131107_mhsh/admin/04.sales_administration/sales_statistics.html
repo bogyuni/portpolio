@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> 문화생활 - 관리자 페이지 </title>
+	<meta name="Author" content="Adtive inovation" />
+	<meta name="Keywords" content="문화생활, 공연, 콘서트, 공연할인, 광고설정" />
+	<link rel="shortcut icon" href="ico/ico.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="../css/style_ie8.css" />
+	<![endif]-->
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="header_wrap">
+			<ul class="util_menu">
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">회원정보</a></li>
+				<li><a href="#">로그아웃</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container_topline">
+		<div class="decoration decoration1"></div>
+		<div class="decoration decoration2"></div>
+		<div class="decoration decoration3"></div>
+	</div>
+
+	<div class="container ad_set">
+		<!--gnb-->
+		<div class="gnb">
+			<div class="logo_box"><a href="/"><img src="../images/common/logo.png" alt="문화생활" /></a></div>
+			<ul class="gnb_list">
+				<li class="menu1">
+					<a href="#">광고설정</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu2">
+					<a href="#">효과관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu3">
+					<a href="#">상정관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu4 on">
+					<a href="#">판매관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu5">
+					<a href="#">회원관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu6">
+					<a href="#">주문관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu7">
+					<a href="#">게시판관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu8">
+					<a href="#">검색어관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu9">
+					<a href="#">쿠폰관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu10">
+					<a href="#">로딩관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu11">
+					<a href="#">계정관리</a>
+					<div class="mask"></div>
+				</li>
+			</ul>
+		</div>
+		<!--//gnb-->
+		<!--snb-->
+		<div class="snb">
+			<div class="title_article">
+				<h1><img src="../images/tit/h1_slaes_set.gif" alt="판매관리" /></h1>
+				<p class="caption"><img src="../images/content/depth1_menu4_caption1.gif" alt="판매현황 및 판매집행 통계 데이터 제공" /></p>
+			</div>
+			<a href="#" class="btn_new_register"><img src="../images/btn/btn_new_register.gif" alt="신규등록" /></a>
+			<ul class="snb_list">
+				<li class="depth2_menu menu1"><a href="#"><img src="../images/common/depth2_menu8_off.gif" alt="판매현황" /></a></li>
+				<li class="depth2_menu menu2"><a href="#"><img src="../images/common/depth2_menu9_on.gif" alt="판매매출통계" /></a></li>
+			</ul>
+		</div>
+		<!--//snb-->
+		<!--content-->
+		<div class="content">
+			<div class="title_article">
+				<h2><img src="../images/tit/h2_sales_statics.gif" alt="판매매출통계" /></h2>
+				<p class="caption"><img src="../images/content/depth2_menu4_caption2.gif" alt="상품판매 결과에 대한 일자별, 시간별 통계 확인이 가능합니다." /></p>
+			</div>
+			<div class="content_section ad_statistics_section">
+				<div class="category_article">
+					<input type="radio" />
+					<div class="select_box">
+						<input type="text" class="selected_text type_w125" value="상품명" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title="상품명">상품명</li>
+								<li title="상품주">상품주</li>
+								<li title="상품타이틀">상품타이틀</li>
+								<li title="상품코드">상품코드</li>
+							</ul>
+						</div>
+					</div>
+					<div class="input_box"><input type="text" class="input_text type_w130" placeholder="직접입력" /></div>
+
+					<input type="radio" />
+					<div class="select_box">
+						<input type="text" class="selected_text type_w130" value="판매중" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title=""></li>
+							</ul>
+						</div>
+					</div>
+
+					<input type="radio" />
+					<div class="select_box">
+						<input type="text" class="selected_text type_w130" value="마감" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title=""></li>
+							</ul>
+						</div>
+					</div>
+
+					<input type="radio" />
+					<div class="select_box">
+						<input type="text" class="selected_text type_w130" value="완전매진" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="ad_date_article">
+					<span class="tit_1">기간:</span>
+
+					<div class="con_box1">
+						<div class="select_box">
+							<input type="text" class="selected_text type_w104" value="일별" readonly="readonly" />
+							<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+							<div class="select_list_box">
+								<div class="bg_layer"></div>
+								<ul class="select_list">
+									<li title=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						~
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						<button><img src="../images/btn/btn_all_date2.gif" alt="판매기간전체" /></button>
+					</div>
+
+					<div class="con_box2">
+						<div class="select_box">
+							<input type="text" class="selected_text type_w104" value="주별" readonly="readonly" />
+							<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+							<div class="select_list_box">
+								<div class="bg_layer"></div>
+								<ul class="select_list">
+									<li title=""></li>
+								</ul>
+							</div>
+						</div>
+						<span>일자:</span>
+						<div class="select_box">
+							<input type="text" class="selected_text type_w400" value="" readonly="readonly" />
+							<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+							<div class="select_list_box">
+								<div class="bg_layer"></div>
+								<ul class="select_list">
+									<li title=""></li>
+								</ul>
+							</div>
+						</div>
+						<button><img src="../images/btn/btn_search3.gif" alt="검색" /></button>
+						<button><img src="../images/btn/btn_reset2.gif" alt="초기화" /></button>
+					</div>
+				</div>
+
+				<div class="search_result_article">
+					<div class="result_box">검색결과 : <span class="result_count">120</span> 건</div>
+				</div>
+
+				<div class="table_article">
+					<table summary="검색결과">
+						<caption>검색결과</caption>
+						<colgroup>
+							<col width="14%" />
+							<col width="9%" />
+							<col width="10%" />
+							<col width="15%" />
+							<col width="17%" />
+							<col width="13%" />
+							<col width="13%" />
+							<col width="9%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="color_type1"><img src="../images/content/th_product_code.gif" alt="상품코드" /></th>
+								<th scope="col" class="color_type1"><img src="../images/content/th_group.gif" alt="분류" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_productmaster.gif" alt="상품주" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_productname.gif" alt="상품명" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_producttit.gif" alt="상품타이틀" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_startday.gif" alt="시작일" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_lastday.gif" alt="종료일" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_status.gif" alt="상태" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Ad20131007-10</td>
+								<td>뮤지컬</td>
+								<td>CJ</td>
+								<td>맨 오브 라만차</td>
+								<td>연속매진! 맨오브라만 연속매진! 맨오브라만 연속매진! 맨오브라만 연속매진! 맨오브라만 </td>
+								<td>2013.10.07</td>
+								<td>2013.10.13</td>
+								<td>진행중</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_box">
+						<a href="#" class="btn_popuplayer_article1"><img src="../images/btn/btn_product_add.gif" alt="상품일괄등록" /></a>
+						<a href="#" class="btn_popuplayer_article2"><img src="../images/btn/btn_product_administration.gif" alt="상품등록관리" /></a>
+						<a href="#" class="btn_popuplayer_article3"><img src="../images/btn/btn_sales_administration.gif" alt="판매/기간 관리" /></a>
+						<a href="#"><img src="../images/btn/btn_detailview.gif" alt="상세" /></a>
+					</div>
+				</div>
+
+				<ul class="pagelist_article">
+					<li><a href="#" class="btn_prev">◀ 이전</a></li>
+					<li><a class="on" href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#" class="btn_next">다음 ▶</a></li>
+				</ul>
+
+				<div class="statistics_article">
+					<dl class="statistics_list">
+						<dt class="dt1 statistics_title on"><button>기본통계</button></dt>
+							<dd class="statistics_content on">
+								<div class="statistics_table_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 일별통계</h4>
+									<table class="statistics_table3" summary="일별통계">
+										<caption>일별통계</caption>
+										<colgroup>
+											<col width="15%" />
+											<col width="9%" />
+											<col width="9%" />
+											<col width="9%" />
+											<col width="12%" />
+											<col width="15%" />
+											<col width="10%" />
+											<col width="10%" />
+											<col width="10%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="color_type1 left_t" scope="col"><img src="../images/content/th_day.gif" alt="날짜" /></th>
+												<th class="color_type1" scope="col"><img src="../images/content/th_pv.gif" alt="PV" /></th>
+												<th class="color_type2 point_bg" scope="col"><img src="../images/content/th_change2.gif" alt="전환률" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_buy.gif" alt="구매" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_coupon_use.gif" alt="쿠폰사용" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_coupon_cash.gif" alt="쿠폰사용금액" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_bonus.gif" alt="장려금" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_dowry.gif" alt="지참금" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_total2.gif" alt="합계" /></th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th scope="row"><img src="../images/content/th_full_total.gif" alt="총계" /></th>
+												<td>150</td>
+												<td>1%</td>
+												<td>30</td>
+												<td>3</td>
+												<td>15,000</td>
+												<td class="point_color1">15,000</td>
+												<td class="point_color2">15,000</td>
+												<td class="point_color3">30,000</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td class="left_t">2013. 10. 07(월)</td>
+												<td>10</td>
+												<td class="point_bg">1%</td>
+												<td>15</td>
+												<td>1</td>
+												<td>15,000</td>
+												<td class="point_fw point_color1">15,000</td>
+												<td class="point_fw point_color2">15,000</td>
+												<td class="point_fw point_color3">30,000</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="statistics_graph_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 일별그래프</h4>
+									<!-- 그래프 모듈 삽입 공간 -->
+									<div class="graph_area" style="text-align:center;padding:30px;border:1px solid #dfdfdf;background:#fff;">
+										<!--
+											그래프 모듈 삽입 공간
+											div graph_area 를 삭제 하시고, 모듈을 삽입하시면 됩니다.
+										-->
+										<img src="../images/temp/temp_graph1.gif" alt="" />
+									</div>
+									<!-- //그래프 모듈 삽입 공간 -->
+								</div>
+							</dd>
+						<dt class="dt2 statistics_title"><button>시간통계</button></dt>
+							<dd class="statistics_content">
+								<div class="statistics_table_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 시간통계</h4>
+									<p style="text-align:right;margin-bottom:6px;"><img src="../images/content/txt_con1.gif" alt="24tlrks rlwns / 1시간 별 리스트" /></p>
+									<table class="statistics_table3" summary="일별통계">
+										<caption>일별통계</caption>
+										<colgroup>
+											<col width="15%" />
+											<col width="9%" />
+											<col width="9%" />
+											<col width="9%" />
+											<col width="12%" />
+											<col width="15%" />
+											<col width="10%" />
+											<col width="10%" />
+											<col width="10%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="color_type1 left_t" scope="col"><img src="../images/content/th_time.gif" alt="시간" /></th>
+												<th class="color_type1" scope="col"><img src="../images/content/th_pv.gif" alt="PV" /></th>
+												<th class="color_type2 point_bg" scope="col"><img src="../images/content/th_change2.gif" alt="전환률" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_buy.gif" alt="구매" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_coupon_use.gif" alt="쿠폰사용" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_coupon_cash.gif" alt="쿠폰사용금액" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_bonus.gif" alt="장려금" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_dowry.gif" alt="지참금" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_total2.gif" alt="합계" /></th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th scope="row"><img src="../images/content/th_full_total.gif" alt="총계" /></th>
+												<td>150</td>
+												<td>1%</td>
+												<td>30</td>
+												<td>3</td>
+												<td>15,000</td>
+												<td class="point_color1">15,000</td>
+												<td class="point_color2">15,000</td>
+												<td class="point_color3">30,000</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>am 12:00 ~ am 12:59</td>
+												<td>10</td>
+												<td class="point_bg">1%</td>
+												<td>15</td>
+												<td>1</td>
+												<td>15,000</td>
+												<td class="point_fw point_color1">15,000</td>
+												<td class="point_fw point_color2">15,000</td>
+												<td class="point_fw point_color3">30,000</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="statistics_graph_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 시간그래프</h4>
+									<!-- 그래프 모듈 삽입 공간 -->
+									<div class="graph_area" style="text-align:center;padding:30px;border:1px solid #dfdfdf;background:#fff;">
+										<!--
+											그래프 모듈 삽입 공간
+											div graph_area 를 삭제 하시고, 모듈을 삽입하시면 됩니다.
+										-->
+										<img src="../images/temp/temp_graph1.gif" alt="" />
+									</div>
+									<!-- //그래프 모듈 삽입 공간 -->
+								</div>
+							</dd>
+						<dt class="dt3 statistics_title"><button>사용자환경</button></dt>
+							<dd class="statistics_content">
+								<div class="statistics_table_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 휴대폰 기기별</h4>
+									<table class="statistics_table2" summary="사용자 환경">
+										<caption>휴대폰 기기별 사용자 환경</caption>
+										<colgroup>
+											<col width="25%" />
+											<col width="18%" />
+											<col width="19%" />
+											<col width="18%" />
+											<col width="19%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="color_type1" scope="col"><img src="../images/content/th_device.gif" alt="단말기" /></th>
+												<th class="color_type2" scope="col"><img src="../images/content/th_guest.gif" alt="방문수" /></th>
+												<th class="color_type2" scope="col"><img src="../images/content/th_guest_p.gif" alt="방문비율" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_page_view.gif" alt="페이지뷰" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_change.gif" alt="전환율" /></th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th scope="row">합계</th>
+												<td class="color_type2">100,000</td>
+												<td class="color_type2">100&#37;</td>
+												<td class="color_type3">100</td>
+												<td class="color_type3">100&#37;</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>iphone 5S</td>
+												<td class="color_type2">1,000</td>
+												<td class="color_type2">2&#37;</td>
+												<td class="color_type3">5.69</td>
+												<td class="color_type3">2&#37;</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="statistics_graph_article">
+									<!-- 그래프 모듈 삽입 공간 -->
+									<div class="graph_area" style="text-align:center;padding:30px;margin-bottom:50px;border:1px solid #dfdfdf;background:#fff;">
+										<!--
+											그래프 모듈 삽입 공간
+											div graph_area 를 삭제 하시고, 모듈을 삽입하시면 됩니다.
+										-->
+										<img src="../images/temp/temp_graph2.gif" alt="" />
+									</div>
+									<!-- //그래프 모듈 삽입 공간 -->
+								</div>
+								<div class="statistics_table_article">
+									<h4><img src="../images/common/ico_result.png" alt="bu icon" /> 지역별 방문자</h4>
+									<table class="statistics_table2" summary="사용자 환경">
+										<caption>지역별 방문자 사용자 환경</caption>
+										<colgroup>
+											<col width="25%" />
+											<col width="18%" />
+											<col width="19%" />
+											<col width="18%" />
+											<col width="19%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="color_type1" scope="col"><img src="../images/content/th_area.gif" alt="지역" /></th>
+												<th class="color_type2" scope="col"><img src="../images/content/th_guest.gif" alt="방문수" /></th>
+												<th class="color_type2" scope="col"><img src="../images/content/th_guest_p.gif" alt="방문비율" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_page_view.gif" alt="페이지뷰" /></th>
+												<th class="color_type3" scope="col"><img src="../images/content/th_change.gif" alt="전환율" /></th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th scope="row">합계</th>
+												<td class="color_type2">100,000</td>
+												<td class="color_type2">100&#37;</td>
+												<td class="color_type3">100</td>
+												<td class="color_type3">100&#37;</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>서울 턱~별시</td>
+												<td class="color_type2">1,000</td>
+												<td class="color_type2">2&#37;</td>
+												<td class="color_type3">5.69</td>
+												<td class="color_type3">2&#37;</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="statistics_graph_article">
+									<!-- 그래프 모듈 삽입 공간 -->
+									<div class="graph_area" style="text-align:center;padding:30px;margin-bottom:50px;border:1px solid #dfdfdf;background:#fff;">
+										<!--
+											그래프 모듈 삽입 공간
+											div graph_area 를 삭제 하시고, 모듈을 삽입하시면 됩니다.
+										-->
+										<img src="../images/temp/temp_graph3.gif" alt="" />
+									</div>
+									<!-- //그래프 모듈 삽입 공간 -->
+								</div>
+							</dd>
+					</dl>
+				</div>
+
+			</div>
+		</div>
+		<!--//content-->
+		<div style="clear:both;"></div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_wrap">
+			<div class="footer_logo"><img src="../images/common/logo_footer.gif" alt="애드티브 컨텐츠베이" /></div>
+			<address><img src="../images/common/address.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주)  대표이사 : 조홍성     등록번호 : 서울 아 01569      사업자등록번호 : 120-87-11103       개인정보취급자 : 김종렬      이메일  jrkim@adtive.co.kr" /></address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2012. TARGET VIEW. All Rights Reserved." /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="background_layer"></div>
+<div class="background_layer2"></div>
+
+
+<div class="popuplayer_article popuplayer_article1">
+	<div class="popup_snb">
+		<h4><img src="../images/common/depth2_menu7_on.gif" alt="상품일괄등록" /></h4>
+		<ul>
+			<li><img src="../images/common/depth3_menu1_now.gif" alt="기본정보" /></li>
+			<li><img src="../images/common/depth3_menu2_2_before.gif" alt="상품등록" /></li>
+			<li><img src="../images/common/depth3_menu3_2_before.gif" alt="판매/기간" /></li>
+		</ul>
+	</div>
+	<div class="popup_content">
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_basic_information.gif" alt="기본정보" /></h2>
+			<p class="caption"><img src="../images/content/depth2_menu3_caption2.gif" alt="상품명, 장소 및 일시 등 기본정보를 등록합니다." /></p>
+			<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+		</div>
+		<div class="content_section">
+			<div class="ad_tit_article">
+				<p><span class="tit_1">상품타이틀: </span><span class="tit_name">맨 오브 라만차</span> 등록화면 입니다.</p>
+			</div>
+			<table class="table_set2" summary="기본정보 입력">
+				<caption>기본정보 입력</caption>
+				<colgroup>
+					<col width="90"/>
+					<col width="*"/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">상품주명 :</th>
+						<td>
+							<input type="radio" />
+							<div class="select_box mr_30">
+								<input type="text" class="selected_text type_w170" value="선택" readonly="readonly" />
+								<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+								<div class="select_list_box">
+									<div class="bg_layer"></div>
+									<ul class="select_list">
+										<li title="">선택</li>
+									</ul>
+								</div>
+							</div>
+							<input type="radio" />
+							<div class="input_box"><input type="text" class="input_text type_w170" placeholder="신규입력" /></div>
+							<input type="image" class="btn_new_add" src="../images/btn/btn_new_add.gif" alt="신규등록" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">상품 타이틀 :</th>
+						<td>
+							<div class="input_box"><input type="text" class="input_text type_w470" placeholder="직접입력" /></div>
+							<span>글자수 제한 : 0 byte</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">상품명 :</th>
+						<td>
+							<div class="input_box"><input type="text" class="input_text type_w470" placeholder="직접입력" /></div>
+							<span>글자수 제한 : 0 byte</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">공연 장소 :</th>
+						<td>
+							<div class="input_box"><input type="text" class="input_text type_w470" placeholder="직접입력" /></div>
+							<span>글자수 제한 : 0 byte</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">공연 일시 :</th>
+						<td>
+							<div class="calendar_box">
+								<input type="text" class="input_text type_w130" readonly="readonly" />
+								<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+							</div>
+							~
+							<div class="calendar_box">
+								<input type="text" class="input_text type_w130" readonly="readonly" />
+								<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+							</div>
+							<input type="checkbox" /> 시간설정 :
+							<div class="select_box">
+								<input type="text" class="selected_text type_w104" value="시" readonly="readonly" />
+								<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+								<div class="select_list_box">
+									<div class="bg_layer"></div>
+									<ul class="select_list">
+										<li title="">시</li>
+									</ul>
+								</div>
+							</div>
+							<div class="select_box">
+								<input type="text" class="selected_text type_w104" value="분" readonly="readonly" />
+								<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+								<div class="select_list_box">
+									<div class="bg_layer"></div>
+									<ul class="select_list">
+										<li title="">분</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">지역선택 :</th>
+						<td>
+							<div class="select_box">
+								<input type="text" class="selected_text type_w204" value="전국" readonly="readonly" />
+								<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+								<div class="select_list_box">
+									<div class="bg_layer"></div>
+									<ul class="select_list">
+										<li title="전국">전국</li>
+										<li title="서울">서울</li>
+										<li title="부산">부산</li>
+										<li title="대구">대구</li>
+										<li title="울산">울산</li>
+										<li title="인천">인천</li>
+										<li title="대전">대전</li>
+										<li title="광주">광주</li>
+										<li title="경기도">경기도</li>
+										<li title="강원도">강원도</li>
+										<li title="충북">충북</li>
+										<li title="충남">충남</li>
+										<li title="경북">경북</li>
+										<li title="경남">경남</li>
+										<li title="전북">전북</li>
+										<li title="전남">전남</li>
+										<li title="제주">제주</li>
+										<li title="기타">기타</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">카테고리 :</th>
+						<td>
+							<div class="select_box">
+								<input type="text" class="selected_text type_w204" value="전체" readonly="readonly" />
+								<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+								<div class="select_list_box">
+									<div class="bg_layer"></div>
+									<ul class="select_list">
+										<li title="전체">전체</li>
+										<li title="뮤니컬, 오페라">뮤니컬, 오페라</li>
+										<li title="발레, 무용">발레, 무용</li>
+										<li title="스포츠">스포츠</li>
+										<li title="전시, 미술">전시, 미술</li>
+										<li title="클래식, 국악">클래식, 국악</li>
+										<li title="영화">영화</li>
+										<li title="연극, 마임">연극, 마임</li>
+										<li title="콘서트">콘서트</li>
+										<li title="락페스티벌">락페스티벌</li>
+										<li title="책">책</li>
+										<li title="효도">효도</li>
+										<li title="어린이, 유아">어린이, 유아</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="top_align pt_13">광고동일등록:</th>
+						<td>
+							<div class="radio_box">
+								<input type="radio" /> <label for="" class="mr_50">등록</label>
+								<input type="radio" /> <label for="" class="mr_50">미등록</label>
+							</div>
+							<p>광고동일등록<span>을 선택한 경우에는</span> 상품주명→광고주명, 상품타이틀→광고타이틀, 상품명→공연명, 공연장소,</p>
+							<p class="mb_26"> 공연일시 <span>정보가</span>광고설정 > 소재일괄등록<span>에 동일하게 적용되어 해당 페이지에서 수정 가능합니다.</span></p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">상품코드 :</th>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btn_next">
+				<a href="#"><img src="../images/btn/btn_save.gif" alt="save" /></a>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+<div class="popuplayer_article popuplayer_article2">
+	<div class="popup_snb">
+		<h4><img src="../images/common/depth2_menu7_on.gif" alt="상품일괄등록" /></h4>
+		<ul>
+			<li><img src="../images/common/depth3_menu1_after.gif" alt="기본정보" /></li>
+			<li><img src="../images/common/depth3_menu2_2_now.gif" alt="상품등록" /></li>
+			<li><img src="../images/common/depth3_menu3_2_before.gif" alt="판매/기간" /></li>
+		</ul>
+	</div>
+	<div class="popup_content">
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_product_add.gif" alt="상품등록" /></h2>
+			<p class="caption"><img src="../images/content/depth2_menu3_caption3.gif" alt="상품화면에 노출되는 상품소재를 등록합니다." /></p>
+			<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+		</div>
+		<div class="content_section product_section">
+			<div class="ad_tit_article">
+				<p><span class="tit_1">상품타이틀: </span><span class="tit_name">맨 오브 라만차</span> 등록화면 입니다.</p>
+			</div>
+			<h3><img src="../images/tit/h3_sales_quantity.gif" alt="판매수량" /></h3>
+			<div class="filesearch_article">
+				<div class="file1">
+					<span class="tit_1">상점노출수량: </span>
+					<div class="input_box"><input type="text" class="input_text type_w130" /></div>
+					<input type="checkbox" />
+					<span class="caption mr_20">실 판매 수량 동일</span>
+					<span class="tit_1">실판매수량: </span>
+					<div class="input_box"><input type="text" class="input_text type_w130" /></div>
+				</div>
+			</div>
+			<h3><img src="../images/tit/h3_product_info.gif" alt="상품정보" /></h3>
+			<div class="filesearch_article">
+				<div class="file1 mb_26">
+					<span class="tit_1">상품등록 이미지: </span>
+					<div class="input_box"><input type="text" class="input_text type_w350" /></div>
+					<button><img src="../images/btn/btn_filesearch.gif" alt="파일찾기" /></button>
+					<span class="caption">
+						size: <span class="img_width">00</span> x <span class="img_height">00</span> &#47;
+						용량 : <span class="filesize">0</span> Kbyte
+					</span>
+				</div>
+				<div class="file2 mb_26">
+					<span class="tit_1">지도보기 MAP: </span>
+					<div class="input_box"><input type="text" class="input_text type_w170" value="경도(X)" /></div>
+					<div class="input_box"><input type="text" class="input_text type_w170 mr_8" value="경도(Y)" /></div>
+					<span class="caption">구글 맵 연동</span>
+					<button class="btn_mapview"><img src="../images/btn/btn_coordinate.gif" alt="좌표값찾기" /></button>
+				</div>
+				<div class="file3 mb_26">
+					<span class="tit_1">출연자: </span>
+					<div class="input_box"><input type="text" class="input_text type_w470" /></div>
+					<span class="caption">글자수 제한 : <span class="filesize">0</span> byte</span>
+				</div>
+				<div class="file4 mb_26">
+					<span class="tit_1">관람등급: </span>
+					<div class="select_box mr_30">
+						<input type="text" class="selected_text type_w170" value="선택" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title="">선택</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="file5 mb_26">
+					<span class="tit_1">관람시간: </span>
+					<div class="input_box"><input type="text" class="input_text type_w470" /></div>
+					<span class="caption">글자수 제한 : <span class="filesize">0</span> byte</span>
+				</div>
+				<div class="file6 mb_26">
+					<span class="tit_1">작품설명: </span>
+					<textarea name="" id="" class="type_w450"></textarea>
+					<span class="caption">글자수 제한 : <span class="filesize">0</span> byte</span>
+				</div>
+				<div class="file7">
+					<span class="tit_1">공연포스터등록: </span>
+					<input type="radio" /> <label for="" class="mr_23">노출</label>
+					<input type="radio" /> <label for="">비노출</label>
+					<div class="input_box"><input type="text" class="input_text type_w204" /></div>
+					<button><img src="../images/btn/btn_filesearch.gif" alt="파일찾기" /></button>
+					<span class="caption">
+						size: <span class="img_width">00</span> x <span class="img_height">00</span> &#47;
+						용량 : <span class="filesize">0</span> Kbyte
+					</span>
+				</div>
+			</div>
+			<div class="btn_next">
+				<input type="image" src="../images/btn/btn_save.gif" alt="save" />
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+<div class="popuplayer_article popuplayer_article3">
+	<div class="popup_snb">
+		<h4><img src="../images/common/depth2_menu7_on.gif" alt="상품일괄등록" /></h4>
+		<ul>
+			<li><img src="../images/common/depth3_menu1_after.gif" alt="기본정보" /></li>
+			<li><img src="../images/common/depth3_menu2_2_after.gif" alt="상품등록" /></li>
+			<li><img src="../images/common/depth3_menu3_2_now.gif" alt="판매/기간" /></li>
+		</ul>
+	</div>
+	<div class="popup_content">
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_sales_administration.gif" alt="판매, 기간" /></h2>
+			<p class="caption"><img src="../images/content/depth2_menu3_caption4.gif" alt="상품금액 금액 및 판매기간을 설정합니다." /></p>
+			<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+		</div>
+		<div class="content_section salesdate_section">
+			<div class="ad_tit_article">
+				<p><span class="tit_1">상품타이틀: </span><span class="tit_name">맨 오브 라만차</span> 등록화면 입니다.</p>
+			</div>
+			<ul class="savemoney_list">
+				<li>
+					<h3><img src="../images/tit/h3_bonus.gif" alt="장려금" /></h3>
+					<div class="savemoney_box">
+						<label for="" class="mb_10">사용가능 적립금 최대 금액:</label>
+						<div class="input_box"><input type="text" class="input_text type_w204" /></div>
+					</div>
+				</li>
+				<li>
+					<h3><img src="../images/tit/h3_dowry.gif" alt="지참금" /></h3>
+					<div class="savemoney_box">
+						<label for="" class="mb_10">추가결제 필요 최소금액:</label>
+						<div class="input_box"><input type="text" class="input_text type_w204" /></div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="total_savemoney_article">
+				<label for=""><img src="../images/tit/h4_total_save.gif" alt="total 적립금" /></label>
+				<div class="input_box"><input type="text" class="input_text type_w270" readonly="readonly" /></div>
+				<span class="caption">장려금과 지참금이 합산된 문화생활비 입니다.</span>
+			</div>
+
+			<div class="ad_date_article">
+				<span class="tit_1">판매기간:</span>
+				<div class="date_box">
+					<span>판매시작일</span>
+					<div class="calendar_box mr_30">
+						<input type="text" class="input_text type_w130" readonly="readonly" />
+						<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+					</div>
+					<span>판매종료일</span>
+					<div class="calendar_box">
+						<input type="text" class="input_text type_w130" readonly="readonly" />
+						<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+					</div>
+					<p class="time_caption">판매시작일의 경우 <span>PM 12: 00 LIVE</span> 됩니다.</p>
+					<p class="time_caption">판매종료일의 경우 <span>AM 11: 59 CLOSE</span> 됩니다.</p>
+				</div>
+			</div>
+
+			<div class="ad_select_status_article">
+				<span class="tit_1">상점노출:</span>
+				<span class="status_span">판매중</span>
+				<input type="checkbox" /> <label for="">중지</label>
+			</div>
+
+			<div class="btn_regi_complete_box">
+				<input type="image" class="btn_regi_complete btn_regi_complete2" src="../images/btn/btn_regi_complete.gif" alt="등록완료" />
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+<div class="alert_popup alert_popup2">
+	<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+	<p><img src="../images/content/alert_txt2.gif" alt="상점등록이 완료되었습니다." /></p>
+	<a href="#"><img src="../images/btn/btn_ad_add.gif" alt="광고등록" /></a>
+	<a href="#"><img src="../images/btn/btn_product_condition.gif" alt="상품현황" /></a>
+</div>
+
+<div class="popuplayer_map">
+	<div class="input_box"><input type="text" class="input_text type_w450" placeholder="주소를 입력해주세요" /></div>
+	<button><img src="../images/btn/btn_search4.gif" alt="search" /></button>
+	<div class="map_box">
+		<img src="../images/temp/sample2.jpg" alt="" />
+	</div>
+	<div class="btn_box">
+		<button class="btn_con"><img src="../images/btn/btn_confirm3.gif" alt="확인" /></button>
+		<button class="btn_con btn_cencel"><img src="../images/btn/btn_cencel.gif" alt="취소" /></button>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container userdb_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">광고주리포트</span>
+			<span class="depth2_name color_type3">USER DB</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_userdb.gif" alt="USER DB 등록현황" /></h2>
+			<p class="caption">캠페일별 DB현황을 확인하실 수 있습니다.</p>
+		</div>
+		<div class="composition_obj_article">
+			<div class="category_group">
+				<dl class="mr_21">
+					<dt>담당자</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">담당자 선택</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="mr_21">
+					<dt>CLIENT</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">클라이언트 선택</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>상태별보기</dt>
+					<dd class="status_btn_list">
+						<button class="btn_type_set btn_type_set_s btn_type3 color_type6">진행중</button>
+						<button class="btn_type_set btn_type_set_s btn_type2 color_type7">종료</button>
+						<button class="btn_type_set btn_type_set_s btn_type2 color_type7">삭제내역</button>
+						<button class="btn_type_set btn_type_set_s btn_type2 color_type7">모두보기</button>
+					</dd>
+				</dl>
+				<div class="search_box">
+					<input type="text" class="inst_search input_w184" />
+					<button class="btn_search"><img src="../images/common/ico_search.png" alt="search" /><span>검색</span></button>
+				</div>
+			</div>
+		</div>
+
+		<table class="table_set1 table_headline" summary="USER DB 등록현황">
+			<caption>USER DB 등록현황</caption>
+			<colgroup>
+				<col width="7%" />
+				<col width="7%" />
+				<col width="7%" />
+				<col width="35%" />
+				<col width="8%" />
+				<col width="9%" />
+				<col width="18%" />
+				<col width="11%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"><input type="checkbox" class="btn_all_check" /> <span>구분</span></th>
+					<th scope="col">번호</th>
+					<th scope="col">상태</th>
+					<th scope="col">입력폼 제목</th>
+					<th scope="col">입력폼</th>
+					<th scope="col">DB 등록수</th>
+					<th scope="col">회원정보</th>
+					<th scope="col">등록일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" class="all_check_child" /></td>
+					<td>100</td>
+					<td class="color_type3">진행중</td>
+					<td class="color_type2 open_user_content">최신형 MG 프라모델이 입고 되었습니다.</td>
+					<td><button class="btn_type_set btn_type_set_s btn_type2">보기</button></td>
+					<td>0</td>
+					<td>반다이코레아 (bandai)</td>
+					<td>2013-01-15</td>
+				</tr>
+				<tr>
+					<td colspan="9" class="user_content">
+						<div class="usertable_article">
+							<div style="border:3px solid #787a84;">
+								<table summary="유저 리스트" class="table_set2 user_list_table">
+									<caption>유저 리스트</caption>
+									<colgroup>
+										<col width="6%" />
+										<col width="11%" />
+										<col width="9%" />
+										<col width="35%" />
+										<col width="7%" />
+										<col width="9%" />
+										<col width="13%" />
+										<col width="10%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col">이름</th>
+											<th scope="col">나이</th>
+											<th scope="col">휴대전화</th>
+											<th scope="col">접근유형</th>
+											<th scope="col">IP</th>
+											<th scope="col">등록일</th>
+											<th scope="col">SMS발송</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pagelist_article">
+								<button class="btn_first"><img src="../images/common/bu_arrow_first.gif" alt="arrow first" class="mr_21" />첫 페이지</button>
+								<button class="btn_prev"><img src="../images/common/bu_arrow_prev.gif" alt="arrow prev" class="mr_21" />이전 10개</button>
+								<ul class="page_list">
+									<li><a class="on" href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+									<li><a href="#">7</a></li>
+									<li><a href="#">8</a></li>
+									<li><a href="#">9</a></li>
+									<li><a href="#">10</a></li>
+								</ul>
+								<button class="btn_next">다음 10개<img src="../images/common/bu_arrow_next.gif" alt="arrow next" class="ml_21" /></button>
+								<button class="btn_last">마지막 페이지<img src="../images/common/bu_arrow_last.gif" alt="arrow last" class="ml_21" /></button>
+							</div>
+							<button class="btn_downset btn_excel"><img src="../images/common/ico_excel.png" alt="Excel" /> 엑셀 다운로드</button>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="all_check_child" /></td>
+					<td>100</td>
+					<td class="color_type3">진행중</td>
+					<td class="color_type2 open_user_content">최신형 MG 프라모델이 입고 되었습니다.</td>
+					<td><button class="btn_type_set btn_type_set_s btn_type2">보기</button></td>
+					<td>0</td>
+					<td>반다이코레아 (bandai)</td>
+					<td>2013-01-15</td>
+				</tr>
+				<tr>
+					<td colspan="9" class="user_content">
+						<div class="usertable_article">
+							<div style="border:3px solid #787a84;">
+								<table summary="유저 리스트" class="table_set2 user_list_table">
+									<caption>유저 리스트</caption>
+									<colgroup>
+										<col width="6%" />
+										<col width="11%" />
+										<col width="9%" />
+										<col width="35%" />
+										<col width="7%" />
+										<col width="9%" />
+										<col width="13%" />
+										<col width="10%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col">이름</th>
+											<th scope="col">나이</th>
+											<th scope="col">휴대전화</th>
+											<th scope="col">접근유형</th>
+											<th scope="col">IP</th>
+											<th scope="col">등록일</th>
+											<th scope="col">SMS발송</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr class="btn_userdb_detail">
+											<td>45</td>
+											<td>강미윤</td>
+											<td>19</td>
+											<td>010-1234-5678</td>
+											<td>Mobile</td>
+											<td>202.222.333.444</td>
+											<td>2013-11-11 08:50</td>
+											<td class="color_type2">발송성공</td>
+										</tr>
+										<tr>
+											<td colspan="8" class="user_detail_content">
+												<table summary="유저 세부정보" class="table_write_set4">
+													<caption>유저 세부정보</caption>
+													<colgroup>
+														<col width="11%" />
+														<col width="*" />
+													</colgroup>
+													<tbody>
+														<tr>
+															<th>이름</th>
+															<td>곽백수</td>
+														</tr>
+														<tr>
+															<th>휴대전화</th>
+															<td>010-5555-9999</td>
+														</tr>
+														<tr>
+															<th>접근유형</th>
+															<td>MOBILE / 운영체제 : ANDROID / 브라우저 : CHROME</td>
+														</tr>
+														<tr>
+															<th>IP</th>
+															<td>111.222.333.444</td>
+														</tr>
+														<tr>
+															<th>등록일</th>
+															<td>2013-11-22 08:11</td>
+														</tr>
+														<tr>
+															<th>등록위치</th>
+															<td>http://m.widecoverage.co.kr/main/article.html?no=14907</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pagelist_article">
+								<button class="btn_first"><img src="../images/common/bu_arrow_first.gif" alt="arrow first" class="mr_21" />첫 페이지</button>
+								<button class="btn_prev"><img src="../images/common/bu_arrow_prev.gif" alt="arrow prev" class="mr_21" />이전 10개</button>
+								<ul class="page_list">
+									<li><a class="on" href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+									<li><a href="#">7</a></li>
+									<li><a href="#">8</a></li>
+									<li><a href="#">9</a></li>
+									<li><a href="#">10</a></li>
+								</ul>
+								<button class="btn_next">다음 10개<img src="../images/common/bu_arrow_next.gif" alt="arrow next" class="ml_21" /></button>
+								<button class="btn_last">마지막 페이지<img src="../images/common/bu_arrow_last.gif" alt="arrow last" class="ml_21" /></button>
+							</div>
+							<button class="btn_downset btn_excel"><img src="../images/common/ico_excel.png" alt="Excel" /> 엑셀 다운로드</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_box">
+			<button class="btn_type_set btn_type_set_s btn_type1 color_type7 fl_left mr_7">선택항목 종료</button>
+			<button class="btn_type_set btn_type_set_s btn_type1 color_type3 fl_left">선택항목 삭제</button>
+		</div>
+		<div class="pagelist_article">
+			<button class="btn_first"><img src="../images/common/bu_arrow_first.gif" alt="arrow first" class="mr_21" />첫 페이지</button>
+			<button class="btn_prev"><img src="../images/common/bu_arrow_prev.gif" alt="arrow prev" class="mr_21" />이전 10개</button>
+			<ul class="page_list">
+				<li><a class="on" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+			</ul>
+			<button class="btn_next">다음 10개<img src="../images/common/bu_arrow_next.gif" alt="arrow next" class="ml_21" /></button>
+			<button class="btn_last">마지막 페이지<img src="../images/common/bu_arrow_last.gif" alt="arrow last" class="ml_21" /></button>
+		</div>
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+</body>
+</html>

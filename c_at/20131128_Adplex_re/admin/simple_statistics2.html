@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> adplex  통합 관리 시스템 </title>
+	<meta name="Author" content="Adtive innovation" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+		<div class="aside_menu_area">
+			<div class="aside_menu clearfix">
+				<div class="category_select_box">
+					<h2>담당자 &#47; 광고주 &#47; 대행사 선택</h2>
+					<div class="category_select_wrap">
+						<div class="top_con clearfix">
+							<div class="location_link">
+								<h3 class="location_tit">경로 : </h3>
+								<a href="#" class="link1_btn">location1</a>
+								<a href="#" class="link2_btn">location2</a>
+								<a href="#" class="link3_btn">location3</a>
+								<a href="#" class="link4_btn">location4</a>
+								<a href="#" class="link5_btn">location5</a>
+								<a href="#" class="link6_btn">location6</a>
+							</div>
+						</div>
+						<div class="mid_con">
+							<div class="category_search_box">
+								<input type="text" class="inst_search_category" placeholder="검색어를 입력하세요." />
+								<button class="btn_type_set btn_type_set_s btn_type11 color_type6 btn_prev_position">상위경로 ▲</button>
+							</div>
+							<ul class="category_select_list category_select_list1 clearfix">
+								<li><a href="#" title="category_menu1">category_menu1 category_menu1category_menu1</a></li>
+								<li><a href="#" title="category_menu2">category_menu2</a></li>
+								<li><a href="#" title="category_menu3">category_menu3</a></li>
+								<li><a href="#" title="category_menu4">category_menu4</a></li>
+								<li><a href="#" title="category_menu5">category_menu5</a></li>
+								<li><a href="#" title="category_menu6">category_menu6</a></li>
+								<li><a href="#" title="category_menu7">category_menu7</a></li>
+								<li><a href="#" title="category_menu8">category_menu8</a></li>
+								<li><a href="#" title="category_menu9">category_menu9</a></li>
+								<li><a href="#" title="category_menu10">category_menu10</a></li>
+								<li><a href="#" title="category_menu11">category_menu11</a></li>
+								<li><a href="#" title="category_menu12">category_menu12</a></li>
+								<li><a href="#" title="category_menu13">category_menu13</a></li>
+								<li><a href="#" title="category_menu14">category_menu14</a></li>
+								<li><a href="#" title="category_menu15">category_menu15</a></li>
+								<li><a href="#" title="category_menu16">category_menu16</a></li>
+								<li><a href="#" title="category_menu17">category_menu17</a></li>
+								<li><a href="#" title="category_menu18">category_menu18</a></li>
+								<li><a href="#" title="category_menu19">category_menu19</a></li>
+								<li><a href="#" title="category_menu20">category_menu20</a></li>
+								<li><a href="#" title="category_menu21">category_menu21</a></li>
+								<li><a href="#" title="category_menu22">category_menu22</a></li>
+								<li><a href="#" title="category_menu23">category_menu23</a></li>
+								<li><a href="#" title="category_menu24">category_menu24</a></li>
+								<li><a href="#" title="category_menu25">category_menu25</a></li>
+								<li><a href="#" title="category_menu26">category_menu26</a></li>
+								<li><a href="#" title="category_menu27">category_menu27</a></li>
+								<li><a href="#" title="category_menu28">category_menu28</a></li>
+								<li><a href="#" title="category_menu29">category_menu29</a></li>
+								<li><a href="#" title="category_menu30">category_menu30</a></li>
+								<li><a href="#" title="category_menu31">category_menu31</a></li>
+								<li><a href="#" title="category_menu32">category_menu32</a></li>
+								<li><a href="#" title="category_menu33">category_menu33</a></li>
+								<li><a href="#" title="category_menu34">category_menu34</a></li>
+								<li><a href="#" title="category_menu35">category_menu35</a></li>
+								<li><a href="#" title="category_menu36">category_menu36</a></li>
+								<li><a href="#" title="category_menu37">category_menu37</a></li>
+								<li><a href="#" title="category_menu38">category_menu38</a></li>
+								<li><a href="#" title="category_menu39">category_menu39</a></li>
+								<li><a href="#" title="category_menu40">category_menu40</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--//category_select_box-->
+				<button class="btn_logout">로그아웃</button>
+				<div class="user_point">보유포인트 : <span class="point">0</span> 원</div>
+				<div class="user_name"><span class="name">관리자</span><span class="admin_con">(관리자) 로그인</span></div>
+			</div>
+		</div><!--//aside_menu_area-->
+
+		<div class="gnb_area">
+			<div class="gnb">
+				<h1><a href="/">Adplex</a></h1>
+				<ul class="gnb_list">
+					<li class="menu1 on"><a href="#">매체관리</a></li>
+					<li class="menu2"><a href="#">캠페인</a></li>
+					<li class="menu3"><a href="#">광고주리포트</a></li>
+					<li class="menu4"><a href="#">관리자기능</a></li>
+					<li class="menu5"><a href="#">관리자통계</a></li>
+					<li class="menu6"><a href="#">패키지</a></li>
+					<li class="menu7"><a href="#">회계/정산</a></li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//gnb_area-->
+
+		<div class="submenu_area">
+			<div class="submenu_wrap">
+				<ul class="submenu_list">
+					<li class="submenu submenu1 on">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">매체/영역관리</a></li>
+							<li class="submenu_detail"><a href="#">수익금조회</a></li>
+							<li class="submenu_detail"><a href="#">매체별 통계</a></li>
+							<li class="submenu_detail"><a href="#">매체 효율표</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu2">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">캠페인 관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 소재관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu3">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">CPP 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC 통계</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅 통계</a></li>
+							<li class="submenu_detail"><a href="#">USER DB</a></li>
+							<li class="submenu_detail"><a href="#">포인트 조회</a></li>
+							<li class="submenu_detail"><a href="#">보도자료통계</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu4">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회원관리</a></li>
+							<li class="submenu_detail"><a href="#">보도자료 관리</a></li>
+							<li class="submenu_detail"><a href="#">포인트 관리</a></li>
+							<li class="submenu_detail"><a href="#">리타겟팅상품관리</a></li>
+							<li class="submenu_detail"><a href="#">CPC 업종별 관리</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu5">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">간략 통계</a></li>
+							<li class="submenu_detail"><a href="#">CPC/리타겟팅 매출</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu6">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">패키지 조회/생성</a></li>
+							<li class="submenu_detail"><a href="#">패키지관리</a></li>
+							<li class="submenu_detail"><a href="#">캠페인별 예약 소재</a></li>
+							<li class="submenu_detail"><a href="#">매체별 예약 소재</a></li>
+						</ul>
+					</li>
+					<li class="submenu submenu7">
+						<ul class="depth2_list">
+							<li class="submenu_detail"><a href="#">회계관리</a></li>
+							<li class="submenu_detail"><a href="#">세금계산서 관리</a></li>
+							<li class="submenu_detail"><a href="#">결제관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_shadow"></div>
+		</div><!--//submenu_area-->
+	</div>
+	<!--//header-->
+
+	<!--container-->
+	<div class="container simple_statistics_container">
+		<div class="location_article">
+			<a href="#"><img src="../images/common/ico_home.gif" alt="메인으로" /></a>
+			<span class="depth1_name">관리자</span>
+			<span class="depth2_name color_type3">간략 통계</span>
+		</div>
+		<div class="title_article">
+			<h2><img src="../images/tit/h2_simple_statistics.gif" alt="간략 통계" /></h2>
+			<p class="caption">상품의 전체 통계를 간략하게 보실 수 있습니다. </p>
+		</div>
+		<div class="composition_obj_article type2">
+			<div class="category_group">
+				<span class="txt_print"><span class="sp1">기준일</span> : <span class="sp2">2014년 07월</span> 기준</span>
+				<div class="link_box">
+					<a href="" class="btn_link">Adplex</a>
+					<a href="" class="btn_link on">TargetView</a>
+				</div>
+			</div>
+			<div class="category_group category_group2">
+				<dl>
+					<dt>상품</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">전체</option>
+							<option value="">페이지</option>
+							<option value="">링크(사이트)</option>
+							<option value="">링크(상품)</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>기간선택</dt>
+					<dd>
+						<select name="" id="" class="select_year">
+							<option value="">2013년 1월</option>
+						</select>
+					</dd>
+				</dl>
+				<button class="btn_type_set btn_type_set_s btn_type3 color_type6">검색</button>
+			</div>
+		</div>
+
+		<div class="btn_box">
+			<button class="btn_downset fl_right btn_excel mr_7"><img src="../images/common/ico_excel.png" alt="Excel" /> <span>엑셀 다운로드</span></button>
+		</div>
+
+		<!-- 상품 카테고리 - 전체-->
+		<div class="table_box_wrap">
+			<div class="table_box fl_left">
+				<h3>TaregetView PC</h3>
+				<table summary="TaregetView PC 테이블" class="table_set9">
+					<caption>TaregetView PC</caption>
+					<colgroup>
+						<col width="16%">
+						<col width="9%">
+						<col width="30%">
+						<col width="20%">
+						<col width="15%">
+						<col width="10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>상세</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td></td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView PC')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView PC')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView PC')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="table_box fl_right">
+				<h3>TaregetView Mobile</h3>
+				<table summary="TaregetView Mobile 테이블" class="table_set9">
+					<caption>TaregetView Mobile</caption>
+					<colgroup>
+						<col width="16%">
+						<col width="9%">
+						<col width="30%">
+						<col width="20%">
+						<col width="15%">
+						<col width="10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>상세</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td></td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td><button class="btn_detail" title="상세정보 열기">▼</button></td>
+						</tr>
+						<tr>
+							<td class="detail_table_td"colspan="6">
+								<div class="detail_table_box">
+									<table summary="세부 정보" class="table_set10">
+										<caption>세부 정보</caption>
+										<colgroup>
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+											<col width="20%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>상품</th>
+												<th>PV</th>
+												<th>Click</th>
+												<th>CTR</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th colspan="2">TOTAL</th>
+												<td>2,000,000</td>
+												<td>2,000,000</td>
+												<td>0.13%</td>
+											</tr>
+										</tfoot>
+
+										<!--링크 그룹-->
+										<tbody>
+											<tr>
+												<td rowspan="2">링크</td>
+												<td>사이트</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>상품</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+
+										<!--페이지 그룹-->
+										<tbody>
+											<tr>
+												<td>페이지</td>
+												<td>페이지</td>
+												<td>1</td>
+												<td>2</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 상품 카테고리 - 전체-->
+
+
+
+		<!-- 상품 카테고리 - 페이지-->
+		<div class="table_box_wrap">
+			<div class="table_box fl_left">
+				<h3>TaregetView 페이지 PC</h3>
+				<table summary="TaregetView PC 테이블" class="table_set9">
+					<caption>TaregetView PC</caption>
+					<colgroup>
+						<col width="16%">
+						<col width="9%">
+						<col width="30%">
+						<col width="25%">
+						<col width="20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView 페이지 PC')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView 페이지 PC')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1,'TaregetView 페이지 PC')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="table_box fl_right">
+				<h3>TaregetView 페이지 Mobile</h3>
+				<table summary="TaregetView Mobile 페이지 테이블" class="table_set9">
+					<caption>TaregetView 페이지 Mobile</caption>
+					<colgroup>
+						<col width="16%">
+						<col width="9%">
+						<col width="30%">
+						<col width="25%">
+						<col width="20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(1)">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 상품 카테고리 - 페이지-->
+
+		<!-- 상품 카테고리 - 링크(사이트) -->
+		<div class="table_box_wrap">
+			<div class="table_box fl_left">
+				<h3>TaregetView 링크(사이트) PC</h3>
+				<table summary="TaregetView 링크(사이트) " class="table_set9">
+					<caption>TaregetView 링크(사이트) </caption>
+					<colgroup>
+						<col width="15%">
+						<col width="10%">
+						<col width="16%">
+						<col width="15%">
+						<col width="14%">
+						<col width="16%">
+						<col width="14%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>소진금액(￦)</th>
+							<th>e-CPM(￦)</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>11,222</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) PC')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) PC')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) PC')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="table_box fl_right">
+				<h3>TaregetView 링크(사이트) Mobile</h3>
+				<table summary="TaregetView 링크(사이트) Mobile" class="table_set9">
+					<caption>TaregetView 링크(사이트) Mobile</caption>
+					<colgroup>
+						<col width="15%">
+						<col width="10%">
+						<col width="16%">
+						<col width="15%">
+						<col width="14%">
+						<col width="16%">
+						<col width="14%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>소진금액(￦)</th>
+							<th>e-CPM(￦)</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>11,222</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) Mobile')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) Mobile')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(2,'TaregetView 링크(사이트) Mobile')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 상품 카테고리 - 링크(사이트) -->
+
+		<!-- 상품 카테고리 - 링크(상품) -->
+		<div class="table_box_wrap">
+			<div class="table_box fl_left">
+				<h3>TaregetView 링크(상품) PC</h3>
+				<table summary="TaregetView 링크(상품) PC" class="table_set9">
+					<caption>TaregetView 링크(상품) PC</caption>
+					<colgroup>
+						<col width="11%">
+						<col width="6%">
+						<col width="13%">
+						<col width="11%">
+						<col width="9%">
+						<col width="14%">
+						<col width="11%">
+						<col width="12%">
+						<col width="12%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>소진금액(￦)</th>
+							<th>e-CPM(￦)</th>
+							<th>구매전환수</th>
+							<th>구매전환율</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>11,222</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) PC')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) PC')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) PC')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="table_box fl_right">
+				<h3>TaregetView 링크(상품) Mobile</h3>
+				<table summary="TaregetView 링크(상품) Mobile" class="table_set9">
+					<caption>TaregetView 링크(상품) Mobile</caption>
+					<colgroup>
+						<col width="11%">
+						<col width="6%">
+						<col width="13%">
+						<col width="11%">
+						<col width="9%">
+						<col width="14%">
+						<col width="11%">
+						<col width="12%">
+						<col width="12%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일자</th>
+							<th>요일</th>
+							<th>PV</th>
+							<th>Click</th>
+							<th>CTR</th>
+							<th>소진금액(￦)</th>
+							<th>e-CPM(￦)</th>
+							<th>구매전환수</th>
+							<th>구매전환율</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>합계</td>
+							<td></td>
+							<td>44,444,666,666</td>
+							<td>11,222</td>
+							<td>0.078%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>11,222</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr>
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) Mobile')">2014.01.01</a></td>
+							<td>월</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+						<tr class="weekday_sat">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) Mobile')">2014.01.01</a></td>
+							<td>토</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+						<tr class="weekday_sun">
+							<td><a class="btn_dataPopup" href="javascript:popuplayerOpen(3,'TaregetView 링크(상품) Mobile')">2014.01.01</a></td>
+							<td>일</td>
+							<td>55,555,555,555</td>
+							<td>33,333</td>
+							<td>0.014%</td>
+							<td class="detail_cost_td">
+								11,222
+								<div class="detail_cost_layer">
+									<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+										<caption>소진금액 상세 정보</caption>
+										<colgroup>
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+											<col width="25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>구분</th>
+												<th>소진금액</th>
+												<th>구분</th>
+												<th>소진금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>유료금액</td>
+												<td>256,246</td>
+												<td>256,246</td>
+												<td>256,246</td>
+											</tr>
+											<tr>
+												<td>무료금액</td>
+												<td>121,121</td>
+												<td>121,121</td>
+												<td>121,121</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>33,333</td>
+							<td>11,222</td>
+							<td>11,222</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 상품 카테고리 - 링크(상품) -->
+
+	</div>
+	<!--//container-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="footer_content">
+			<h1><img src="../images/common/logo_footer.gif" alt="2beon" /></h1>
+			<address>
+				<span><img src="../images/common/address1.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주) " /></span>
+				<span><img src="../images/common/address2.gif" alt="대표이사 : 조재범" /></span>
+				<span><img src="../images/common/address3.gif" alt="등록번호 : 서울 아 01569" /></span>
+				<span><img src="../images/common/address4.gif" alt="사업자등록번호 : 120-87-11103" /></span>
+				<span><img src="../images/common/address5.gif" alt="개인정보취급자 : 김종렬" /></span>
+				<a href="mailto:jrkim@adtive.co.kr" target="_blank"><img src="../images/common/address6.gif" alt="이메일  jrkim@adtive.co.kr" /></a>
+			</address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2013. 2Beon. All Rights Reserved." /></p>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+
+<div class="background_layer"></div>
+
+<div class="popuplayer popuplayer1 popuplayer_type1">
+	<div class="pop_header">
+		<h1><span class="popTitleSet">TargetView PC</span> <span class="sub_tit2">(2014년 08월 01일)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table summary="Adplex W 날짜별 통계" class="table_set6">
+			<caption>Adplex W</caption>
+			<colgroup>
+				<col width="33%" />
+				<col width="26%" />
+				<col width="19%" />
+				<col width="22%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">시간</th>
+					<th scope="col">PV</th>
+					<th scope="col">Click</th>
+					<th scope="col">CTR</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td class="td_center">합계</td>
+					<td class="td_center">0</td>
+					<td class="td_center">100</td>
+					<td class="td_center">0 1234568&#37;</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.0001&#37;</td>
+				</tr>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">000000000000000000000000000</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.000151515151515151&#37;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="popuplayer popuplayer2 popuplayer_type1">
+	<div class="pop_header">
+		<h1><span class="popTitleSet">TargetView</span> <span class="sub_tit2">(2014년 08월 01일)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table summary="TargetView 날짜별 통계" class="table_set6">
+			<caption>TargetView</caption>
+			<colgroup>
+				<col width="25%" />
+				<col width="15%" />
+				<col width="15%" />
+				<col width="15%" />
+				<col width="15%" />
+				<col width="15%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">시간</th>
+					<th scope="col">PV</th>
+					<th scope="col">Click</th>
+					<th scope="col">CTR</th>
+					<th scope="col">소진금액(￦)</th>
+					<th scope="col">e-CPM(￦)</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td class="td_center">합계</td>
+					<td class="td_center">0</td>
+					<td class="td_center">100</td>
+					<td class="td_center">0 1234568&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+			<td class="td_center">100</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.0001&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td class="td_center">0</td>
+				</tr>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.0001&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td class="td_center">0</td>
+				</tr>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">000000000000000000000000000</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.000151515151515151&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td class="td_center">0</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="popuplayer popuplayer3 popuplayer_type1">
+	<div class="pop_header">
+		<h1><span class="popTitleSet">TargetView</span> <span class="sub_tit2">(2014년 08월 01일)</span></h1>
+		<button class="btn_close"><img src="../images/btn/btn_close.png" alt="close" /></button>
+	</div>
+	<div class="pop_content">
+		<table summary="TargetView 날짜별 통계" class="table_set6">
+			<caption>TargetView</caption>
+			<colgroup>
+				<col width="17%" />
+				<col width="9%" />
+				<col width="10%" />
+				<col width="9%" />
+				<col width="15%" />
+				<col width="14%" />
+				<col width="13%" />
+				<col width="14%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">시간</th>
+					<th scope="col">PV</th>
+					<th scope="col">Click</th>
+					<th scope="col">CTR</th>
+					<th scope="col">소진금액(￦)</th>
+					<th scope="col">e-CPM(￦)</th>
+					<th scope="col">구매전환수</th>
+					<th scope="col">구매전환율</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td class="td_center">합계</td>
+					<td class="td_center">0</td>
+					<td class="td_center">100</td>
+					<td class="td_center">0 1234568&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+										<td>256,246</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+										<td>121,121</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td class="td_center">100</td>
+					<td class="td_center">100</td>
+					<td class="td_center">100</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td class="td_center">00:00:00 ~ 00:59:12</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0.0001&#37;</td>
+					<td class="td_center detail_cost_td">
+						11,222
+						<div class="detail_cost_layer">
+							<table summary="소진금액 상세 정보" class="detail_cost_table type2">
+								<caption>소진금액 상세 정보</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>소진금액</th>
+										<th>구분</th>
+										<th>소진금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>유료금액</td>
+										<td>256,246</td>
+										<td>256,246</td>
+										<td>256,246</td>
+									</tr>
+									<tr>
+										<td>무료금액</td>
+										<td>121,121</td>
+										<td>121,121</td>
+										<td>121,121</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+					<td class="td_center">0</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

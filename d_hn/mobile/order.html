@@ -1,0 +1,435 @@
+<?php
+	include('outline/header_sub.html');
+?>
+
+
+<div class="sub_title_area">
+	<h3 class="cate_tit">
+		<div>주문하기</div>
+	</h3>
+	<a href="" class="btn_back t_hide">back page</a>
+</div>
+
+
+<div class="sub_container">
+	<section class="order_section">
+		<div class="ord_step_wrap ord_step_wrap2">
+			<div class="ord_step_con ord_step_con1">장바구니</div>
+			<div class="ord_step_con ord_step_con2 on"><span class="arr1"></span>주문/결제<span class="arr2"></span></div>
+			<div class="ord_step_con ord_step_con3">주문완료</div>
+		</div>
+
+		<div class="payment_wrap">
+			<article class="payment_article payment_article1">
+				<h4>주문/배송고객 정보</h4>
+				<div class="row_con">
+					<div class="tit">주문/배송지 정보</div>
+					<a class="open_payment_set open_payment_set1">주문고객 정보와 동일</a>
+				</div>
+				<div class="row_con">
+					<div class="tit">배송메시지</div>
+					<a class="open_payment_set open_payment_set2">없음</a>
+				</div>
+			</article>
+
+			<article class="payment_article payment_article2">
+				<h4>쿠폰/포인트 사용</h4>
+				<div class="row_con">
+					<div class="tit">쿠폰적용 (보유쿠폰 <em>1장</em>)</div>
+					<a class="open_payment_set open_payment_set3">선택해주세요</a>
+				</div>
+				<div class="row_con">
+					<div class="tit">포인트할인 (보유적립금 <em>23,050P</em>)</div>
+					<span class="point_con"><input type="text" class="inst_point" value="0"> P</span>
+				</div>
+			</article>
+
+			<article class="payment_article3">
+				<h4>최종결제 정보</h4>
+				<div class="ord_payment_info">
+					<div class="inBox">
+						<div class="top_con">
+							<div class="row_con">
+								<div class="tit tit1_1">주문금액</div>
+								<div class="cost"><em>999,999</em>원</div>
+							</div>
+							<div class="row_con">
+								<div class="tit tit2">배송비</div>
+								<div class="cost"><em>999,999</em>원</div>
+							</div>
+							<div class="row_con">
+								<div class="tit tit3">쿠폰할인</div>
+								<div class="cost cost2"><em>999,999</em>P</div>
+							</div>
+							<div class="row_con">
+								<div class="tit tit3">포인트할인</div>
+								<div class="cost cost2"><em>999,999</em>P</div>
+							</div>
+						</div>
+						<div class="row_con row_con2">
+							<div class="tit tit4">예상결제금액</div>
+							<div class="cost total"><em>999,999</em>원</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="payment_article payment_article4">
+				<h4>결제수단 선택</h4>
+				<div class="row_con">
+					<label class="rd_label txt btn_payment_selected1" for="payment_select_opt1">
+						<input type="radio" id="payment_select_opt1" name="payment_select_opt">
+						<span></span>
+						무통장입금
+					</label>
+					<label class="rd_label txt btn_payment_selected2" for="payment_select_opt2">
+						<input type="radio" id="payment_select_opt2" name="payment_select_opt">
+						<span></span>
+						신용카드
+					</label>
+					<label class="rd_label txt btn_payment_selected2" for="payment_select_opt3">
+						<input type="radio" id="payment_select_opt3" name="payment_select_opt">
+						<span></span>
+						계좌이체
+					</label>
+					<label class="rd_label txt btn_payment_selected2" for="payment_select_opt4">
+						<input type="radio" id="payment_select_opt4" name="payment_select_opt">
+						<span></span>
+						이니시스 에스크로 계좌이체
+					</label>
+				</div>
+				<div class="row_con selected_rowcon selected_rowcon1">
+					<select name="" class="select_bankaccount">
+						<option value="">== 입금계좌를 선택해주세요 ==</option>
+						<option value="4">농협 355-0015-5041-23 (주)헬로네이처</option>
+						<option value="6">국민은행 598601-04-045226 (주)헬로네이처</option>
+						<option value="8">우리은행 1005-702-131534 (주)헬로네이처</option>
+					</select>
+					<br>
+					<input type="text" class="inst_name" placeholder="입금자명을 입력해 주세요.">
+				</div>
+				<div class="row_con selected_rowcon selected_rowcon2">
+					<span>주문자 확인사항</span> : *결제 시도 중 실패 하거나 주문이 정상적으로 되지 않을 경우 고객센터 1644-4339나 1:1 문의게시판을 이용 하시기 바랍니다. 
+ 				</div>
+			</article>
+
+			<div class="payment_info_txt">
+				<p>* 무통장 입금 결제방식은 주문 후 24시간 이내 미 입금 시 자동으로 주문취소 됩니다.</p>
+				<p>* 현금영수증 발급 : 입금/결제 완료 후 마이페이지 > 주문정보 > 주문내역상세의 최하단에서 발급신청하실 수 있습니다.(무통장입금, 계좌이체 등 현금성 결제수단에 해당)</p>
+				<p>* 입금자 성함이 주문고객 과 일치하지 않을 경우 전산 처리과정에서 입금확인이 되지 않아  배송이 지연될 수 있어 반드시 고객센터 <span>1644-4339</span>로 연락바랍니다. </p>
+			</div>
+
+			<div class="payment_btn_box">
+				<a href="" class="btn_order btn_cancel">취소하기</a>
+				<input type="submit" class="btn_order btn_order_payment" value="결제하기">
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="order_address_popup layer_window">
+	<div class="top_tit">
+		주문/배송지입력
+		<button type="button" class="btn_close t_hide">레이어닫기</button>
+	</div>
+
+	<section class="inst_form_section">
+		<h4>주문자정보</h4>
+		<div class="row_con">
+			<input type="text" class="inst_input" value="주문자명">
+		</div>
+		<div class="row_con2">
+			<select name="" class="select_phone">
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				<option value="018">018</option>
+				<option value="019">019</option>
+			</select>
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+		</div>
+
+		<h4>배송지 정보</h4>
+		<div class="row_con row_con3">
+			<label class="rd_label txt" for="address_select1">
+				<input type="radio" id="address_select1" name="address_select">
+				<span></span>
+				주문고객과 동일
+			</label>
+			<label class="rd_label txt address_select2" for="address_select2">
+				<input type="radio" id="address_select2" name="address_select">
+				<span></span>
+				최근배송지
+			</label>
+			<label class="rd_label txt" for="address_select3">
+				<input type="radio" id="address_select3" name="address_select">
+				<span></span>
+				신규배송지
+			</label>
+		</div>
+		<div class="row_con">
+			<input type="text" class="inst_input" placeholder="받으시는 분">
+		</div>
+		<div class="row_con">
+			<select name="" class="select_phone">
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				<option value="018">018</option>
+				<option value="019">019</option>
+			</select>
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+		</div>
+		<div class="row_con">
+			<input type="tel" class="inst_input inst_phone1" maxlength="3" placeholder="전화번호">
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+			<input type="tel" class="inst_input inst_phone" maxlength="4">
+		</div>
+		<div class="row_con">
+			<input type="text" class="inst_input post_code" readonly>
+			<input type="button" class="search_post_code" value="우편번호찾기">
+		</div>
+		<div class="row_con">
+			<input type="text" class="inst_input" readonly>
+		</div>
+		<div class="row_con">
+			<input type="text" class="inst_input" placeholder="상세주소">
+		</div>
+		<div class="row_con">
+			<p>* 주말, 공휴일에 회사로 배송이 되어 상품 수령을 하지 못하는 경우, 반송에 따른 추가 <span>배송비 및 추가 비용이 부과</span>될 수 있습니다.</p>
+		</div>
+		<div class="row_con">
+			<label class="ch_label txt ord_info_add" for="ord_info_add">
+				<input type="checkbox" name="" id="ord_info_add"><span></span>
+				입력한 배송고객의 정보를 회원정보에 업데이트 합니다.
+			</label>
+		</div>
+		<div class="btn_box">
+			<button type="button" class="btn_cancel">취소하기</button>
+			<button type="button" class="btn_apply">입력완료</button>
+		</div>
+	</section>
+</div>
+
+<div class="order_message_popup layer_window">
+	<div class="top_tit">
+		배송메시지
+		<button type="button" class="btn_close t_hide">레이어닫기</button>
+	</div>
+	<section class="inst_form_section">
+		<h4>주문자정보</h4>
+		<div class="row_con">
+			<label class="rd_label txt" for="order_message_ch1">
+				<input type="radio" id="order_message_ch1" name="order_message_ch"><span></span>
+				없음
+			</label>
+		</div>
+		<div class="row_con">
+			<label class="rd_label txt" for="order_message_ch2">
+				<input type="radio" id="order_message_ch2" name="order_message_ch"><span></span>
+				부재시 경비실(관리실)에 맡겨주세요.
+			</label>
+		</div>
+		<div class="row_con">
+			<label class="rd_label txt" for="order_message_ch3">
+				<input type="radio" id="order_message_ch3" name="order_message_ch"><span></span>
+				부재시 문앞에 놓아주세요.
+			</label>
+		</div>
+		<div class="row_con">
+			<label class="rd_label txt" for="order_message_ch4">
+				<input type="radio" id="order_message_ch4" name="order_message_ch"><span></span>
+				파손될 우려가 있으니 주의 부탁 드립니다.
+			</label>
+		</div>
+		<div class="row_con">
+			<label class="rd_label txt" for="order_message_ch5">
+				<input type="radio" id="order_message_ch5" name="order_message_ch"><span></span>
+				벨 누르지 마시고 노크 부탁드립니다.
+			</label>
+		</div>
+		<div class="row_con last_row_con">
+			<label class="rd_label txt" for="order_message_ch6">
+				<input type="radio" id="order_message_ch6" name="order_message_ch"><span></span>
+				직업입력
+			</label>
+			<textarea name="" placeholder="※배송메시지 기재 필수 사항 &#10; 1. 선물의 경우 [선물용]이라는 문구 기재 &#10; 2. 건물 1층 입구 비밀번호, 배송요청사항 등 구체적인 요청사항"></textarea>
+		</div>
+		<div class="btn_box">
+			<button type="button" class="btn_cancel">취소하기</button>
+			<button type="button" class="btn_apply">선택완료</button>
+		</div>
+	</section>
+</div>
+
+<div class="new_address_popup layer_window">
+	<div class="top_tit">
+		최근배송지
+		<button type="button" class="btn_close2 t_hide">레이어닫기</button>
+	</div>
+	<section class="inst_form_section">
+		<div class="row_wrap">
+			<div class="head_row">
+				<div class="left_con">이름</div>
+				<div class="right_con">주소</div>
+			</div>
+			<div class="row_con">
+				<label class="rd_label txt" for="new_address_ch1">
+					<input type="radio" id="new_address_ch1" name="new_address_ch"><span></span>
+					<div class="name_con">서보균</div>
+					<div class="add_con">서울 구로구 구로동 1132-52번지 KS 오피스텔 308호</div>
+				</label>
+			</div>
+			<div class="row_con">
+				<label class="rd_label txt" for="new_address_ch2">
+					<input type="radio" id="new_address_ch2" name="new_address_ch"><span></span>
+					<div class="name_con">서보균</div>
+					<div class="add_con">서울 구로구 구로동 1132-52번지 KS 오피스텔 308호</div>
+				</label>
+			</div>
+		</div>
+
+		<div class="btn_box">
+			<button type="button" class="btn_cancel">취소하기</button>
+			<button type="button" class="btn_apply">선택완료</button>
+		</div>
+
+	</section>
+</div>
+
+<div class="coupon_popup layer_window">
+	<div class="top_tit">
+		쿠폰사용하기
+		<button type="button" class="btn_close t_hide">레이어닫기</button>
+	</div>
+	<div class="coupon_wrap">
+		<div class="coupon_con">
+			<label class="rd_label" for="coupon_select1">
+				<input type="radio" id="coupon_select1" name="coupon_select"><span></span>
+			</label>
+			<div class="coupon_tag coupon_tag1">
+				<div class="name">할인쿠폰</div>
+				<em>99999</em>
+			</div>
+			<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+			<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+			<div class="approach">기한임박</div>
+		</div>
+
+		<div class="coupon_con">
+			<label class="rd_label" for="coupon_select2">
+				<input type="radio" id="coupon_select2" name="coupon_select"><span></span>
+			</label>
+			<div class="coupon_tag coupon_tag2">
+				<div class="name">배송쿠폰</div>
+				<div class="cp_name2">무료배송</div>
+			</div>
+			<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+			<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+			<div class="approach">기한임박</div>
+		</div>
+
+		<div class="coupon_con">
+			<label class="rd_label" for="coupon_select3">
+				<input type="radio" id="coupon_select3" name="coupon_select"><span></span>
+			</label>
+			<div class="coupon_tag coupon_tag3">
+				<div class="name">적립쿠폰</div>
+				<em>99999</em>
+			</div>
+			<div class="coupon_name">50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능 50,000원 이상 구매시 사용가능</div>
+			<div class="coupon_date">2016.01.18 ~ 2016.01.24</div>
+			<div class="approach">기한임박</div>
+		</div>
+
+	</div>
+
+	<div class="btn_box">
+		<button type="button" class="btn_cancel">취소하기</button>
+		<button type="button" class="btn_apply">선택완료</button>
+	</div>
+
+</div>
+
+
+<script>
+	$(function (){
+		$('.btn_payment_selected1').click(function (){
+			$('.selected_rowcon2').hide();
+			$('.selected_rowcon1').show();
+		});
+		$('.btn_payment_selected2').click(function (){
+			$('.selected_rowcon1').hide();
+			$('.selected_rowcon2').show();
+		});
+
+		$('.open_payment_set1').click(function (){
+			$('html,body').addClass('popon');
+			$('.order_address_popup').show();
+		});
+		$('.order_address_popup .btn_close, .order_address_popup .btn_apply, .order_address_popup .btn_cancel').click(function (){
+			$('html,body').removeClass('popon');
+			$('.order_address_popup').hide();
+		});
+
+		$('.open_payment_set2').click(function (){
+			$('html,body').addClass('popon');
+			$('.order_message_popup').show();
+		});
+		$('.order_message_popup .btn_close, .order_message_popup .btn_apply, .order_message_popup .btn_cancel').click(function (){
+			$('html,body').removeClass('popon');
+			$('.order_message_popup').hide();
+		});
+
+		$('.open_payment_set3').click(function (){
+			$('html,body').addClass('popon');
+			$('.coupon_popup').show();
+		});
+		$('.coupon_popup .btn_close, .coupon_popup .btn_apply, .coupon_popup .btn_cancel').click(function (){
+			$('html,body').removeClass('popon');
+			$('.coupon_popup ').hide();
+		});
+
+		$('.address_select2').click(function (){
+			//$('html,body').addClass('popon');
+			$('.new_address_popup').show();
+		});
+		$('.new_address_popup .btn_close2, .new_address_popup .btn_apply, .new_address_popup .btn_cancel').click(function (){
+			//$('html,body').removeClass('popon');
+			$('.new_address_popup').hide();
+		});
+
+		$('.order_message_popup .rd_label').click(function (){
+			$(this).parent().siblings('.row_con').find('label').removeClass('on');
+			$(this).addClass('on');
+		});
+		$('.new_address_popup .rd_label').click(function (){
+			$(this).parent().siblings('.row_con').find('label').removeClass('on');
+			$(this).addClass('on');
+		});
+		$('.coupon_popup .rd_label').click(function (){
+			$(this).parent().siblings('.coupon_con').find('label').removeClass('on');
+			$(this).addClass('on');
+		});
+
+
+	});
+</script>
+
+
+<!-- GNB & Search menu -->
+<?php
+	include('outline/gnb.html');
+?>
+
+<!--  Popup layer-->
+<?php
+	include('outline/popup_layer.html');
+?>
+
+
+<button class="btn_top"><img src="images/common/btn_top.png" alt="go to top"></button>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title> 문화생활 - 관리자 페이지 </title>
+	<meta name="Author" content="Adtive inovation" />
+	<meta name="Keywords" content="문화생활, 공연, 콘서트, 공연할인, 광고설정" />
+	<link rel="shortcut icon" href="ico/ico.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="../css/style_ie8.css" />
+	<![endif]-->
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="header_wrap">
+			<ul class="util_menu">
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">회원정보</a></li>
+				<li><a href="#">로그아웃</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container_topline">
+		<div class="decoration decoration1"></div>
+		<div class="decoration decoration2"></div>
+		<div class="decoration decoration3"></div>
+	</div>
+
+	<div class="container ad_set">
+		<!--gnb-->
+		<div class="gnb">
+			<div class="logo_box"><a href="/"><img src="../images/common/logo.png" alt="문화생활" /></a></div>
+			<ul class="gnb_list">
+				<li class="menu1">
+					<a href="#">광고설정</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu2">
+					<a href="#">효과관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu3">
+					<a href="#">상정관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu4">
+					<a href="#">판매관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu5">
+					<a href="#">회원관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu6 on">
+					<a href="#">주문관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu7">
+					<a href="#">게시판관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu8">
+					<a href="#">검색어관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu9">
+					<a href="#">쿠폰관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu10">
+					<a href="#">로딩관리</a>
+					<div class="mask"></div>
+				</li>
+				<li class="menu11">
+					<a href="#">계정관리</a>
+					<div class="mask"></div>
+				</li>
+			</ul>
+		</div>
+		<!--//gnb-->
+		<!--snb-->
+		<div class="snb">
+			<div class="title_article">
+				<h1><img src="../images/tit/h1_order_admin.gif" alt="주문관리" /></h1>
+				<p class="caption"><img src="../images/content/depth1_menu6_caption1.gif" alt="전체주문 및 티켓사용 현황 확인" /></p>
+			</div>
+			<ul class="snb_list">
+				<li class="depth2_menu menu1"><img src="../images/common/depth2_menu12_on.gif" alt="전체주문현황" /></li>
+				<li class="depth2_menu menu2"><a href="#"><img src="../images/common/depth2_menu13_off.gif" alt="티켓사용현황" /></a></li>
+			</ul>
+		</div>
+		<!--//snb-->
+		<!--content-->
+		<div class="content">
+			<div class="title_article">
+				<h2><img src="../images/tit/h2_all_order.gif" alt="전체주문현황" /></h2>
+				<p class="caption"><img src="../images/content/depth2_menu6_caption1.gif" alt="전체 주문 상품에 대한 검색 및 상세 확인이 가능합니다." /></p>
+			</div>
+			<div class="content_section memberlist_section">
+				<div class="search_result_article">
+					<div class="result_box">전체 : <span class="result_count">120</span> 건</div>
+					<ul class="result_count_list">
+						<li>결제완료 : <span class="in_count">80</span></li>
+						<li>결제대기 : <span class="in_count">20</span></li>
+						<li>취소환불 : <span class="in_count">20</span></li>
+					</ul>
+				</div>
+
+				<div class="search_article">
+					<h3 style="width:240px;">상품명&#47;상품주&#47;상품타이틀&#47;상품코드 :</h3>
+					<div class="select_box">
+						<input type="text" class="selected_text type_w130" value="상품명" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title=""></li>
+							</ul>
+						</div>
+					</div>
+					<div class="select_box">
+						<input type="text" class="selected_text type_w170" value="선택" readonly="readonly" />
+						<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+						<div class="select_list_box">
+							<div class="bg_layer"></div>
+							<ul class="select_list">
+								<li title=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="insertform_article">
+					<!--
+						결제여부 라디오 버튼중 취소환불의(클래스명:cancel_date_check) 프로퍼티값에 따라 최소환불일자 영역 on off 하였습니다.
+						라디오 버튼의 name 은 테스트로 삽입한 것이니 수정하여주시고, label과 input의 id값도 동일하게 수정해 주시면 됩니다.
+					-->
+					<div class="insert_con cancel_date_check_box">
+						<h3>결제여부:</h3>
+						<input type="radio" name="chch1" id="chch1_1" /> <label for="chch1_1" class="mr_30">전체</label>
+						<input type="radio" name="chch1" id="chch1_2" /> <label for="chch1_2" class="mr_30">결제완료</label>
+						<input type="radio" name="chch1" id="chch1_3" /> <label for="chch1_3" class="mr_30">결제대기</label>
+						<input type="radio" name="chch1" id="chch1_4" class="cancel_date_check" /> <label for="chch1_4">취소환불</label>
+					</div>
+
+
+					<div class="insert_con">
+						<h3>결제일자:</h3>
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						~
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_today.gif" alt="오늘" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_week.gif" alt="일주일" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_month.gif" alt="1개월" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_3month.gif" alt="3개월" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_all.gif" alt="전체" /></button>
+					</div>
+
+					<!-- 결제 여부에 따른 on, off 영역-->
+					<div class="insert_con cancel_date_con">
+						<h3>최소환불일자:</h3>
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						~
+						<div class="calendar_box">
+							<input type="text" class="input_text type_w130" readonly="readonly" />
+							<div class="btn_calendar"><img src="../images/common/ico_calendar.gif" alt="달력" /></div>
+						</div>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_today.gif" alt="오늘" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_week.gif" alt="일주일" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_month.gif" alt="1개월" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_3month.gif" alt="3개월" /></button>
+						<button class="btn_day_select"><img src="../images/btn/btn_day_all.gif" alt="전체" /></button>
+					</div>
+					<!-- //결제 여부에 따른 on, off 영역-->
+
+					<div class="btn_box">
+						<button><img src="../images/btn/btn_search3.gif" alt="검색" /></button>
+						<button><img src="../images/btn/btn_reset2.gif" alt="초기화" /></button>
+					</div>
+				</div>
+
+				<div class="insertform_article">
+					<div class="insert_con">
+						<h3>주문자 성함:</h3>
+						<div class="input_box"><input type="text" class="input_text type_w130" placeholder="직접입력" /></div>
+					</div>
+					<div class="insert_con">
+						<h3>주문자 연락처:</h3>
+						<div class="select_box">
+							<input type="text" class="selected_text type_w104" value="전체" readonly="readonly" />
+							<span class="arrow_con"><img src="../images/common/ico_arraow_bottom.gif" alt="리스트 열기" /></span>
+							<div class="select_list_box">
+								<div class="bg_layer"></div>
+								<ul class="select_list">
+									<li title=""></li>
+								</ul>
+							</div>
+						</div>
+						~
+						<div class="input_box"><input type="text" class="input_text type_w104" /></div>
+						~
+						<div class="input_box"><input type="text" class="input_text type_w104" /></div>
+					</div>
+
+					<div class="btn_box">
+						<button><img src="../images/btn/btn_search3.gif" alt="검색" /></button>
+						<button><img src="../images/btn/btn_reset2.gif" alt="초기화" /></button>
+					</div>
+				</div>
+
+				<div class="search_result_article">
+					<div class="result_box">검색결과 : <span class="result_count">120</span> 건</div>
+				</div>
+
+				<div class="table_article">
+					<table summary="검색결과">
+						<caption>검색결과</caption>
+						<colgroup>
+							<col width="17%" />
+							<col width="16%" />
+							<col width="14%" />
+							<col width="16%" />
+							<col width="14%" />
+							<col width="13%" />
+							<col width="10%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="color_type1"><img src="../images/content/th_product_code.gif" alt="상품코드" /></th>
+								<th scope="col" class="color_type1"><img src="../images/content/th_productname.gif" alt="상품명" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_order.gif" alt="주문자" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_tell.gif" alt="연락처" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_payment_day.gif" alt="결제일" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_payment_means.gif" alt="결제수단" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_status2.gif" alt="상태" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Askdjkskd1013-15</td>
+								<td>맨 오브 라만차</td>
+								<td>빠빠빠</td>
+								<td>010.2222.3333</td>
+								<td>2013.03.05</td>
+								<td>신용카드</td>
+								<td>결제완료</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_box">
+						<a href="#" class="btn_popuplayer_order_info"><img src="../images/btn/btn_order_info.gif" alt="주문자정보" /></a>
+						<a href="#" class="btn_popuplayer_payment_info"><img src="../images/btn/btn_payment_info.gif" alt="결제정보" /></a>
+						<a href="#"><img src="../images/btn/btn_sales_detail.gif" alt="판매내역" /></a>
+					</div>
+				</div>
+				<div class="table_article">
+					<table summary="검색결과">
+						<caption>검색결과</caption>
+						<colgroup>
+							<col width="17%" />
+							<col width="16%" />
+							<col width="14%" />
+							<col width="16%" />
+							<col width="14%" />
+							<col width="13%" />
+							<col width="10%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="color_type1"><img src="../images/content/th_product_code.gif" alt="상품코드" /></th>
+								<th scope="col" class="color_type1"><img src="../images/content/th_productname.gif" alt="상품명" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_order.gif" alt="주문자" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_tell.gif" alt="연락처" /></th>
+								<th scope="col" class="color_type2"><img src="../images/content/th_cancel_date.gif" alt="취소환불일자" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_payment_means.gif" alt="결제수단" /></th>
+								<th scope="col" class="color_type3"><img src="../images/content/th_status2.gif" alt="상태" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Askdjkskd1013-15</td>
+								<td>맨 오브 라만차</td>
+								<td>빠빠빠</td>
+								<td>010.2222.3333</td>
+								<td>2013.03.05</td>
+								<td>신용카드</td>
+								<td>결제완료</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_box">
+						<a href="#" class="btn_popuplayer_order_info"><img src="../images/btn/btn_order_info.gif" alt="주문자정보" /></a>
+						<a href="#" class="btn_popuplayer_payment_info"><img src="../images/btn/btn_payment_info.gif" alt="결제정보" /></a>
+						<a href="#"><img src="../images/btn/btn_sales_detail.gif" alt="판매내역" /></a>
+					</div>
+				</div>
+
+				<div class="btn_box_article">
+					<button><img src="../images/btn/btn_excel.gif" alt="엑셀" /></button>
+					<button><img src="../images/btn/btn_alarm.gif" alt="알람방송" /></button>
+				</div>
+
+				<ul class="pagelist_article">
+					<li><a href="#" class="btn_prev">◀ 이전</a></li>
+					<li><a class="on" href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#" class="btn_next">다음 ▶</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!--//content-->
+		<div style="clear:both;"></div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_wrap">
+			<div class="footer_logo"><img src="../images/common/logo_footer.gif" alt="애드티브 컨텐츠베이" /></div>
+			<address><img src="../images/common/address.gif" alt="서울시 강남구 역삼동 719 신웅빌딩 14층 애드티브이노베이션(주)  대표이사 : 조홍성     등록번호 : 서울 아 01569      사업자등록번호 : 120-87-11103       개인정보취급자 : 김종렬      이메일  jrkim@adtive.co.kr" /></address>
+			<p class="copyright"><img src="../images/common/copyright.gif" alt="Copyright (C) 2012. TARGET VIEW. All Rights Reserved." /></p>
+		</div>
+	</div>
+</div>
+
+
+<div class="background_layer"></div>
+
+
+
+<div class="popuplayer_order_info popuplayer_set2">
+	<div class="top_con">
+		<h3><img src="../images/tit/h3_order_info.gif" alt="주문자정보" /></h3>
+		<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+	</div>
+	<div class="bot_con">
+		<table class="popuplayer_tableset1" summary="주문자정보">
+			<caption>주문자정보</caption>
+			<colgroup>
+				<col width="110" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>이름:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>연락처:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>이메일:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>회원구분:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>가입일:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>최종방문일:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>사용가능적립금:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>주문횟수:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>주문금액:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>5&#37;쿠폰</th>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="popuplayer_payment_info popuplayer_set2">
+	<div class="top_con">
+		<h3><img src="../images/tit/h3_pament_info.gif" alt="결제정보" /></h3>
+		<button class="btn_close"><img src="../images/btn/btn_close.gif" alt="close" /></button>
+	</div>
+	<div class="bot_con">
+		<table class="popuplayer_tableset1" summary="결제정보">
+			<caption>결제정보</caption>
+			<colgroup>
+				<col width="110" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>결제일자:</th>
+					<td>1d5s15d 1d5s1d5s15d15s1ds5d1s5</td>
+				</tr>
+				<tr>
+					<th>최소환불일자:</th>
+					<td>
+						2013.12.12
+						<!--취소환불일자 : *관리자권한 취소환불처리일 경우 해당 text 노출, 사용자에 의한 취소일 경우 취소일자만 표기 요청-->
+						<span class="caption">관리자권한 취소환불처리</span>
+						<!--취소환불일자 : *관리자권한 취소환불처리일 경우 해당 text 노출, 사용자에 의한 취소일 경우 취소일자만 표기 요청-->
+					</td>
+				</tr>
+				<tr>
+					<th>장려금&#47;지참금:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>5&#37;쿠폰사용:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="btn_td">
+						<button><img src="../images/btn/btn_admin_cacel.gif" alt="관리자권한 취소환불" /></button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;padding:20px">
+						<img src="../images/temp/sample3.gif" alt="" />
+					</td>
+				</tr>
+				<tr>
+					<th>티켓사용여부:</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>티켓사용일자:</th>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_box">
+			<button><img src="../images/btn/btn_ticket.gif" alt="티켓사용현황" /></button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

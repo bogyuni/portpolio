@@ -1,0 +1,245 @@
+<meta charset="utf-8">
+
+<!-- 텃밭 -->
+<div class="main_content">
+	<div class="top_vis_content"><img src="images/content/top_vis_garden.jpg" alt="garden"></div>
+
+	<section class="plans_section">
+		<div class="prod_option_box">
+			<div class="opt_inbox prod_cnt">상품 <em>999</em> 개</div>
+
+			<div class="opt_inbox sort_option">
+				<select class="opt_select" name="">
+					<option value="">상품순</option>
+					<option value="">신상품순</option>
+					<option value="">많이팔린순</option>
+					<option value="">후기많은순</option>
+					<option value="">높은가격순</option>
+					<option value="">낮은가격순</option>
+				</select>
+				<button class="btn_list_view t_hide" onclick="pordListViewChange()">큰상품 보기</button>
+			</div>
+		</div>
+
+		<ul class="prod_list list_view_set type1">
+
+			<li class="prod_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor prod_link" onclick="prodSumOpen('link_url')">
+							<div class="prod_img"><img src="images/temp/@prod_f.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<!--<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>-->
+							<!--<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>-->
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a class="prod_link" onclick="prodSumOpen('link_url')">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+							<span class="delivery_tag2">개별배송</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>
+						<!--<span class="soldout_text">일시품절</span>-->
+					</div>
+				</div>
+			</li>
+
+			<li class="prod_item country_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor" href="">
+							<div class="prod_img"><img src="images/temp/@prod_b.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>
+							<!--<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>
+							<div class="soldout_con"></div>-->
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a href="">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+							<span class="delivery_tag2">개별배송</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>
+						<!--<span class="soldout_text">일시품절</span>-->
+					</div>
+				</div>
+			</li>
+
+			<li class="prod_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor" href="">
+							<div class="prod_img"><img src="images/temp/@prod_f.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<!--<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>-->
+							<!--<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>-->
+							<div class="soldout_con"></div>
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a href="">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<!--<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>-->
+						<span class="soldout_text">일시<br>품절</span>
+					</div>
+				</div>
+			</li>
+
+			<li class="prod_item country_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor" href="">
+							<div class="prod_img"><img src="images/temp/@prod_b.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>
+							<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>
+							<!--<div class="soldout_con"></div>-->
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a href="">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>
+						<!--<span class="soldout_text">일시품절</span>-->
+					</div>
+				</div>
+			</li>
+
+			<li class="prod_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor" href="">
+							<div class="prod_img"><img src="images/temp/@prod_f.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<!--<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>-->
+							<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>
+							<!--<div class="soldout_con"></div>-->
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a href="">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>
+						<!--<span class="soldout_text">일시품절</span>-->
+					</div>
+				</div>
+			</li>
+
+			<li class="prod_item country_item">
+				<div class="prod_wrap">
+					<div class="top_con">
+						<a class="prod_anchor" href="">
+							<div class="prod_img"><img src="images/temp/@prod_b.jpg" alt=""></div>
+							<div class="tag_box">
+								<img src="images/common/tag_prod_new.gif" alt="신상품">
+								<img src="images/common/tag_prod_fresh.gif" alt="오늘수확">
+								<img src="images/common/tag_prod_country.gif" alt="전국최고">
+							</div>
+							<div class="sale_box"><em>99</em>%</div>
+							<div class="master_box"><div class="master_icon"><img src="images/temp/1449563824609l2.jpg" alt="명인인장"></div></div>
+							<!--<div class="soldout_option"><div>입고예정,<br> 1~2일 지연 배송상품</div></div>-->
+							<div class="soldout_con"></div>
+						</a>
+					</div>
+					<div class="bot_con">
+						<div class="prod_name"><a href="">[할인행사]초원친환경의 껍질이 얇은 -달콤새콤 노지감귤(로얄</a></div>
+						<div class="prod_option">
+							<div class="grade_box">
+								<span class="full"></span><span class="full"></span><span class="full"></span><span class="full"></span><span class="half"></span>
+							</div>
+							<span class="grade_count"><em>10</em>건</span>
+						</div>
+						<div class="cost_box">
+							<span class="prod_standard">1KG 50 grand big!!! hhhhhh</span>
+							<span class="before_cost"><em>4,600</em>원</span>
+							<span class="after_cost"><em>994,140</em>원</span>
+						</div>
+						<!--<button onclick="prodCartIn()" class="btn_cart_p t_hide">카트에 담기</button>-->
+						<span class="soldout_text">일시<br>품절</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<!--  footer info -->
+	<?php
+		include('../outline/footer_info.html');
+	?>
+</div>
+
+

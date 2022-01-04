@@ -1,0 +1,96 @@
+<meta charset="utf-8">
+
+<div class="main_content">
+	<article class="slide_visual slide_visual1">
+		<div class="visual_view_box">
+			<ul class="slide_visual_list">
+				<li class="visual_con"><a href=""><img class="first_vis_img" src="images/temp/@main_vis1.jpg" alt="vis1"></a></li>
+				<li class="visual_con"><a href=""><img src="images/temp/@main_vis2.jpg" alt="vis2"></a></li>
+				<li class="visual_con"><a href=""><img src="images/temp/@main_vis3.jpg" alt="vis3"></a></li>
+				<li class="visual_con"><a href=""><img src="images/temp/@main_vis4.jpg" alt="vis4"></a></li>
+				<li class="visual_con"><a href=""><img src="images/temp/@main_vis5.jpg" alt="vis5"></a></li>
+			</ul>
+		</div>
+		<!--<ul class="indicator_list"></ul>-->
+		<div class="indicator_count">
+			<span class="indicator_cnt1">1</span> / <span class="indicator_cnt2"></span>
+		</div>
+		<button class="btn_visual_all"><img src="images/content/btn_vis_all.png" alt="all view"></button>
+	</article>
+
+	<nav class="section_menu">
+		<a class="on" href="main/main1.html">신상품</a>
+		<a href="main/main2.html">반짝특가</a>
+		<a href="main/main3.html">타임세일</a>
+		<a href="main/main4.html">기획전</a>
+	</nav>
+
+	<section class="main_section">
+		<?php
+			include('main1.html');
+		?>
+	</section>
+
+	<!--  footer info -->
+	<?php
+		include('/shop/webm/outline/footer_info.html');
+	?>
+
+</div>
+
+
+<div class="visual_all_view">
+	<div class="top_con">
+		<h3>맛있는 유기농 마트 헬로네이처</h3>
+	</div>
+	<div class="bot_con">
+		<ul class="visual_all_list">
+			<li class="visual_all_con"><a href=""><img src="images/temp/@main_vis1.jpg" alt=""></a></li>
+			<li class="visual_all_con"><a href=""><img src="images/temp/@main_vis2.jpg" alt=""></a></li>
+			<li class="visual_all_con"><a href=""><img src="images/temp/@main_vis3.jpg" alt=""></a></li>
+			<li class="visual_all_con"><a href=""><img src="images/temp/@main_vis4.jpg" alt=""></a></li>
+			<li class="visual_all_con"><a href=""><img src="images/temp/@main_vis5.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<button class="btn_close t_hide">X</button>
+</div>
+
+
+<script>
+	$(function (){
+		visRollingEvn('.slide_visual1',false);
+
+		$('.container').on('click', '.btn_visual_all', function (){
+			$('html,body').addClass('popon');
+			$('body').append($('.visual_all_view'));
+			$('.visual_all_view').show();
+		});
+
+		$('.visual_all_view .btn_close').click(function (){
+			$('html,body').removeClass('popon');
+			$('.visual_all_view').fadeOut();
+		});
+
+
+		$('.section_menu a').click(function (e){
+			e.preventDefault();
+			$('.section_menu a').removeClass('on');
+			$(this).addClass('on');
+			$.ajax({
+				type:'GET',
+				//async : false,
+				url : $(this).attr('href'),
+				dataType:'html',
+				success:function(result){
+					$('.main_section').html(result);
+					setTimeout(function (){
+						containerHeightSet();
+					},1000);
+				}
+			});
+		});
+
+	});
+	var noCookieBigCh = true;
+</script>
+

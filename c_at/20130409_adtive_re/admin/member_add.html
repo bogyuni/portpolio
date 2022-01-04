@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="Author" content="seopubl" />
+	<title> 관리자 front page </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<!--header-->
+<div class="header">
+	<div class="title_wrap">
+		<div class="title_article">
+			<h1 class="logo">www.adtive.com</h1>
+		</div>
+	</div>
+
+	<div class="gnb_wrap">
+		<ul class="gnb">
+			<li class="depth1">
+				<a href="#">메뉴1</a>
+				<ul class="sub_menu">
+					<li class="depth2"><a href="#">sub menu1</a></li>
+					<li class="depth2"><a href="#">sub menu2</a></li>
+					<li class="depth2"><a href="#">sub menu3</a></li>
+				</ul>
+			</li>
+			<li class="depth1">
+				<a href="#">메뉴2</a>
+				<ul class="sub_menu">
+					<li class="depth2"><a href="#">sub menu1</a></li>
+					<li class="depth2"><a href="#">sub menu2</a></li>
+				</ul>
+			</li>
+			<li class="depth1">
+				<a href="#">메뉴3</a>
+				<ul class="sub_menu">
+					<li class="depth2"><a href="#">sub menu1</a></li>
+					<li class="depth2"><a href="#">sub menu2</a></li>
+					<li class="depth2"><a href="#">sub menu3</a></li>
+				</ul>
+			</li>
+			<li class="depth1">
+				<a href="#">메뉴4</a>
+				<ul class="sub_menu">
+					<li class="depth2"><a href="#">sub menu1</a></li>
+					<li class="depth2"><a href="#">sub menu3</a></li>
+				</ul>
+			</li>
+			<li class="depth1">
+				<a href="#">메뉴5</a>
+				<ul class="sub_menu">
+					<li class="depth2"><a href="#">sub menu1</a></li>
+					<li class="depth2"><a href="#">sub menu2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--//header-->
+
+<!--container-->
+<div class="container">
+	<div class="container_wrap">
+		<div class="snb">
+			<div class="admin_article">
+				<span class="admin_ID">admin</span> / <button class="btn_logout">Log Out</button>
+			</div>
+			<h2 class="depth1menu_tit">sub title </h2>
+			<ul class="snb_list">
+				<li class="on"><a href="#">depth2 menu1</a></li>
+				<li><a href="#">depth2 menu2</a></li>
+				<li><a href="#">depth2 menu3</a></li>
+				<li><a href="#">depth2 menu4</a></li>
+				<li><a href="#">depth2 menu5</a></li>
+				<li><a href="#">depth2 menu6</a></li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<h2 class="depth2menu_tit">회원 등록 메뉴</h2>
+			<p class="caption_p"><span>*</span> 표시는 모두 기입 하셔야 합니다.</p>
+			<div class="section member_add_section">
+				<div class="table_article">
+					<table class="table_set2">
+						<caption>text board table</caption>
+						<colgroup>
+							<col width="20%" />
+							<col width="80%" />
+						</colgroup>
+						<tbody>
+							<tr class="top_tr">
+								<th>아이디 <span class="point">*</span></th>
+								<td><input class="inst_w140" type="text" /></td>
+							</tr>
+							<tr>
+								<th>비밀번호 <span class="point">*</span></th>
+								<td><input class="inst_w140" type="password" /> <span>*영문, 숫자 포함 6~14</span></td>
+							</tr>
+							<tr>
+								<th>비밀번호확인 <span class="point">*</span></th>
+								<td><input class="inst_w140" type="password" /> <span>*영문, 숫자 포함 6~14</span></td>
+							</tr>
+							<tr>
+								<th>휴대폰 <span class="point">*</span></th>
+								<td>
+									<select name="" id="" class="select_phone">
+										<option value="">010</option>
+										<option value="">011</option>
+										<option value="">016</option>
+										<option value="">017</option>
+										<option value="">018</option>
+										<option value="">019</option>
+									</select>
+									-
+									<input class="inst_w30" type="number" />
+									-
+									<input class="inst_w30" type="number" />
+								</td>
+							</tr>
+							<tr>
+								<th>이름 <span class="point">*</span></th>
+								<td><input class="inst_w140" type="text" /></td>
+							</tr>
+							<tr>
+								<th>이메일 <span class="point">*</span></th>
+								<td>
+									<input class="inst_w80" type="text" />
+									@
+									<input class="inst_w80" type="password" />
+									<select name="" id="" class="select_email">
+										<option value="">직접입력</option>
+										<option value="">hotmail.com</option>
+										<option value="">naver.com</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>부가정보</th>
+								<td>
+									<ul class="check_list">
+										<li><label for="">사랑과 <input type="checkbox" /></label></li>
+										<li><label for="">전쟁 <input type="checkbox" /></label></li>
+										<li><label for="">나오늘 <input type="checkbox" /></label></li>
+										<li><label for="">집에안갈래 <input type="checkbox" /></label></li>
+										<li><label for="">자장면 <input type="checkbox" /></label></li>
+										<li><label for="">짬봉 <input type="checkbox" /></label></li>
+										<li><label for="">탕수육 <input type="checkbox" /></label></li>
+										<li><label for="">건담 <input type="checkbox" /></label></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>부가정보2</th>
+								<td>
+									<ul class="check_list">
+										<li><label for="">사과 <input type="radio" /></label></li>
+										<li><label for="">바나나 <input type="radio" /></label></li>
+										<li><label for="">키위 <input type="radio" /></label></li>
+										<li><label for="">배 <input type="radio" /></label></li>
+										<li><label for="">귤 <input type="radio" /></label></li>
+										<li><label for="">구아바<input type="radio" /></label></li>
+										<li><label for="">파인애플<input type="radio" /></label></li>
+										<li><label for="">망고 <input type="radio" /></label></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>추가설명</th>
+								<td class="textContent">
+									<textarea name="" id="" cols="" rows=""></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="option_box">
+						<div class="subBox_R">
+							<button class="btn_set btn_cancel">취소</button>
+							<button class="btn_set btn_complete" onclick="javascript:alert('뭐하러 등록하노?')">등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+<!--//container-->
+
+<!--footer-->
+<div class="footer">
+	Copyright(c) 2013 <span>Adtive innovation.</span> All rights reserved
+</div>
+<!--//footer-->
+
+</body>
+</html>
